@@ -1,5 +1,5 @@
 ---
-import { indicators } from '@/config/general'
+import { app, indicators } from '@/config/general'
 import type { StratifiedRow } from '@/lib/parquet'
 
 interface Props {
@@ -15,7 +15,7 @@ const countries = [
     Object.values(allStratifiedData)
       .flat()
       .map((row) => String(row.territorio ?? '').trim())
-      .filter(Boolean),
+      .filter((territory) => Boolean(territory) && territory !== app.local),
   ),
 ].sort((a, b) => a.localeCompare(b, 'es'))
 
