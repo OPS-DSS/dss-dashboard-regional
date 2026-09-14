@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@astrojs/react": "^5.0.1",
-    "@ops-dss/charts": "^0.1.25",
+    "@ops-dss/charts": "^0.1.26",
     "@tailwindcss/vite": "^4.1.18",
     "astro": "^6.0.8",
     "astro-icon": "^1.1.5",
