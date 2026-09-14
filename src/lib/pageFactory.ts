@@ -57,7 +57,6 @@ export async function loadAllDatasets(): Promise<PageDatasets> {
       ind.slug,
       ind.file,
       ind.scheme,
-      { territory: app.local },
     )
   }
 
@@ -95,6 +94,7 @@ export interface PageDefinition {
   analyticsData?: AnalyticsRow[]
   scatterData?: ScatterRow[]
   stratifiedData?: StratifiedRow[]
+  allStratifiedData?: Record<string, StratifiedRow[]>
   dimension?: string
   subdimensions?: string[]
   description?: string
@@ -119,6 +119,7 @@ export function buildPages(datasets: PageDatasets): PageDefinition[] {
       description: 'Factores que influyen en la salud de la población',
       date: '2026-01-01',
       navbar: true,
+      allStratifiedData: datasets.stratifiedData,
     },
     {
       slug: 'analisis',
