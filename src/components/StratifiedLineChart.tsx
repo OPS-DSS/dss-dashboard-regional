@@ -111,6 +111,21 @@ export const StratifiedLineChart = ({
   csvPath,
   geojsonUrls,
 }: StratifiedLineChartProps) => {
+  const selectedCountry =
+    typeof window !== 'undefined'
+      ? new URLSearchParams(window.location.search).get('country')
+      : null
+
+  const selectedTerritory = selectedCountry || app.local
+
+  const countryData = useMemo(
+    () =>
+      data.filter(
+        (row) => String(row.territorio ?? '') === selectedTerritory,
+      ),
+    [data, selectedTerritory],
+  )
+
   const [stratifier, setStratifier] = useState<IndicatorStratifier>('total')
   const [view, setView] = useState<'chart' | 'table'>('chart')
   const [mapView, setMapView] = useState<'map' | 'table'>('map')
@@ -122,9 +137,9 @@ export const StratifiedLineChart = ({
 
   // ── Year selection (shared between chart highlight and map) ───────────────
   const availableYears = useMemo(() => {
-    if (!data || data.length === 0) return []
-    return [...new Set(data.map((r) => r.anio))].sort((a, b) => b - a)
-  }, [data])
+    if (!countryData || countryData.length === 0) return []
+    return [...new Set(countryData.map((r) => r.anio))].sort((a, b) => b - a)
+  }, [countryData])
 
   const lastYear = availableYears[0] ?? null
   const [selectedYear, setSelectedYear] = useState<number | null>(null)
@@ -170,14 +185,14 @@ export const StratifiedLineChart = ({
   }
 
   const { chartData, lines, keys } = useMemo(
-    () => pivotData(data, stratifier, stratifiers ?? [], indicator),
-    [data, stratifier, stratifiers, indicator],
+    () => pivotData(countryData, stratifier, stratifiers ?? [], indicator),
+    [countryData, stratifier, stratifiers, indicator],
   )
 
   const hasMap =
     app.features.map && geojsonUrls && Object.keys(geojsonUrls).length > 0
 
-  if (!data || data.length === 0) {
+  if (!countryData || countryData.length === 0) {
     return (
       <p className="text-gray-500 italic py-8 text-center">
         No hay datos disponibles.
