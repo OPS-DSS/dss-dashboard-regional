@@ -7,7 +7,7 @@ import tailwindcss from '@tailwindcss/vite'
 // https://astro.build/config
 export default defineConfig({
   site: process.env.SITE_URL || 'https://ops-dss.github.io',
-  base: process.env.BASE_PATH || '/starter-local-astro',
+  base: process.env.BASE_PATH || '/dss-dashboard-regional',
   output: 'static',
   build: {
     assets: '_astro',
