@@ -16,7 +16,6 @@ export const nonPriorityIndicators: any[] = rawConfig.indicators.filter(
 
 export const STATIC_ROUTES = [
   '/',
-  '/analisis-de-inequidad',
   '/determinantes-de-la-salud',
   '/analisis',
 ]

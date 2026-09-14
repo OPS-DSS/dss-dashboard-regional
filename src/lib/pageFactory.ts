@@ -114,13 +114,6 @@ export function buildPages(datasets: PageDatasets): PageDefinition[] {
       navbar: true,
     },
     {
-      slug: 'analisis-de-inequidad',
-      title: 'Análisis de Inequidad',
-      description: 'Problemas, gráficos de tendencias y mediciones de brechas',
-      date: '2026-01-01',
-      navbar: true,
-    },
-    {
       slug: 'determinantes-de-la-salud',
       title: 'Determinantes Sociales de la Salud',
       description: 'Factores que influyen en la salud de la población',

@@ -60,13 +60,9 @@ const staticEntries: Record<string, PageRegistryEntry> = {
   },
 
   // ─── Section index pages ───────────────────────────────────────────────────
-  'analisis-de-inequidad': {
-    component: PrioritySelector,
-    resolveProps: ({ title, text, slug }) => ({ title, text, section: slug }),
-  },
   'determinantes-de-la-salud': {
-    component: PrioritySelector,
-    resolveProps: ({ title, text, slug }) => ({ title, text, section: slug }),
+    component: PrioritySDoH,
+    resolveProps: ({ title, text }) => ({ title, text }),
   },
   analisis: {
     component: PrioritySelector,
