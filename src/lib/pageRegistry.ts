@@ -31,6 +31,7 @@ export interface PageProps {
   analyticsData?: AnalyticsRow[]
   scatterData?: ScatterRow[]
   stratifiedData?: StratifiedRow[]
+  allStratifiedData?: Record<string, StratifiedRow[]>
   stratifiers?: IndicatorStratifier[]
 }
 
@@ -62,7 +63,11 @@ const staticEntries: Record<string, PageRegistryEntry> = {
   // ─── Section index pages ───────────────────────────────────────────────────
   'determinantes-de-la-salud': {
     component: PrioritySDoH,
-    resolveProps: ({ title, text }) => ({ title, text }),
+    resolveProps: ({ title, text, allStratifiedData }) => ({
+      title,
+      text,
+      allStratifiedData: allStratifiedData ?? {},
+    }),
   },
   analisis: {
     component: PrioritySelector,

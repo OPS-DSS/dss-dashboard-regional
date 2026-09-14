@@ -1,7 +1,23 @@
 ---
-import { indicators } from '@/config/general'
+import { app, indicators } from '@/config/general'
+import type { StratifiedRow } from '@/lib/parquet'
 
-const { title, text } = Astro.props
+interface Props {
+  title: string
+  text: string
+  allStratifiedData?: Record<string, StratifiedRow[]>
+}
+
+const { title, text, allStratifiedData = {} } = Astro.props
+
+const countries = [
+  ...new Set(
+    Object.values(allStratifiedData)
+      .flat()
+      .map((row) => String(row.territorio ?? '').trim())
+      .filter((territory) => Boolean(territory) && territory !== app.local),
+  ),
+].sort((a, b) => a.localeCompare(b, 'es'))
 
 const base = import.meta.env.BASE_URL.endsWith('/')
   ? import.meta.env.BASE_URL
@@ -27,6 +43,43 @@ for (const ind of indicators) {
   <div class="flex flex-col gap-2">
     <h1 class="text-3xl font-bold my-6">{title}</h1>
     <p class="text-gray-700">{text}</p>
+
+    <div id="country-selector" class="mt-4 rounded-lg border border-gray-200 p-5">
+      <label for="country-select" class="block text-sm font-medium text-gray-700 mb-2">
+        Seleccione un país de la Región de las Américas
+      </label>
+      <div class="flex flex-col sm:flex-row gap-3 sm:items-center">
+        <select
+          id="country-select"
+          class="min-w-72 rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-800"
+        >
+          <option value="">Seleccione un país</option>
+          {countries.map((country) => <option value={country}>{country}</option>)}
+        </select>
+        <button
+          id="country-enter-btn"
+          type="button"
+          class="rounded-lg bg-gray-800 px-4 py-2 text-sm font-medium text-white disabled:opacity-40"
+          disabled
+        >
+          Ver indicadores
+        </button>
+      </div>
+    </div>
+
+    <div id="country-content" class="hidden">
+      <div class="mt-4 flex items-center justify-between gap-3 flex-wrap">
+        <p class="text-sm text-gray-600">
+          País seleccionado: <strong id="selected-country-label"></strong>
+        </p>
+        <button
+          id="change-country-btn"
+          type="button"
+          class="text-sm font-medium text-blue-700 hover:underline"
+        >
+          Cambiar país
+        </button>
+      </div>
 
     <div class="flex flex-col gap-3 mt-4">
       <div class="flex gap-3 items-center">
@@ -84,6 +137,7 @@ for (const ind of indicators) {
           >
             <a
               href={`${base}${ind.slug}`}
+              data-indicator-href={`${base}${ind.slug}`}
               class="block rounded-lg border border-gray-200 p-4 hover:border-blue-400 hover:shadow-sm transition-all"
             >
               <h3 class="text-lg font-semibold text-gray-900">{ind.title}</h3>
@@ -107,15 +161,18 @@ for (const ind of indicators) {
     <p id="empty-message" class="text-gray-500 italic mt-4 hidden">
       No hay indicadores disponibles para los filtros seleccionados.
     </p>
+    </div>
   </div>
 </div>
 <script>
+  const params = new URLSearchParams(window.location.search)
+
   function getInitialDimension(): string {
-    const params = new URLSearchParams(window.location.search)
     const d = params.get('dimension')
     return d === 'dss' || d === 'policy' ? d : 'dss'
   }
 
+  let selectedCountry = params.get('country') ?? ''
   let selectedDimension = getInitialDimension()
   let selectedSubdimensions = new Set<string>()
 
@@ -199,14 +256,66 @@ for (const ind of indicators) {
       })
   }
 
+  function updateCountryView() {
+    const selector = document.getElementById('country-selector')
+    const content = document.getElementById('country-content')
+    const label = document.getElementById('selected-country-label')
+    const select = document.getElementById('country-select') as HTMLSelectElement | null
+    const enterBtn = document.getElementById('country-enter-btn') as HTMLButtonElement | null
+
+    if (select) select.value = selectedCountry
+    if (enterBtn) enterBtn.disabled = !(select?.value)
+
+    if (selectedCountry) {
+      selector?.classList.add('hidden')
+      content?.classList.remove('hidden')
+      if (label) label.textContent = selectedCountry
+    } else {
+      selector?.classList.remove('hidden')
+      content?.classList.add('hidden')
+    }
+
+    document.querySelectorAll<HTMLAnchorElement>('[data-indicator-href]').forEach((link) => {
+      const baseHref = link.getAttribute('data-indicator-href') ?? link.href
+      const query = new URLSearchParams({
+        country: selectedCountry,
+        dimension: selectedDimension,
+      })
+      link.href = `${baseHref}?${query.toString()}`
+    })
+  }
+
   function setDimension(dim: string) {
     selectedDimension = dim
     selectAllSubdims()
     updateDimensionButtons()
     updateSubdimTags()
     filterIndicators()
-    history.replaceState(null, '', `?dimension=${dim}`)
+    const query = new URLSearchParams({ country: selectedCountry, dimension: dim })
+    history.replaceState(null, '', `?${query.toString()}`)
+    updateCountryView()
   }
+
+  const countrySelect = document.getElementById('country-select') as HTMLSelectElement | null
+  const countryEnterBtn = document.getElementById('country-enter-btn') as HTMLButtonElement | null
+
+  countrySelect?.addEventListener('change', () => {
+    if (countryEnterBtn) countryEnterBtn.disabled = !countrySelect.value
+  })
+
+  countryEnterBtn?.addEventListener('click', () => {
+    selectedCountry = countrySelect?.value ?? ''
+    if (!selectedCountry) return
+    const query = new URLSearchParams({ country: selectedCountry, dimension: selectedDimension })
+    history.replaceState(null, '', `?${query.toString()}`)
+    updateCountryView()
+  })
+
+  document.getElementById('change-country-btn')?.addEventListener('click', () => {
+    selectedCountry = ''
+    history.replaceState(null, '', window.location.pathname)
+    updateCountryView()
+  })
 
   document
     .querySelectorAll<HTMLButtonElement>('[data-dim-btn]')
@@ -236,4 +345,5 @@ for (const ind of indicators) {
   updateDimensionButtons()
   updateSubdimTags()
   filterIndicators()
+  updateCountryView()
 </script>
