@@ -1,0 +1,491 @@
+{
+  "local": "San Martín del Valle",
+  "subnational": "Huila",
+  "national": "Colombia",
+  "indicators": [
+    {
+      "slug": "mortalidad-materna",
+      "title": "Razón de Mortalidad Materna",
+      "description": "Registros locales de mortalidad materna / Estadísticas Vitales Municipales",
+      "date": "2026-03-01",
+      "category": "comunidad",
+      "dimension": "dss",
+      "subdimensions": ["salud"],
+      "source": "Registros locales de mortalidad materna / Estadísticas Vitales Municipales",
+      "related_priorities": [],
+      "priority": true,
+      "label": "Razón de Mortalidad Materna",
+      "axisLabel": "RMM (por 100.000 nacidos vivos)",
+      "color": "#ef4444",
+      "totalColor": "#6b7280",
+      "stratifiers": ["zona", "etnia"],
+      "bivariateValue": "maternal_value",
+      "file": "mortalidad-materna.parquet",
+      "scheme": [
+        {
+          "name": "territorio",
+          "type": "string",
+          "role": "territory",
+          "index": 1
+        },
+        {
+          "name": "anio",
+          "type": "number",
+          "role": "year",
+          "index": 3
+        },
+        {
+          "name": "valor",
+          "type": "number",
+          "role": "value",
+          "index": 7
+        },
+        {
+          "name": "zona",
+          "type": "string",
+          "label": "Zona",
+          "values": ["urbano", "periurbano", "rural"],
+          "aggregate": "Total",
+          "colors": {
+            "urbano": "#22c55e",
+            "periurbano": "#f59e0b",
+            "rural": "#ef4444"
+          },
+          "index": 5
+        },
+        {
+          "name": "etnia",
+          "type": "string",
+          "label": "Etnia",
+          "values": ["Indígena", "No indígena"],
+          "aggregate": "Total",
+          "colors": {
+            "Indígena": "#8b5cf6",
+            "No indígena": "#06b6d4"
+          },
+          "index": 6
+        }
+      ],
+      "inequitySource": "Las métricas de desigualdad implementadas se basan en el marco metodológico del Cuantificador de Desigualdades en Salud, desarrollado conjuntamente por la Organización Panamericana de la Salud (OPS/OMS) y el Centro Nacional de Epidemiología, Prevención y Control de Enfermedades del Ministerio de Salud del Perú (CDC-Perú). Disponible en https://opendata.paho.org/es/ods3/cuantificador-desigualdades-salud",
+      "gaps": {
+        "etnia": {
+          "field": "etnia",
+          "scopeField": "zona",
+          "scopeValue": "Total",
+          "unit": "muertes por 100.000 NV",
+          "comparisons": [
+            {
+              "id": "indigena_no_indigena",
+              "label": "Indígena vs No indígena",
+              "group": { "value": "Indígena", "label": "Indígena" },
+              "reference": { "value": "No indígena", "label": "No indígena" },
+              "colorAbsolute": "#8b5cf6",
+              "colorRelative": "#06b6d4",
+              "interpretation": {
+                "absolute": {
+                  "below0": "La razón de mortalidad materna en población no indígena fue superior a la observada en población indígena.",
+                  "above0": "La razón de mortalidad materna en población indígena fue superior a la observada en población no indígena, evidenciando una desigualdad étnica desfavorable para la población indígena."
+                },
+                "relative": {
+                  "below1": "La población no indígena presentó una razón de mortalidad materna mayor que la población indígena.",
+                  "above1": "La población indígena presentó una razón de mortalidad materna mayor que la población no indígena."
+                }
+              }
+            }
+          ]
+        },
+        "zona": {
+          "field": "zona",
+          "scopeField": "etnia",
+          "scopeValue": "Total",
+          "unit": "muertes por 100.000 NV",
+          "comparisons": [
+            {
+              "id": "rural_urbano",
+              "label": "Rural vs Urbano",
+              "group": { "value": "rural", "label": "Rural" },
+              "reference": { "value": "urbano", "label": "Urbano" },
+              "colorAbsolute": "#f97316",
+              "colorRelative": "#14b8a6",
+              "interpretation": {
+                "absolute": {
+                  "below0": "La razón de mortalidad materna en población urbana fue superior a la observada en población rural.",
+                  "above0": "La razón de mortalidad materna en población rural fue superior a la observada en población urbana, evidenciando una desigualdad territorial desfavorable para la población rural."
+                },
+                "relative": {
+                  "below1": "La población urbana presentó una razón de mortalidad materna mayor que la población rural.",
+                  "above1": "La población rural presentó una razón de mortalidad materna mayor que la población urbana."
+                }
+              }
+            },
+            {
+              "id": "periurbano_urbano",
+              "label": "Periurbano vs Urbano",
+              "group": { "value": "periurbano", "label": "Periurbano" },
+              "reference": { "value": "urbano", "label": "Urbano" },
+              "colorAbsolute": "#f97316",
+              "colorRelative": "#14b8a6",
+              "interpretation": {
+                "absolute": {
+                  "below0": "La razón de mortalidad materna en población urbana fue superior a la observada en población periurbana.",
+                  "above0": "La razón de mortalidad materna en población periurbana fue superior a la observada en población urbana, evidenciando una desigualdad territorial desfavorable para la población periurbana."
+                },
+                "relative": {
+                  "below1": "La población urbana presentó una razón de mortalidad materna mayor que la población periurbana.",
+                  "above1": "La población periurbana presentó una razón de mortalidad materna mayor que la población urbana."
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "traslado",
+      "title": "Proporción de mujeres embarazadas que viven a más de una hora del centro de salud más cercano, por barrio",
+      "description": "Permite identificar barreras territoriales de acceso a servicios que afectan la oportunidad y continuidad de la atención durante el embarazo.",
+      "date": "2026-04-10",
+      "dimension": "dss",
+      "subdimensions": ["territorial"],
+      "stratifiers": ["zona", "etnia"],
+      "source": "Registros territoriales de acceso a servicios + mapas de localización de servicios y equipamiento urbano",
+      "label": "Tiempo de traslado (>1h al CS)",
+      "axisLabel": "% mujeres embarazadas",
+      "color": "#6366f1",
+      "file": "traslado.parquet",
+      "scheme": [
+        {
+          "name": "territorio",
+          "type": "string",
+          "role": "territory",
+          "index": 1
+        },
+        { "name": "anio", "type": "number", "role": "year", "index": 3 },
+        {
+          "name": "zona",
+          "type": "string",
+          "label": "Zona",
+          "values": ["urbano", "periurbano", "rural"],
+          "aggregate": "Total",
+          "colors": {
+            "urbano": "#22c55e",
+            "periurbano": "#f59e0b",
+            "rural": "#ef4444"
+          },
+          "index": 5
+        },
+        {
+          "name": "etnia",
+          "type": "string",
+          "label": "Etnia",
+          "values": ["Indígena", "No indígena"],
+          "aggregate": "Total",
+          "colors": {
+            "Indígena": "#8b5cf6",
+            "No indígena": "#06b6d4"
+          },
+          "index": 6
+        },
+        { "name": "valor", "type": "number", "role": "value", "index": 7 }
+      ]
+    },
+    {
+      "slug": "embarazadas-empleo-informal",
+      "title": "Proporción de personas con empleo informal o sin protección social, por barrio",
+      "text": "Da cuenta de condiciones laborales que limitan el acceso a controles, licencias y apoyos durante el embarazo.",
+      "description": "Da cuenta de condiciones laborales que limitan el acceso a controles, licencias y apoyos durante el embarazo.",
+      "date": "2026-04-10",
+      "dimension": "dss",
+      "subdimensions": ["empleo"],
+      "stratifiers": ["zona", "sexo"],
+      "source": "Encuesta nacional de hogares + encuesta local de condiciones de vida",
+      "label": "Empleo informal",
+      "axisLabel": "% personas con empleo informal",
+      "color": "#8b5cf6",
+      "file": "embarazadas-empleo-informal.parquet",
+      "scheme": [
+        {
+          "name": "territorio",
+          "type": "string",
+          "role": "territory",
+          "index": 1
+        },
+        { "name": "anio", "type": "number", "role": "year", "index": 3 },
+        {
+          "name": "sexo",
+          "type": "string",
+          "label": "Sexo",
+          "values": ["Hombres", "Mujeres"],
+          "aggregate": "Total",
+          "colors": {
+            "Hombres": "#3b82f6",
+            "Mujeres": "#ec4899"
+          },
+          "index": 4
+        },
+        {
+          "name": "zona",
+          "type": "string",
+          "label": "Zona",
+          "values": ["urbano", "periurbano", "rural"],
+          "aggregate": "Total",
+          "colors": {
+            "urbano": "#22c55e",
+            "periurbano": "#f59e0b",
+            "rural": "#ef4444"
+          },
+          "index": 5
+        },
+        { "name": "valor", "type": "number", "role": "value", "index": 6 }
+      ]
+    },
+    {
+      "slug": "sobrecarga-embarazadas",
+      "title": "Proporción de mujeres embarazadas que presentan sobrecarga de cuidados (personas dependientes a cargo), por barrio",
+      "text": "Permite monitorear desigualdades en la organización del cuidado que dificultan el acceso oportuno a servicios y apoyos.",
+      "description": "Permite monitorear desigualdades en la organización del cuidado que dificultan el acceso oportuno a servicios y apoyos.",
+      "date": "2026-04-10",
+      "dimension": "dss",
+      "subdimensions": ["cuidados"],
+      "stratifiers": ["zona", "etnia"],
+      "source": "Encuesta local de condiciones de vida + registros sociales municipales",
+      "label": "Sobrecarga de cuidados",
+      "axisLabel": "% mujeres embarazadas",
+      "color": "#f59e0b",
+      "file": "sobrecarga-embarazadas.parquet",
+      "scheme": [
+        {
+          "name": "territorio",
+          "type": "string",
+          "role": "territory",
+          "index": 1
+        },
+        { "name": "anio", "type": "number", "role": "year", "index": 3 },
+        {
+          "name": "zona",
+          "type": "string",
+          "label": "Zona",
+          "values": ["urbano", "periurbano", "rural"],
+          "aggregate": "Total",
+          "colors": {
+            "urbano": "#22c55e",
+            "periurbano": "#f59e0b",
+            "rural": "#ef4444"
+          },
+          "index": 4
+        },
+        {
+          "name": "etnia",
+          "type": "string",
+          "label": "Etnia",
+          "values": ["Indígena", "No indígena"],
+          "aggregate": "Total",
+          "colors": {
+            "Indígena": "#8b5cf6",
+            "No indígena": "#06b6d4"
+          },
+          "index": 5
+        },
+        { "name": "valor", "type": "number", "role": "value", "index": 6 }
+      ]
+    },
+    {
+      "slug": "apoyo-embarazadas",
+      "title": "Cobertura de programas municipales de apoyo social a mujeres embarazadas en barrios periféricos",
+      "text": "Permite evaluar el alcance territorial de las políticas sociales dirigidas a mujeres embarazadas en contextos de mayor vulnerabilidad.",
+      "description": "Permite evaluar el alcance territorial de las políticas sociales dirigidas a mujeres embarazadas en contextos de mayor vulnerabilidad.",
+      "date": "2026-04-10",
+      "dimension": "policy",
+      "subdimensions": ["programas sociales"],
+      "stratifiers": ["zona"],
+      "source": "Base de datos del programa municipal de apoyo a mujeres embarazadas",
+      "label": "Cobertura programa social",
+      "axisLabel": "% mujeres embarazadas",
+      "color": "#10b981",
+      "file": "apoyo-embarazadas.parquet",
+      "scheme": [
+        {
+          "name": "territorio",
+          "type": "string",
+          "role": "territory",
+          "index": 1
+        },
+        { "name": "anio", "type": "number", "role": "year", "index": 3 },
+        {
+          "name": "zona",
+          "type": "string",
+          "label": "Zona",
+          "values": ["urbano", "periurbano", "rural"],
+          "aggregate": "Total",
+          "colors": {
+            "urbano": "#22c55e",
+            "periurbano": "#f59e0b",
+            "rural": "#ef4444"
+          },
+          "index": 4
+        },
+        { "name": "valor", "type": "number", "role": "value", "index": 5 }
+      ]
+    },
+    {
+      "slug": "frecuencia-transporte",
+      "title": "Cobertura del transporte público subsidiado hacia centros de salud desde barrios periféricos",
+      "text": "Da cuenta de la adecuación de las políticas de transporte a las necesidades de acceso a servicios de salud materna.",
+      "description": "Da cuenta de la adecuación de las políticas de transporte a las necesidades de acceso a servicios de salud materna.",
+      "date": "2026-04-10",
+      "dimension": "policy",
+      "subdimensions": ["transporte"],
+      "stratifiers": ["zona", "etnia"],
+      "source": "Registros del sector transporte sobre recorridos, frecuencias y horarios",
+      "label": "Transporte subsidiado",
+      "axisLabel": "% población con acceso",
+      "color": "#3b82f6",
+      "file": "frecuencia-transporte.parquet",
+      "scheme": [
+        {
+          "name": "territorio",
+          "type": "string",
+          "role": "territory",
+          "index": 1
+        },
+        { "name": "anio", "type": "number", "role": "year", "index": 3 },
+        {
+          "name": "zona",
+          "type": "string",
+          "label": "Zona",
+          "values": ["Urbano", "Periurbano", "Rural"],
+          "aggregate": "Total",
+          "colors": {
+            "Urbano": "#22c55e",
+            "Periurbano": "#f59e0b",
+            "Rural": "#ef4444"
+          },
+          "index": 4
+        },
+        {
+          "name": "etnia",
+          "type": "string",
+          "label": "Etnia",
+          "values": ["Indígena", "No indígena"],
+          "aggregate": "Total",
+          "colors": {
+            "Indígena": "#8b5cf6",
+            "No indígena": "#06b6d4"
+          },
+          "index": 5
+        },
+        { "name": "valor", "type": "number", "role": "value", "index": 6 }
+      ]
+    },
+    {
+      "slug": "apoyo-infantil",
+      "title": "Cobertura del programa municipal de apoyo al cuidado infantil “Cuidar en Comunidad” en mujeres embarazadas que residen en barrios periféricos del Municipio de San Martín del Valle",
+      "text": "Permite monitorear el acceso efectivo a apoyos de cuidado que reducen la sobrecarga y facilitan el acceso a servicios durante el embarazo.",
+      "description": "Permite monitorear el acceso efectivo a apoyos de cuidado que reducen la sobrecarga y facilitan el acceso a servicios durante el embarazo.",
+      "date": "2026-05-10",
+      "dimension": "policy",
+      "subdimensions": ["programas sociales"],
+      "stratifiers": ["zona", "etnia"],
+      "source": "Registros administrativos del sistema municipal de cuidados / Programa “Cuidar en Comunidad”",
+      "label": "Cuidar en Comunidad",
+      "axisLabel": "% mujeres embarazadas",
+      "color": "#ec4899",
+      "file": "apoyo-infantil.parquet",
+      "scheme": [
+        {
+          "name": "territorio",
+          "type": "string",
+          "role": "territory",
+          "index": 1
+        },
+        { "name": "anio", "type": "number", "role": "year", "index": 3 },
+        {
+          "name": "zona",
+          "type": "string",
+          "label": "Zona",
+          "values": ["urbano", "periurbano", "rural"],
+          "aggregate": "Total",
+          "colors": {
+            "urbano": "#22c55e",
+            "periurbano": "#f59e0b",
+            "rural": "#ef4444"
+          },
+          "index": 4
+        },
+        {
+          "name": "etnia",
+          "type": "string",
+          "label": "Etnia",
+          "values": ["Indígena", "No indígena"],
+          "aggregate": "Total",
+          "colors": {
+            "Indígena": "#8b5cf6",
+            "No indígena": "#06b6d4"
+          },
+          "index": 5
+        },
+        { "name": "valor", "type": "number", "role": "value", "index": 6 }
+      ]
+    }
+  ],
+  "features": {
+    "map": true,
+    "scatter": true
+  },
+  "data": {
+    "path": "public/data/parquet"
+  },
+  "datasets": {
+    "analytics": {
+      "file": "analytics.parquet",
+      "scheme": [
+        { "name": "anio", "type": "number", "role": "year", "index": 0 },
+        { "name": "valor", "type": "number", "role": "value", "index": 1 },
+        { "name": "traslado", "type": "number", "index": 2 },
+        { "name": "embarazadas-empleo-informal", "type": "number", "index": 3 },
+        { "name": "sobrecarga-embarazadas", "type": "number", "index": 4 },
+        { "name": "apoyo-embarazadas", "type": "number", "index": 5 },
+        { "name": "frecuencia-transporte", "type": "number", "index": 6 },
+        { "name": "apoyo-infantil", "type": "number", "index": 7 }
+      ]
+    },
+    "scatter": {
+      "file": "scatter.parquet",
+      "scheme": [
+        { "name": "anio", "type": "number", "role": "year", "index": 0 },
+        {
+          "name": "territorio",
+          "type": "string",
+          "role": "territory",
+          "index": 1
+        },
+        { "name": "valor", "type": "number", "role": "value", "index": 2 },
+        { "name": "traslado", "type": "number", "index": 3 },
+        { "name": "embarazadas-empleo-informal", "type": "number", "index": 4 },
+        { "name": "sobrecarga-embarazadas", "type": "number", "index": 5 },
+        { "name": "apoyo-embarazadas", "type": "number", "index": 6 },
+        { "name": "frecuencia-transporte", "type": "number", "index": 7 },
+        { "name": "apoyo-infantil", "type": "number", "index": 8 },
+        { "name": "nacimientos", "type": "number", "index": 9 }
+      ]
+    },
+    "forestPlot": {
+      "file": "forest-plot.parquet",
+      "scheme": [
+        { "name": "anio", "type": "number", "role": "year", "index": 0 },
+        { "name": "indicador", "type": "string", "index": 1 },
+        { "name": "label", "type": "string", "index": 2 },
+        {
+          "name": "correlacion",
+          "type": "number",
+          "role": "value",
+          "index": 3
+        },
+        { "name": "ci_lower", "type": "number", "index": 4 },
+        { "name": "ci_upper", "type": "number", "index": 5 },
+        { "name": "p_value", "type": "number", "index": 6 },
+        { "name": "n", "type": "number", "index": 7 }
+      ]
+    }
+  }
+}

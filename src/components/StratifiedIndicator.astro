@@ -1,0 +1,72 @@
+---
+import { StratifiedLineChart } from './StratifiedLineChart'
+import type { StratifiedRow } from '@/lib/parquet'
+import type { IndicatorStratifier, IndicatorMeta } from '@/config/general'
+
+interface Props {
+  title: string
+  dimension: string
+  subdimensions: string[]
+  text: string
+  data: StratifiedRow[]
+  indicator: IndicatorMeta
+  stratifiers?: IndicatorStratifier[]
+  yAxisLabel?: string
+  csvPath?: string
+  geojsonUrls?: Record<number, string>
+  source: string
+}
+
+const {
+  title,
+  dimension,
+  subdimensions = [],
+  text,
+  data,
+  indicator,
+  stratifiers,
+  yAxisLabel,
+  csvPath,
+  geojsonUrls,
+  source,
+} = Astro.props
+---
+
+<div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-10">
+  <div class="flex flex-col gap-4">
+    <div class="flex mt-4 gap-2 flex-wrap">
+      <span
+        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-700 border border-gray-200"
+      >
+        {
+          dimension === 'dss'
+            ? 'Determinantes Sociales de la Salud'
+            : dimension === 'policy'
+              ? 'Políticas'
+              : dimension
+        }
+      </span>
+      {
+        subdimensions.map((sub) => (
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200 capitalize">
+            {sub}
+          </span>
+        ))
+      }
+    </div>
+    <h1 class="text-3xl font-bold mb-6">{title}</h1>
+    <p class="text-gray-700">{text}</p>
+
+    <StratifiedLineChart
+      client:only="react"
+      data={data}
+      indicator={indicator}
+      stratifiers={stratifiers}
+      yAxisLabel={yAxisLabel}
+      csvPath={csvPath}
+      geojsonUrls={geojsonUrls}
+    />
+
+    <p class="text-sm text-gray-600">Fuente: {source}</p>
+  </div>
+</div>

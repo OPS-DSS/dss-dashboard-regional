@@ -1,0 +1,146 @@
+---
+import { priorities } from '@/config/general'
+import { Icon } from 'astro-icon/components'
+
+const base = import.meta.env.BASE_URL.endsWith('/')
+  ? import.meta.env.BASE_URL
+  : import.meta.env.BASE_URL + '/'
+
+interface Props {
+  title: string
+  text: string
+  section: string
+}
+
+const { title, text, section } = Astro.props
+const showDimensionToggle = section === 'determinantes-de-la-salud'
+---
+<div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-10">
+<div class="flex flex-col">
+  <h1 class="text-4xl py-8">
+    {
+      section == 'analisis-de-inequidad'
+        ? 'Análisis de Inequidad o Problemática Priorizada'
+        : title
+    }
+  </h1>
+  <div class="flex flex-col gap-6">
+    <p class="text-slate-600">
+      {text}
+    </p>
+
+    {
+      showDimensionToggle && (
+        <div class="flex gap-3 items-center">
+          <div class="flex rounded-lg border border-gray-300 overflow-hidden text-sm">
+            <button
+              id="dimension-btn-dss"
+              type="button"
+              aria-pressed="true"
+              class="px-4 py-2 font-medium bg-gray-800 text-white transition-colors"
+            >
+              Determinantes Sociales de la Salud
+            </button>
+            <button
+              id="dimension-btn-policy"
+              type="button"
+              aria-pressed="false"
+              class="px-4 py-2 font-medium bg-white text-gray-700 hover:bg-gray-50 transition-colors"
+            >
+              Política
+            </button>
+          </div>
+        </div>
+      )
+    }
+
+    <ul class="flex gap-2">
+      {
+        priorities.map((priority) => (
+          <li class="md:w-1/2">
+            <a
+              href={`${base}${section}/${priority.slug}`}
+              data-base-href={`${base}${section}/${priority.slug}`}
+              class="h-full rounded-lg border bg-fuchsia-100 border-fuchsia-300 p-4 hover:border-blue-400 hover:shadow-sm hover:bg-blue-100 transition-all flex gap-5"
+            >
+              <div>
+                {priority.category === 'inequidad' ? (
+                  <Icon
+                    name="fa6-solid:people-pulling"
+                    size={48}
+                    class="text-fuchsia-500 m-4"
+                  />
+                ) : (
+                  <Icon
+                    name="roentgen:two-people-together"
+                    size={80}
+                    class="text-fuchsia-500"
+                  />
+                )}
+              </div>
+              <div class="flex flex-col">
+                <h2 class="mt-1 text-xl font-semibold text-gray-900">
+                  {priority.title}
+                </h2>
+                <p class="mt-1 text-sm text-gray-600">{priority.description}</p>
+              </div>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</div>
+</div>
+{
+  showDimensionToggle && (
+    <script>
+      const _params = new URLSearchParams(window.location.search)
+      const _d = _params.get('dimension')
+      let selectedDimension: string = _d === 'dss' || _d === 'policy' ? _d : 'dss'
+
+      function updateLinks() {
+        document.querySelectorAll<HTMLAnchorElement>('[data-base-href]').forEach((link) => {
+          const baseHref = link.getAttribute('data-base-href')!
+          link.setAttribute('href', `${baseHref}?dimension=${selectedDimension}`)
+        })
+      }
+
+      function updateToggle() {
+        const btnDss = document.getElementById('dimension-btn-dss')
+        const btnPolicy = document.getElementById('dimension-btn-policy')
+
+        if (selectedDimension === 'dss') {
+          btnDss?.classList.add('bg-gray-800', 'text-white')
+          btnDss?.classList.remove('bg-white', 'text-gray-700', 'hover:bg-gray-50')
+          btnPolicy?.classList.remove('bg-gray-800', 'text-white')
+          btnPolicy?.classList.add('bg-white', 'text-gray-700', 'hover:bg-gray-50')
+          btnDss?.setAttribute('aria-pressed', 'true')
+          btnPolicy?.setAttribute('aria-pressed', 'false')
+        } else {
+          btnPolicy?.classList.add('bg-gray-800', 'text-white')
+          btnPolicy?.classList.remove('bg-white', 'text-gray-700', 'hover:bg-gray-50')
+          btnDss?.classList.remove('bg-gray-800', 'text-white')
+          btnDss?.classList.add('bg-white', 'text-gray-700', 'hover:bg-gray-50')
+          btnPolicy?.setAttribute('aria-pressed', 'true')
+          btnDss?.setAttribute('aria-pressed', 'false')
+        }
+      }
+
+      document.getElementById('dimension-btn-dss')?.addEventListener('click', () => {
+        selectedDimension = 'dss'
+        updateToggle()
+        updateLinks()
+      })
+
+      document.getElementById('dimension-btn-policy')?.addEventListener('click', () => {
+        selectedDimension = 'policy'
+        updateToggle()
+        updateLinks()
+      })
+
+      updateToggle()
+      updateLinks()
+    </script>
+  )
+}

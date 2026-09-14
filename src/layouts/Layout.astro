@@ -1,0 +1,28 @@
+---
+import NavBarMenu from '@/components/NavBarMenu.astro'
+import CiteThis from '@/components/CiteThis.astro'
+import '../styles/global.css'
+const { title, date, pages, currentPage } = Astro.props
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href={`${import.meta.env.BASE_URL}favicon.svg`}
+    />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="flex flex-col min-h-screen">
+    {pages && <NavBarMenu pages={pages} />}
+    <main class="flex-1 min-h-0">
+      <slot />
+    </main>
+    {pages && <CiteThis title={title} date={date} currentPage={currentPage} />}
+  </body>
+</html>

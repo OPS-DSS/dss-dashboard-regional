@@ -1,0 +1,29 @@
+---
+import { PriorityPanel } from './PriorityPanel'
+import type { PriorityRow } from '@/lib/parquet'
+import type { IndicatorMeta } from '@/config/general'
+
+interface Props {
+  priority: IndicatorMeta
+  title: string
+  text: string
+  data: PriorityRow[] | undefined
+  csvPath?: string
+  source: string
+}
+
+const { title, text, data, csvPath, source, priority } = Astro.props
+---
+
+<div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-10">
+  <div class="flex flex-col gap-2">
+    <h1 class="text-3xl font-bold my-6">{title}</h1>
+    <p class="text-gray-700">{text}</p>
+    {data && <PriorityPanel data={data} csvPath={csvPath} client:load />}
+    <hr class="my-4" />
+    <p class="text-sm text-gray-500">Fuente: {source}</p>
+    <p class="text-sm text-gray-500 text-justify">
+      {priority.inequitySource}
+    </p>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+---
+import { format } from 'date-fns'
+const { title, date, currentPage } = Astro.props
+
+export function getBasePath() {
+  const site = Astro.site?.toString() || ''
+  const baseUrl = import.meta.env.BASE_URL || '/'
+  const normalizedSite = site.replace(/\/+$/, '')
+  const normalizedBaseUrl = baseUrl.startsWith('/') ? baseUrl : `/${baseUrl}`
+  const combined = `${normalizedSite}${normalizedBaseUrl}` || '/'
+  return combined.endsWith('/') ? combined : `${combined}/`
+}
+---
+
+<div class="w-full mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+  <div class="mt-8 py-6 border-t border-gray-200">
+    <h2 class="font-semibold uppercase text-slate-400">Cite este trabajo</h2>
+    <p class="text-slate-600 pb-2">
+      Si desea citar este trabajo, utilice el siguiente formato:
+    </p>
+    <div class="overflow-x-auto rounded-md bg-gray-100">
+      <pre
+        class="p-6 text-sm text-gray-700">"{title}". Observatorio de Determinantes Sociales de la Salud de San Martin del Valle, {format(date, 'dd/MM/yyyy')}, {currentPage == undefined ? getBasePath() : getBasePath() + currentPage}</pre>
+    </div>
+  </div>
+</div>
