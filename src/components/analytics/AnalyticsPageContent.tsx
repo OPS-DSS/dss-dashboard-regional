@@ -171,6 +171,7 @@ export const AnalyticsPageContent = ({ forestPlotData, analyticsData, scatterDat
           <DSForestPlot
             data={top10.map((r) => ({
               indicador: r.dss,
+              // Forest plot must always use the short display label from app.config.json.
               label: indicators.find((i) => i.slug === r.dss)?.label ?? r.dss,
               correlacion: Number(r.correlacion),
               ci_lower: Number(r.ci_lower),
