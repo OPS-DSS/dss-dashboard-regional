@@ -192,7 +192,14 @@ export const PriorityChart = ({
                 }
                 xAxisLabel="Año"
                 yAxisLabel={priority.axisLabel}
-                yAxisDomain={[0, 100]}
+                yAxisDomain={
+                  priority.slug === 'gini' ||
+                  priority.axisLabel.includes('%') ||
+                  priority.label.includes('%') ||
+                  priority.title.includes('%')
+                    ? [0, 100]
+                    : ['auto', 'auto']
+                }
                 highlightX={highlightYear}
               />
             </div>
