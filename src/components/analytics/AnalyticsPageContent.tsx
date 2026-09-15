@@ -13,6 +13,35 @@ interface Props {
   scatterData: ScatterRow[]
 }
 
+const BIVARIATE_COLORS = [
+  ['#e8e8e8', '#ace4e4', '#5ac8c8'],
+  ['#dfb0d6', '#a5b8c5', '#5a9ab5'],
+  ['#be64ac', '#8c62aa', '#3b4994'],
+]
+
+function BivariateLegend({ xLabel, yLabel }: { xLabel: string; yLabel: string }) {
+  const cellSize = 22
+  return (
+    <div className="flex items-end gap-3">
+      <div className="flex flex-col items-center gap-1 shrink-0" style={{ width: 14 }}>
+        <span className="text-gray-500 text-xs font-medium" style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)', whiteSpace: 'nowrap', lineHeight: 1.1 }}>{yLabel} →</span>
+      </div>
+      <div className="flex flex-col gap-1">
+        {[...BIVARIATE_COLORS].reverse().map((row, reversedIdx) => {
+          const yIdx = BIVARIATE_COLORS.length - 1 - reversedIdx
+          return <div key={yIdx} className="flex gap-0.5">{row.map((color, xIdx) => (
+            <div key={xIdx} style={{ width: cellSize, height: cellSize, backgroundColor: color, border: '1px solid rgba(0,0,0,0.08)' }} title={`${yLabel}: ${yIdx === 0 ? 'Baja' : yIdx === 1 ? 'Media' : 'Alta'} / ${xLabel}: ${xIdx === 0 ? 'Bajo' : xIdx === 1 ? 'Medio' : 'Alto'}`} />
+          ))}</div>
+        })}
+        <div className="flex items-center gap-1 mt-0.5" style={{ paddingLeft: 2 }}>
+          <span className="text-gray-400 text-xs">Bajo</span><div className="flex-1 border-t border-gray-400" style={{ marginTop: 1 }} /><span className="text-gray-400 text-xs">→</span>
+        </div>
+        <div className="text-center"><span className="text-gray-500 text-xs font-medium" style={{ whiteSpace: 'nowrap' }}>{xLabel} →</span></div>
+      </div>
+    </div>
+  )
+}
+
 export const AnalyticsPageContent = ({ forestPlotData, analyticsData, scatterData }: Props) => {
   const availablePriorities = priorities.filter((p) =>
     forestPlotData.some((r) => r.priorizado === p.slug),
@@ -82,6 +111,15 @@ export const AnalyticsPageContent = ({ forestPlotData, analyticsData, scatterDat
     })).sort((a, b) => b.anio - a.anio).slice(0, 15).sort((a, b) => a.anio - b.anio)
   }, [analyticsData, activeDss])
 
+  const commonTrendYears = useMemo(() => {
+    const healthYears = new Set(healthTrend.map((d) => d.anio))
+    const dssYears = new Set(dssTrend.map((d) => d.anio))
+    return [...healthYears].filter((yr) => dssYears.has(yr)).sort((a, b) => b - a).slice(0, 15).sort((a, b) => a - b)
+  }, [healthTrend, dssTrend])
+
+  const alignedHealthTrend = useMemo(() => healthTrend.filter((d) => commonTrendYears.includes(d.anio)), [healthTrend, commonTrendYears])
+  const alignedDssTrend = useMemo(() => dssTrend.filter((d) => commonTrendYears.includes(d.anio)), [dssTrend, commonTrendYears])
+
   if (!priority || forestPlotData.length === 0) {
     return <p className="text-gray-500 italic py-8">No hay resultados analíticos regionales disponibles.</p>
   }
@@ -148,8 +186,8 @@ export const AnalyticsPageContent = ({ forestPlotData, analyticsData, scatterDat
         <ExpandablePanel className="relative border rounded-lg p-4 h-full">
           <h2 className="font-bold mb-3">Tendencias temporales</h2>
           <div className="flex flex-col gap-5">
-            <DSLineChart data={healthTrend} xAxisKey="anio" lines={[{ dataKey: 'valor', name: priority.label, color: priority.color }]} xAxisLabel="Año" yAxisLabel={priority.axisLabel} height={260} highlightX={effectiveYear ?? undefined} />
-            {activeDss && <DSLineChart data={dssTrend} xAxisKey="anio" lines={[{ dataKey: 'valor', name: activeDss.label, color: activeDss.color }]} xAxisLabel="Año" yAxisLabel={activeDss.axisLabel} height={260} highlightX={effectiveYear ?? undefined} />}
+            <DSLineChart data={alignedHealthTrend} xAxisKey="anio" lines={[{ dataKey: 'valor', name: priority.label, color: priority.color }]} xAxisLabel="Año" yAxisLabel={priority.axisLabel} height={260} highlightX={effectiveYear ?? undefined} />
+            {activeDss && <DSLineChart data={alignedDssTrend} xAxisKey="anio" lines={[{ dataKey: 'valor', name: activeDss.label, color: activeDss.color }]} xAxisLabel="Año" yAxisLabel={activeDss.axisLabel} height={260} highlightX={effectiveYear ?? undefined} />}
           </div>
         </ExpandablePanel>
         </div>
@@ -228,14 +266,15 @@ export const AnalyticsPageContent = ({ forestPlotData, analyticsData, scatterDat
           <div className="flex flex-col gap-2 text-sm mt-3">
             <span className="font-medium text-gray-700">Leyenda:</span>
             {mapMode === 'bivariate' ? (
-              <div className="flex items-center gap-3 flex-wrap text-xs text-gray-600">
-                <span>Menor</span>
-                {['#e8e8e8','#ace4e4','#5ac8c8','#dfb0d6','#a5b8c5','#5a9ab5','#be64ac','#8c62aa','#3b4994'].map((color) => (
-                  <span key={color} style={{ width: 14, height: 14, background: color, border: '1px solid #9ca3af', display: 'inline-block' }} />
-                ))}
-                <span>Mayor</span>
-                <span style={{ width: 14, height: 14, background: '#CCCCCC', border: '1px solid #9ca3af', display: 'inline-block', marginLeft: 8 }} />
-                <span>Sin datos</span>
+              <div className="flex items-start gap-6 flex-wrap">
+                <BivariateLegend
+                  xLabel={activeDss?.label ?? 'DSS'}
+                  yLabel={secondaryDss ? (indicators.find((i) => i.slug === secondaryDss)?.label ?? 'DSS') : priority.axisLabel}
+                />
+                <div className="flex items-center gap-1.5 self-end">
+                  <span style={{ width: 14, height: 14, background: '#CCCCCC', border: '1px solid #9ca3af', borderRadius: 3, display: 'inline-block' }} />
+                  <span className="text-gray-600 text-xs">Sin datos</span>
+                </div>
               </div>
             ) : (
               <div className="flex items-center gap-2 text-xs text-gray-600">
