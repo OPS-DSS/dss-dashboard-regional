@@ -28,7 +28,7 @@
           "index": 0
         },
         {
-          "name": "Territorio",
+          "name": "territorio",
           "type": "string",
           "role": "territory",
           "index": 1
@@ -76,7 +76,7 @@
           "index": 0
         },
         {
-          "name": "Territorio",
+          "name": "territorio",
           "type": "string",
           "role": "territory",
           "index": 1
