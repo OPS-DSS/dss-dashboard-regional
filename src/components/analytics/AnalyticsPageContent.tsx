@@ -72,9 +72,9 @@ export const AnalyticsPageContent = ({ forestPlotData, analyticsData, scatterDat
   const [selectedDss, setSelectedDss] = useState('')
   const [mapMode, setMapMode] = useState<'bivariate' | 'priority'>('bivariate')
   const [secondaryDss, setSecondaryDss] = useState('')
-  const activeDssSlug = top10.some((r) => r.indicador === selectedDss)
+  const activeDssSlug = top10.some((r) => r.dss === selectedDss)
     ? selectedDss
-    : (top10[0]?.indicador ?? '')
+    : (top10[0]?.dss ?? '')
   const activeDss = indicators.find((i) => i.slug === activeDssSlug)
 
   const points = scatterData.filter((r) =>
@@ -162,8 +162,8 @@ export const AnalyticsPageContent = ({ forestPlotData, analyticsData, scatterDat
           <p className="text-xs text-gray-500 mb-4">Top 10 calculado en R por |ρ de Spearman|. IC95%, p y n corresponden a países con datos coincidentes.</p>
           <DSForestPlot
             data={top10.map((r) => ({
-              indicador: r.indicador,
-              label: indicators.find((i) => i.slug === r.indicador)?.label ?? r.indicador,
+              indicador: r.dss,
+              label: indicators.find((i) => i.slug === r.dss)?.label ?? r.dss,
               correlacion: Number(r.correlacion),
               ci_lower: Number(r.ci_lower),
               ci_upper: Number(r.ci_upper),
