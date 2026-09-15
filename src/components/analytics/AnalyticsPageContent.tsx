@@ -214,7 +214,6 @@ export const AnalyticsPageContent = ({ forestPlotData, analyticsData, scatterDat
               }
               center={[5, -82]}
               zoom={2}
-              fitBounds={false}
               height="820px"
               nameProperty="territorio"
               valueProperty="value"
