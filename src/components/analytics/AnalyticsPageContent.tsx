@@ -251,7 +251,8 @@ export const AnalyticsPageContent = ({ forestPlotData, analyticsData, scatterDat
                     : `/dss-dashboard-regional/data/geojson/bivariate-${priority.slug}-${activeDss.slug}-${effectiveYear}.geojson`
               }
               center={[5, -82]}
-              zoom={8}
+              zoom={4}
+                    autoFit={false}
               height="820px"
               nameProperty="territorio"
               valueProperty="value"
