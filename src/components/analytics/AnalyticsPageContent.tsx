@@ -168,7 +168,7 @@ export const AnalyticsPageContent = ({ forestPlotData, analyticsData, scatterDat
                   onClick={() => setMapMode('bivariate')}
                   className={`px-4 py-1.5 transition-colors ${mapMode === 'bivariate' && !secondaryDss ? 'bg-gray-800 text-white' : 'bg-white text-gray-600 hover:bg-gray-50'}`}
                 >
-                  Bivariado
+                  Bivariado ODS
                 </button>
                 <button
                   type="button"
