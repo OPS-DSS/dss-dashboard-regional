@@ -108,5 +108,140 @@
   "data": {
     "path": "public/data/parquet"
   },
-  "datasets": {}
+  "datasets": {
+    "forestPlot": {
+      "file": "regional-correlations.parquet",
+      "scheme": [
+        {
+          "name": "priorizado",
+          "type": "string",
+          "index": 0
+        },
+        {
+          "name": "indicador",
+          "type": "string",
+          "index": 1
+        },
+        {
+          "name": "anio",
+          "type": "number",
+          "role": "year",
+          "index": 2
+        },
+        {
+          "name": "correlacion",
+          "type": "number",
+          "index": 3
+        },
+        {
+          "name": "ci_lower",
+          "type": "number",
+          "index": 4
+        },
+        {
+          "name": "ci_upper",
+          "type": "number",
+          "index": 5
+        },
+        {
+          "name": "p_value",
+          "type": "number",
+          "index": 6
+        },
+        {
+          "name": "n",
+          "type": "number",
+          "index": 7
+        },
+        {
+          "name": "rank_abs",
+          "type": "number",
+          "index": 8
+        },
+        {
+          "name": "top10",
+          "type": "string",
+          "index": 9
+        }
+      ]
+    },
+    "scatter": {
+      "file": "regional-scatter.parquet",
+      "scheme": [
+        {
+          "name": "priorizado",
+          "type": "string",
+          "index": 0
+        },
+        {
+          "name": "dss",
+          "type": "string",
+          "index": 1
+        },
+        {
+          "name": "iso3",
+          "type": "string",
+          "index": 2
+        },
+        {
+          "name": "territorio",
+          "type": "string",
+          "index": 3
+        },
+        {
+          "name": "anio",
+          "type": "number",
+          "role": "year",
+          "index": 4
+        },
+        {
+          "name": "valor_salud",
+          "type": "number",
+          "index": 5
+        },
+        {
+          "name": "valor_dss",
+          "type": "number",
+          "index": 6
+        }
+      ]
+    },
+    "analytics": {
+      "file": "regional-trends.parquet",
+      "scheme": [
+        {
+          "name": "tipo",
+          "type": "string",
+          "index": 0
+        },
+        {
+          "name": "indicador",
+          "type": "string",
+          "index": 1
+        },
+        {
+          "name": "iso3",
+          "type": "string",
+          "index": 2
+        },
+        {
+          "name": "territorio",
+          "type": "string",
+          "index": 3
+        },
+        {
+          "name": "anio",
+          "type": "number",
+          "role": "year",
+          "index": 4
+        },
+        {
+          "name": "valor",
+          "type": "number",
+          "role": "value",
+          "index": 5
+        }
+      ]
+    }
+  }
 }
