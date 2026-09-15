@@ -12,8 +12,8 @@ importers:
         specifier: ^5.0.1
         version: 5.0.7(@types/node@26.1.2)(@types/react-dom@19.2.4(@types/react@19.2.18))(@types/react@19.2.18)(jiti@2.7.0)(lightningcss@1.32.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@ops-dss/charts':
-        specifier: ^0.1.26
-        version: 0.1.26(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+        specifier: ^0.1.29
+        version: 0.1.29(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@tailwindcss/vite':
         specifier: ^4.1.18
         version: 4.3.3(vite@7.3.6(@types/node@26.1.2)(jiti@2.7.0)(lightningcss@1.32.0))
@@ -741,8 +741,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@ops-dss/charts@0.1.26':
-    resolution: {integrity: sha512-RjMuQYhUAaXzP+vCe7eOV9V19mqTiv/GwWDliePYeu2Kk55imNiOQuWqkEBLDp8JPdlZSr74mRFzZEtlC+PChQ==}
+  '@ops-dss/charts@0.1.29':
+    resolution: {integrity: sha512-WEnYUT9rQJ4AqznJPAF7WhBrP0umFQOBQpQKHZxvvEWz2+/6uHxY05+IFa+podCGhnDV3PYKEVFXTEJPoGyZlg==}
     peerDependencies:
       react: ^19.1.0
       react-dom: ^19.1.0
@@ -3880,7 +3880,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@ops-dss/charts@0.1.26(react-dom@19.2.8(react@19.2.8))(react@19.2.8)':
+  '@ops-dss/charts@0.1.29(react-dom@19.2.8(react@19.2.8))(react@19.2.8)':
     dependencies:
       leaflet: 1.9.4
       react: 19.2.8
