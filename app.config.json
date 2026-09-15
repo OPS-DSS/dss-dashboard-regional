@@ -99,6 +99,166 @@
           "index": 4
         }
       ]
+    },
+    {
+      "slug": "uso-internet",
+      "title": "Personas que usan Internet (% de la población)",
+      "description": "Personas que usan Internet como porcentaje de la población por país de la Región de las Américas.",
+      "date": "2026-09-15",
+      "dimension": "dss",
+      "subdimensions": [
+        "tecnologia"
+      ],
+      "source": "Banco Mundial",
+      "related_priorities": [],
+      "priority": false,
+      "label": "Personas que usan Internet (% de la población)",
+      "axisLabel": "Personas que usan Internet (% de la población)",
+      "color": "#0ea5e9",
+      "totalColor": "#6b7280",
+      "stratifiers": [
+        "sexo"
+      ],
+      "file": "uso-internet.parquet",
+      "scheme": [
+        {
+          "name": "iso3",
+          "type": "string",
+          "index": 0
+        },
+        {
+          "name": "territorio",
+          "type": "string",
+          "role": "territory",
+          "index": 1
+        },
+        {
+          "name": "cod_local",
+          "type": "string",
+          "index": 2
+        },
+        {
+          "name": "anio",
+          "type": "number",
+          "role": "year",
+          "index": 3
+        },
+        {
+          "name": "valor",
+          "type": "number",
+          "role": "value",
+          "index": 4
+        },
+        {
+          "name": "sexo",
+          "type": "string",
+          "label": "Sexo",
+          "values": [
+            "Total",
+            "Mujeres",
+            "Hombres"
+          ],
+          "aggregate": "Total",
+          "index": 5
+        }
+      ]
+    },
+    {
+      "slug": "gini",
+      "title": "Índice de Gini",
+      "description": "Índice de Gini por país de la Región de las Américas.",
+      "date": "2026-09-15",
+      "dimension": "dss",
+      "subdimensions": [
+        "desigualdad"
+      ],
+      "source": "Banco Mundial",
+      "related_priorities": [],
+      "priority": false,
+      "label": "Índice de Gini",
+      "axisLabel": "Índice de Gini",
+      "color": "#8b5cf6",
+      "stratifiers": [],
+      "file": "gini.parquet",
+      "scheme": [
+        {
+          "name": "iso3",
+          "type": "string",
+          "index": 0
+        },
+        {
+          "name": "territorio",
+          "type": "string",
+          "role": "territory",
+          "index": 1
+        },
+        {
+          "name": "cod_local",
+          "type": "string",
+          "index": 2
+        },
+        {
+          "name": "anio",
+          "type": "number",
+          "role": "year",
+          "index": 3
+        },
+        {
+          "name": "valor",
+          "type": "number",
+          "role": "value",
+          "index": 4
+        }
+      ]
+    },
+    {
+      "slug": "tuberculosis",
+      "title": "Incidencia de tuberculosis (por 100.000 habitantes)",
+      "description": "Incidencia de tuberculosis por 100.000 habitantes por país de la Región de las Américas.",
+      "date": "2026-09-15",
+      "dimension": "dss",
+      "subdimensions": [
+        "salud"
+      ],
+      "source": "Naciones Unidas - Global SDG Database",
+      "related_priorities": [],
+      "priority": true,
+      "label": "Incidencia de tuberculosis (por 100.000 habitantes)",
+      "axisLabel": "Incidencia de tuberculosis (por 100.000 habitantes)",
+      "color": "#dc2626",
+      "totalColor": "#6b7280",
+      "stratifiers": [],
+      "file": "tuberculosis.parquet",
+      "scheme": [
+        {
+          "name": "iso3",
+          "type": "string",
+          "index": 0
+        },
+        {
+          "name": "territorio",
+          "type": "string",
+          "role": "territory",
+          "index": 1
+        },
+        {
+          "name": "cod_local",
+          "type": "string",
+          "index": 2
+        },
+        {
+          "name": "anio",
+          "type": "number",
+          "role": "year",
+          "index": 3
+        },
+        {
+          "name": "valor",
+          "type": "number",
+          "role": "value",
+          "index": 4
+        }
+      ]
     }
   ],
   "features": {
@@ -118,7 +278,7 @@
           "index": 0
         },
         {
-          "name": "indicador",
+          "name": "dss",
           "type": "string",
           "index": 1
         },
