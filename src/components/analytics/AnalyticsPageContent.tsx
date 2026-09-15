@@ -1,6 +1,8 @@
 import { useMemo, useState } from 'react'
 import { DSScatterChart } from '@ops-dss/charts/scatter-chart'
 import { DSLineChart } from '@ops-dss/charts/line-chart'
+import { DSForestPlot } from '@ops-dss/charts/forest-plot'
+import { DSChoroplethMap } from '@ops-dss/charts/choropleth-map'
 import { ExpandablePanel } from '@/components/ExpandablePanel'
 import { indicators, priorities } from '@/config/general'
 import type { ForestPlotDataRow, AnalyticsRow, ScatterRow } from '@/lib/parquet'
@@ -91,33 +93,47 @@ export const AnalyticsPageContent = ({ forestPlotData, analyticsData, scatterDat
             {availablePriorities.map((p) => <option key={p.slug} value={p.slug}>{p.title}</option>)}
           </select>
         </label>
-        <label className="flex flex-col gap-1 text-sm font-medium">
-          Año
-          <select value={effectiveYear ?? ''} onChange={(e) => { setYear(Number(e.target.value)); setSelectedDss('') }} className="rounded-lg border border-gray-300 bg-white px-3 py-2">
-            {years.map((y) => <option key={y} value={y}>{y}</option>)}
-          </select>
-        </label>
       </div>
+
+      {years.length > 1 && (
+        <div className="sticky top-0 z-30 bg-white/95 backdrop-blur-sm py-2 border-b border-gray-100 overflow-x-auto">
+          <div className="flex rounded-lg overflow-hidden border border-gray-200 text-sm w-fit">
+            {years.map((yr) => (
+              <button
+                key={yr}
+                type="button"
+                onClick={() => { setYear(yr); setSelectedDss('') }}
+                className={`px-3 py-1 transition-colors ${
+                  yr === effectiveYear
+                    ? 'bg-gray-800 text-white border-gray-800'
+                    : 'bg-white text-gray-600 border-gray-200 hover:bg-gray-50'
+                }`}
+              >
+                {yr}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
 
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-3">
         <ExpandablePanel className="relative border rounded-lg p-4">
           <h2 className="font-bold">Correlaciones con {priority.title}</h2>
           <p className="text-xs text-gray-500 mb-4">Top 10 calculado en R por |ρ de Spearman|. IC95%, p y n corresponden a países con datos coincidentes.</p>
-          <div className="overflow-x-auto">
-            <table className="w-full text-xs">
-              <thead><tr className="border-b"><th className="text-left p-2">Indicador DSS</th><th>ρ</th><th>IC95%</th><th>p</th><th>n</th></tr></thead>
-              <tbody>{top10.map((r) => {
-                const meta = indicators.find((i) => i.slug === r.indicador)
-                return <tr key={r.indicador} onClick={() => setSelectedDss(r.indicador)} className={`border-b cursor-pointer hover:bg-gray-50 ${r.indicador === activeDssSlug ? 'bg-blue-50' : ''}`}>
-                  <td className="p-2 font-medium">{meta?.label ?? r.indicador}</td>
-                  <td className="text-center">{Number(r.correlacion).toFixed(2)}</td>
-                  <td className="text-center">[{Number(r.ci_lower).toFixed(2)}, {Number(r.ci_upper).toFixed(2)}]</td>
-                  <td className="text-center">{Number(r.p_value).toFixed(3)}</td>
-                  <td className="text-center">{r.n}</td>
-                </tr>
-              })}</tbody>
-            </table>
-          </div>
+          <DSForestPlot
+            data={top10.map((r) => ({
+              indicador: r.indicador,
+              label: indicators.find((i) => i.slug === r.indicador)?.label ?? r.indicador,
+              correlacion: Number(r.correlacion),
+              ci_lower: Number(r.ci_lower),
+              ci_upper: Number(r.ci_upper),
+              p_value: Number(r.p_value),
+              n: Number(r.n),
+            }))}
+            selectedIndicator={activeDssSlug}
+            onSelectIndicator={setSelectedDss}
+            showSignificance
+          />
         </ExpandablePanel>
 
         <ExpandablePanel className="relative border rounded-lg p-4">
@@ -132,6 +148,28 @@ export const AnalyticsPageContent = ({ forestPlotData, analyticsData, scatterDat
             <DSLineChart data={healthTrend} xAxisKey="anio" lines={[{ dataKey: 'valor', name: priority.label, color: priority.color }]} xAxisLabel="Año" yAxisLabel={priority.axisLabel} height={260} highlightX={effectiveYear ?? undefined} />
             {activeDss && <DSLineChart data={dssTrend} xAxisKey="anio" lines={[{ dataKey: 'valor', name: activeDss.label, color: activeDss.color }]} xAxisLabel="Año" yAxisLabel={activeDss.axisLabel} height={260} highlightX={effectiveYear ?? undefined} />}
           </div>
+        </ExpandablePanel>
+
+        <ExpandablePanel className="relative border rounded-lg p-4">
+          <h2 className="font-bold">Mapa bivariado</h2>
+          <p className="text-xs text-gray-500 mb-3">
+            Distribución conjunta de {priority.label} y {activeDss?.label ?? 'DSS'} en los países de las Américas ({effectiveYear}).
+          </p>
+          {activeDss && effectiveYear !== null ? (
+            <DSChoroplethMap
+              geojsonUrl={`${import.meta.env.BASE_URL}data/geojson/bivariate-${priority.slug}-${activeDss.slug}-${effectiveYear}.geojson`}
+              center={[10, -75]}
+              zoom={3}
+              height="500px"
+              nameProperty="territorio"
+              valueProperty="value"
+              valueName={activeDss.axisLabel}
+              secondaryValueProperty="health_value"
+              secondaryValueName={priority.axisLabel}
+            />
+          ) : (
+            <p className="text-gray-500 italic py-8">Sin mapa disponible.</p>
+          )}
         </ExpandablePanel>
 
         <ExpandablePanel className="relative border rounded-lg p-4">
