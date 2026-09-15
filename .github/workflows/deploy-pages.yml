@@ -36,6 +36,9 @@ jobs:
         run: pnpm install
 
       - name: Build with Astro
+        env:
+          SITE_URL: https://ops-dss.github.io
+          BASE_PATH: /dss-dashboard-regional
         run: pnpm run build
 
       - name: Upload artifact
