@@ -1,52 +1,21 @@
 ---
 import { AnalyticsPageContent } from './AnalyticsPageContent'
-import type { ForestPlotDataRow, AnalyticsRow, ScatterRow } from '@/lib/parquet'
-import type { AnalyticsIndicatorKey } from '@/lib/parquet'
-import type { IndicatorMeta } from '@/config/general'
+import type { StratifiedRow } from '@/lib/parquet'
 
 interface Props {
   title: string
-  text: string
-  priority: IndicatorMeta
-  forestPlotData?: ForestPlotDataRow[]
-  analyticsData?: AnalyticsRow[]
-  scatterData?: ScatterRow[]
-  geojsonUrls?: Record<AnalyticsIndicatorKey, Record<number, string>>
-  priorityGeojsonUrls?: Record<number, string>
-  dssBivariateGeojsonUrls?: Partial<
-    Record<
-      AnalyticsIndicatorKey,
-      Partial<Record<AnalyticsIndicatorKey, Record<number, string>>>
-    >
-  >
-  csvUrl?: string
+  text?: string
+  allStratifiedData?: Record<string, StratifiedRow[]>
 }
 
-const {
-  priority,
-  title,
-  forestPlotData,
-  analyticsData,
-  scatterData,
-  geojsonUrls,
-  priorityGeojsonUrls,
-  dssBivariateGeojsonUrls,
-  csvUrl,
-} = Astro.props
+const { title, allStratifiedData = {} } = Astro.props
 ---
 
 <div class="mx-auto max-w-[120em] px-2 sm:px-6 lg:px-10 mb-16">
   <div class="flex flex-col gap-2">
     <h1 class="text-3xl font-bold my-6">{title}</h1>
     <AnalyticsPageContent
-      priority={priority}
-      forestPlotData={forestPlotData}
-      analyticsData={analyticsData}
-      scatterData={scatterData}
-      geojsonUrls={geojsonUrls}
-      priorityGeojsonUrls={priorityGeojsonUrls}
-      dssBivariateGeojsonUrls={dssBivariateGeojsonUrls}
-      csvUrl={csvUrl}
+      allStratifiedData={allStratifiedData}
       client:only="react"
     />
   </div>
