@@ -34,6 +34,13 @@ const {
 
 <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-10">
   <div class="flex flex-col gap-4">
+    <a
+      id="back-to-country-indicators"
+      href={`${import.meta.env.BASE_URL}determinantes-de-la-salud`}
+      class="mt-4 w-fit text-sm font-medium text-blue-700 hover:underline"
+    >
+      ← Volver a los indicadores del país
+    </a>
     <div class="flex mt-4 gap-2 flex-wrap">
       <span
         class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-700 border border-gray-200"
@@ -70,3 +77,16 @@ const {
     <p class="text-sm text-gray-600">Fuente: {source}</p>
   </div>
 </div>
+
+<script>
+  const backLink = document.getElementById('back-to-country-indicators') as HTMLAnchorElement | null
+  const params = new URLSearchParams(window.location.search)
+  const country = params.get('country')
+  const dimension = params.get('dimension') ?? 'dss'
+  if (backLink && country) {
+    const url = new URL(backLink.href)
+    url.searchParams.set('country', country)
+    url.searchParams.set('dimension', dimension)
+    backLink.href = url.toString()
+  }
+</script>
