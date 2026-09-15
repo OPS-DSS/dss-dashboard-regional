@@ -46,22 +46,47 @@ function pivotData(
     }),
   )
 
+  // DSS views show only the 15 most recent years actually available for the
+  // selected country/indicator (not a fixed 15-calendar-year window).
+  const years = [...new Set(filtered.map((r) => r.anio))]
+    .sort((a, b) => b - a)
+    .slice(0, 15)
+  const keepYears = new Set(years)
+
+  // Percentage indicators may arrive either as proportions (0–1) or already
+  // expressed on a 0–100 scale. Convert only when the observed values are in
+  // the proportion scale.
+  const percentageIndicator =
+    indicator.axisLabel.includes('%') ||
+    indicator.label.includes('%') ||
+    indicator.title.includes('%')
+  const finiteValues = filtered
+    .filter((r) => keepYears.has(r.anio))
+    .map((r) => Number(r.valor))
+    .filter(Number.isFinite)
+  const convertToPercent =
+    percentageIndicator &&
+    finiteValues.length > 0 &&
+    finiteValues.every((v) => v >= 0 && v <= 1)
+
+  const displayValue = (value: number) =>
+    convertToPercent ? value * 100 : value
+
   const byYear = new Map<number, Record<string, number>>()
   const keySet = new Set<string>()
 
   for (const row of filtered) {
+    if (!keepYears.has(row.anio)) continue
     const key = stratifier === 'total' ? TOTAL : String(row[stratifier] ?? '')
-
     keySet.add(key)
     if (!byYear.has(row.anio)) byYear.set(row.anio, { anio: row.anio })
-    byYear.get(row.anio)![key] = row.valor * 100
+    byYear.get(row.anio)![key] = displayValue(Number(row.valor))
   }
 
   const chartData = Array.from(byYear.entries())
     .sort(([a], [b]) => a - b)
     .map(([anio, vals]) => ({ anio, ...vals }))
 
-  // Sort keys: age groups numerically, others alphabetically
   const keys = Array.from(keySet).sort((a, b) => {
     const na = parseInt(a)
     const nb = parseInt(b)
@@ -69,7 +94,7 @@ function pivotData(
     return a.localeCompare(b, 'es')
   })
 
-  const activeColumn = indicator.scheme?.find((c) => c.name === stratifier)
+  const activeColumn = indicator.scheme?.find((col) => col.name === stratifier)
   const colors = activeColumn?.colors ?? {}
 
   const lines = keys.map((key, i) => ({
@@ -127,8 +152,6 @@ export const StratifiedLineChart = ({
     [countryData, stratifier, stratifiers, indicator],
   )
 
-  const hasMap =
-    app.features.map && geojsonUrls && Object.keys(geojsonUrls).length > 0
 
   if (!countryData || countryData.length === 0) {
     return (
@@ -264,142 +287,6 @@ export const StratifiedLineChart = ({
         </div>
       )}
 
-      {/* ── Map section ─────────────────────────────────────────────────────── */}
-      {hasMap && (
-        <section className="flex flex-col gap-4 mt-6">
-          <div className="flex items-center justify-between gap-2 flex-wrap">
-            <div className="flex rounded-lg overflow-hidden border border-gray-200 text-sm">
-              <button
-                type="button"
-                onClick={() => handleMapViewChange('map')}
-                className={`px-4 py-1.5 transition-colors ${
-                  mapView === 'map'
-                    ? 'bg-gray-800 text-white'
-                    : 'bg-white text-gray-600 hover:bg-gray-50'
-                }`}
-              >
-                Mapa
-              </button>
-              <button
-                type="button"
-                onClick={() => handleMapViewChange('table')}
-                className={`px-4 py-1.5 transition-colors ${
-                  mapView === 'table'
-                    ? 'bg-gray-800 text-white'
-                    : 'bg-white text-gray-600 hover:bg-gray-50'
-                }`}
-              >
-                Tabla
-              </button>
-            </div>
-          </div>
-
-          {mapView === 'map' && (
-            <ExpandablePanel
-              className="relative border rounded-lg p-4"
-              positionToBottom={true}
-            >
-              {(isFullscreen) => (
-                <>
-                  <Suspense
-                    fallback={
-                      <div
-                        className="flex items-center justify-center text-gray-400 text-sm"
-                        style={{
-                          height: isFullscreen ? 'calc(100vh - 180px)' : '30em',
-                        }}
-                      >
-                        Cargando mapa…
-                      </div>
-                    }
-                  >
-                    <DSChoroplethMap
-                      geojsonUrl={activeGeojsonUrl}
-                      center={[2.3, -75.7]}
-                      zoom={8}
-                      height={isFullscreen ? 'calc(100vh - 180px)' : '30em'}
-                      nameProperty="Territorio"
-                      valueProperty="value"
-                      valueName={yAxisLabel}
-                      valueFormatter={(v) => (v * 100).toFixed(1) + '%'}
-                    />
-                  </Suspense>
-                  <div className="flex flex-col gap-2 text-sm">
-                    <span className="font-medium text-gray-700">Leyenda:</span>
-                    <div className="flex flex-wrap gap-x-6 gap-y-2 items-center">
-                      <div className="flex items-center gap-2">
-                        <span className="text-gray-500 text-xs w-28 shrink-0">
-                          {yAxisLabel}
-                        </span>
-                        <span className="text-gray-600 text-xs">Menor</span>
-                        <div
-                          style={{
-                            width: 120,
-                            height: 14,
-                            background:
-                              'linear-gradient(to right, #FFFFB2, #FECC5C, #FD8D3C, #F03B20, #BD0026)',
-                            border: '1px solid #9ca3af',
-                            borderRadius: 3,
-                          }}
-                        />
-                        <span className="text-gray-600 text-xs">Mayor</span>
-                      </div>
-                      <div className="flex items-center gap-1.5">
-                        <div
-                          style={{
-                            width: 14,
-                            height: 14,
-                            background: '#CCCCCC',
-                            border: '1px solid #9ca3af',
-                            borderRadius: 3,
-                            flexShrink: 0,
-                          }}
-                        />
-                        <span className="text-gray-600 text-xs">Sin datos</span>
-                      </div>
-                    </div>
-                  </div>
-                </>
-              )}
-            </ExpandablePanel>
-          )}
-
-          {mapView === 'table' &&
-            (mapTableLoading ? (
-              <p className="text-gray-500 italic py-8 text-center">
-                Cargando datos…
-              </p>
-            ) : (
-              <div className="overflow-x-auto rounded-lg border border-gray-200">
-                <table className="w-full text-sm text-left">
-                  <thead className="bg-gray-50 text-gray-600 uppercase text-xs">
-                    <tr>
-                      <th className="px-4 py-3 font-medium">Barrio</th>
-                      <th className="px-4 py-3 font-medium">{yAxisLabel}</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-gray-100">
-                    {mapTableData.map((row) => (
-                      <tr
-                        key={row.name}
-                        className="bg-white hover:bg-gray-50 transition-colors"
-                      >
-                        <td className="px-4 py-3 font-medium text-gray-900">
-                          {row.name}
-                        </td>
-                        <td className="px-4 py-3 text-gray-600">
-                          {row.value != null && Number.isFinite(row.value)
-                            ? (row.value * 100).toFixed(1) + '%'
-                            : '—'}
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            ))}
-        </section>
-      )}
     </div>
   )
 }
