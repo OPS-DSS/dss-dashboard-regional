@@ -41,6 +41,8 @@ export const AnalyticsPageContent = ({ forestPlotData, analyticsData, scatterDat
   )
 
   const [selectedDss, setSelectedDss] = useState('')
+  const [mapMode, setMapMode] = useState<'bivariate' | 'priority'>('bivariate')
+  const [secondaryDss, setSecondaryDss] = useState('')
   const activeDssSlug = top10.some((r) => r.indicador === selectedDss)
     ? selectedDss
     : (top10[0]?.indicador ?? '')
