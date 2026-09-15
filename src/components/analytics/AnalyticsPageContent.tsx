@@ -158,21 +158,94 @@ export const AnalyticsPageContent = ({ forestPlotData, analyticsData, scatterDat
           <p className="text-xs text-gray-500 mb-3">
             Distribución conjunta de {priority.label} y {activeDss?.label ?? 'DSS'} en los países de las Américas ({effectiveYear}).
           </p>
+          <div className="flex items-center justify-between gap-2 flex-wrap mb-3">
+            <div className="flex flex-wrap items-center gap-2">
+              <div className="flex rounded-lg overflow-hidden border border-gray-200 text-sm">
+                <button
+                  type="button"
+                  onClick={() => setMapMode('bivariate')}
+                  className={`px-4 py-1.5 transition-colors ${mapMode === 'bivariate' && !secondaryDss ? 'bg-gray-800 text-white' : 'bg-white text-gray-600 hover:bg-gray-50'}`}
+                >
+                  Bivariado
+                </button>
+                <button
+                  type="button"
+                  onClick={() => { setMapMode('priority'); setSecondaryDss('') }}
+                  className={`px-4 py-1.5 transition-colors ${mapMode === 'priority' ? 'bg-gray-800 text-white' : 'bg-white text-gray-600 hover:bg-gray-50'}`}
+                >
+                  Solo {priority.label}
+                </button>
+              </div>
+              <div className="flex items-center gap-1.5">
+                <span className="text-xs text-gray-500 shrink-0">Bivariado DSS:</span>
+                <select
+                  value={secondaryDss}
+                  onChange={(e) => { setSecondaryDss(e.target.value); if (e.target.value) setMapMode('bivariate') }}
+                  className="text-sm rounded-lg border border-gray-200 bg-white text-gray-600 px-2 py-1.5"
+                >
+                  <option value="">Seleccionar indicador</option>
+                  {indicators.filter((i) => i.slug !== activeDssSlug).map((i) => (
+                    <option key={i.slug} value={i.slug}>{i.label}</option>
+                  ))}
+                </select>
+              </div>
+            </div>
+            {activeDss && effectiveYear !== null && (
+              <a
+                href={`/dss-dashboard-regional/data/csv/regional-scatter.csv`}
+                download
+                className="flex items-center gap-1.5 px-4 py-1.5 text-sm rounded-lg border border-gray-200 bg-white text-gray-600 hover:bg-gray-50 transition-colors"
+              >
+                ↓ Descargar tabla
+              </a>
+            )}
+          </div>
+
           {activeDss && effectiveYear !== null ? (
             <DSChoroplethMap
-              geojsonUrl={`/dss-dashboard-regional/data/geojson/bivariate-${priority.slug}-${activeDss.slug}-${effectiveYear}.geojson`}
+              geojsonUrl={
+                mapMode === 'priority'
+                  ? `/dss-dashboard-regional/data/geojson/${priority.slug}-${effectiveYear}.geojson`
+                  : secondaryDss
+                    ? `/dss-dashboard-regional/data/geojson/bivariate-${activeDss.slug}-${secondaryDss}-${effectiveYear}.geojson`
+                    : `/dss-dashboard-regional/data/geojson/bivariate-${priority.slug}-${activeDss.slug}-${effectiveYear}.geojson`
+              }
               center={[5, -82]}
               zoom={2}
+              fitBounds={false}
               height="820px"
               nameProperty="territorio"
               valueProperty="value"
-              valueName={activeDss.axisLabel}
-              secondaryValueProperty="health_value"
-              secondaryValueName={priority.axisLabel}
+              valueName={mapMode === 'priority' ? priority.axisLabel : activeDss.axisLabel}
+              secondaryValueProperty={mapMode === 'bivariate' && !secondaryDss ? 'health_value' : undefined}
+              secondaryValueName={mapMode === 'bivariate' && !secondaryDss ? priority.axisLabel : undefined}
             />
           ) : (
             <p className="text-gray-500 italic py-8">Sin mapa disponible.</p>
           )}
+
+          <div className="flex flex-col gap-2 text-sm mt-3">
+            <span className="font-medium text-gray-700">Leyenda:</span>
+            {mapMode === 'bivariate' ? (
+              <div className="flex items-center gap-3 flex-wrap text-xs text-gray-600">
+                <span>Menor</span>
+                {['#e8e8e8','#ace4e4','#5ac8c8','#dfb0d6','#a5b8c5','#5a9ab5','#be64ac','#8c62aa','#3b4994'].map((color) => (
+                  <span key={color} style={{ width: 14, height: 14, background: color, border: '1px solid #9ca3af', display: 'inline-block' }} />
+                ))}
+                <span>Mayor</span>
+                <span style={{ width: 14, height: 14, background: '#CCCCCC', border: '1px solid #9ca3af', display: 'inline-block', marginLeft: 8 }} />
+                <span>Sin datos</span>
+              </div>
+            ) : (
+              <div className="flex items-center gap-2 text-xs text-gray-600">
+                <span>Menor</span>
+                <span style={{ width: 120, height: 14, background: 'linear-gradient(to right, #FFFFB2, #FECC5C, #FD8D3C, #F03B20, #BD0026)', border: '1px solid #9ca3af', display: 'inline-block' }} />
+                <span>Mayor</span>
+                <span style={{ width: 14, height: 14, background: '#CCCCCC', border: '1px solid #9ca3af', display: 'inline-block', marginLeft: 8 }} />
+                <span>Sin datos</span>
+              </div>
+            )}
+          </div>
         </ExpandablePanel>
         </div>
 
