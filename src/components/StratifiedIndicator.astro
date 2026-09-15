@@ -36,7 +36,7 @@ const {
   <div class="flex flex-col gap-4">
     <a
       id="back-to-country-indicators"
-      href={`${import.meta.env.BASE_URL}determinantes-de-la-salud`}
+      href={`${import.meta.env.BASE_URL.replace(/\/?$/, '/')}determinantes-de-la-salud`}
       class="mt-4 w-fit text-sm font-medium text-blue-700 hover:underline"
     >
       ← Volver a los indicadores del país
