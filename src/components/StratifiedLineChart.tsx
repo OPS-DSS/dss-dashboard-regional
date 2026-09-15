@@ -1,18 +1,10 @@
-import { useState, useMemo, useRef, lazy, Suspense } from 'react'
+import { useState, useMemo, useRef } from 'react'
 import { DSLineChart } from '@ops-dss/charts/line-chart'
 import type { StratifiedRow } from '@/lib/parquet'
 import { app } from '@/config/general'
 import type { IndicatorStratifier, IndicatorMeta } from '@/config/general'
 import { ExpandablePanel } from './ExpandablePanel'
 import { Icon } from '@iconify/react'
-
-// Loaded on demand — only imported when app.features.map is enabled, so
-// deployments without geolocation data never fetch the map bundle.
-const DSChoroplethMap = lazy(() =>
-  import('@ops-dss/charts/choropleth-map').then((m) => ({
-    default: m.DSChoroplethMap,
-  })),
-)
 
 // ── Canonical aggregate label ─────────────────────────────────────────────────
 // Every stratifier column marks its aggregate rows with this sentinel.
@@ -128,61 +120,7 @@ export const StratifiedLineChart = ({
 
   const [stratifier, setStratifier] = useState<IndicatorStratifier>('total')
   const [view, setView] = useState<'chart' | 'table'>('chart')
-  const [mapView, setMapView] = useState<'map' | 'table'>('map')
-  const [mapTableData, setMapTableData] = useState<
-    { name: string; value: number | null }[]
-  >([])
-  const [mapTableLoading, setMapTableLoading] = useState(false)
   const chartRef = useRef<HTMLDivElement>(null)
-
-  // ── Year selection (shared between chart highlight and map) ───────────────
-  const availableYears = useMemo(() => {
-    if (!countryData || countryData.length === 0) return []
-    return [...new Set(countryData.map((r) => r.anio))].sort((a, b) => b - a)
-  }, [countryData])
-
-  const lastYear = availableYears[0] ?? null
-  const [selectedYear, setSelectedYear] = useState<number | null>(null)
-  const effectiveYear: number | null = selectedYear ?? lastYear
-
-  const activeGeojsonUrl =
-    geojsonUrls && effectiveYear !== null
-      ? geojsonUrls[effectiveYear]
-      : undefined
-
-  const fetchMapTableData = (url: string) => {
-    setMapTableLoading(true)
-    fetch(url)
-      .then((res) => {
-        if (!res.ok) throw new Error(`HTTP ${res.status}`)
-        return res.json()
-      })
-      .then((geojson) => {
-        const rows = (geojson.features ?? [])
-          .map(
-            (f: { properties: { Territorio?: string; value?: number } }) => ({
-              name: f.properties.Territorio ?? '',
-              value: f.properties.value ?? null,
-            }),
-          )
-          .sort(
-            (
-              a: { name: string; value: number | null },
-              b: { name: string; value: number | null },
-            ) => a.name.localeCompare(b.name),
-          )
-        setMapTableData(rows)
-        setMapTableLoading(false)
-      })
-      .catch(() => setMapTableLoading(false))
-  }
-
-  const handleMapViewChange = (next: 'map' | 'table') => {
-    setMapView(next)
-    if (next === 'table' && activeGeojsonUrl) {
-      fetchMapTableData(activeGeojsonUrl)
-    }
-  }
 
   const { chartData, lines, keys } = useMemo(
     () => pivotData(countryData, stratifier, stratifiers ?? [], indicator),
@@ -214,38 +152,6 @@ export const StratifiedLineChart = ({
 
   return (
     <div style={{ width: '100%', margin: '0 auto' }}>
-      {/* ── Sticky year selector ─────────────────────────────────────────────── */}
-      {availableYears.length > 1 && (
-        <div className="sticky top-0 z-30 bg-white/95 backdrop-blur-sm py-2 border-b border-gray-100 -mx-2 px-2 sm:-mx-6 sm:px-6 lg:-mx-10 lg:px-10 overflow-x-auto mb-4">
-          <div className="flex rounded-lg overflow-hidden border border-gray-200 text-sm w-fit">
-            {availableYears.map((yr) => {
-              const isActive = yr === effectiveYear
-              return (
-                <button
-                  key={yr}
-                  type="button"
-                  onClick={() => {
-                    const next = yr === lastYear ? null : yr
-                    setSelectedYear(next)
-                    if (mapView === 'table' && hasMap) {
-                      const url = geojsonUrls![yr === lastYear ? lastYear! : yr]
-                      if (url) fetchMapTableData(url)
-                    }
-                  }}
-                  className={`px-3 py-1 text-sm transition-colors ${
-                    isActive
-                      ? 'bg-gray-800 text-white border-gray-800'
-                      : 'bg-white text-gray-600 border-gray-200 hover:bg-gray-50'
-                  }`}
-                >
-                  {yr}
-                </button>
-              )
-            })}
-          </div>
-        </div>
-      )}
-
       {/* ── Stratifier selector ─────────────────────────────────────────────── */}
       <div className="flex flex-wrap justify-between gap-1 mb-4">
         <div className="flex rounded-lg overflow-hidden border border-gray-200 text-sm">
@@ -316,8 +222,7 @@ export const StratifiedLineChart = ({
                 }
                 xAxisLabel="Año"
                 yAxisLabel={yAxisLabel}
-                yAxisDomain={[0, 100]}
-                highlightX={effectiveYear ?? undefined}
+                yAxisDomain={['auto', 'auto']}
               />
             </div>
           )}
