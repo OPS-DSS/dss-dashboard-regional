@@ -151,7 +151,7 @@ export type ScatterRow = {
 export type ForestPlotDataRow = {
   priorizado: string
   anio: number
-  indicador: string
+  dss: string
   correlacion: number
   ci_lower: number
   ci_upper: number
