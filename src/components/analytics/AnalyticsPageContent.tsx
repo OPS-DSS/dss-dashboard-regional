@@ -13,6 +13,14 @@ interface Props {
   scatterData: ScatterRow[]
 }
 
+const usesZeroToHundredScale = (indicator: (typeof indicators)[number] | undefined) =>
+  !!indicator && (
+    indicator.slug === 'gini' ||
+    indicator.axisLabel.includes('%') ||
+    indicator.label.includes('%') ||
+    indicator.title.includes('%')
+  )
+
 const BIVARIATE_COLORS = [
   ['#e8e8e8', '#ace4e4', '#5ac8c8'],
   ['#dfb0d6', '#a5b8c5', '#5a9ab5'],
@@ -186,8 +194,8 @@ export const AnalyticsPageContent = ({ forestPlotData, analyticsData, scatterDat
         <ExpandablePanel className="relative border rounded-lg p-4 h-full">
           <h2 className="font-bold mb-3">Tendencias temporales</h2>
           <div className="flex flex-col gap-5">
-            <DSLineChart data={alignedHealthTrend} xAxisKey="anio" lines={[{ dataKey: 'valor', name: priority.label, color: priority.color }]} xAxisLabel="Año" yAxisLabel={priority.axisLabel} height={260} highlightX={effectiveYear ?? undefined} />
-            {activeDss && <DSLineChart data={alignedDssTrend} xAxisKey="anio" lines={[{ dataKey: 'valor', name: activeDss.label, color: activeDss.color }]} xAxisLabel="Año" yAxisLabel={activeDss.axisLabel} height={260} highlightX={effectiveYear ?? undefined} />}
+            <DSLineChart data={alignedHealthTrend} xAxisKey="anio" lines={[{ dataKey: 'valor', name: priority.label, color: priority.color }]} xAxisLabel="Año" yAxisLabel={priority.axisLabel} yAxisDomain={usesZeroToHundredScale(priority) ? [0, 100] : ['auto', 'auto']} height={260} highlightX={effectiveYear ?? undefined} />
+            {activeDss && <DSLineChart data={alignedDssTrend} xAxisKey="anio" lines={[{ dataKey: 'valor', name: activeDss.label, color: activeDss.color }]} xAxisLabel="Año" yAxisLabel={activeDss.axisLabel} yAxisDomain={usesZeroToHundredScale(activeDss) ? [0, 100] : ['auto', 'auto']} height={260} highlightX={effectiveYear ?? undefined} />}
           </div>
         </ExpandablePanel>
         </div>

@@ -245,7 +245,7 @@ export const StratifiedLineChart = ({
                 }
                 xAxisLabel="Año"
                 yAxisLabel={yAxisLabel}
-                yAxisDomain={['auto', 'auto']}
+                yAxisDomain={indicator.slug === 'uso-internet' || indicator.slug === 'gini' ? [0, 100] : ['auto', 'auto']}
               />
             </div>
           )}
