@@ -142,15 +142,18 @@ export const AnalyticsPageContent = ({ forestPlotData, analyticsData, scatterDat
           {points.length > 0 ? <DSScatterChart data={points.map((p) => ({ x: Number(p.valor_dss), y: Number(p.valor_salud), label: p.territorio, size: 1 }))} xLabel={activeDss?.axisLabel ?? ''} yLabel={priority.axisLabel} width={760} /> : <p className="text-gray-500 italic py-8">Sin datos para esta combinación.</p>}
         </ExpandablePanel>
 
-        <ExpandablePanel className="relative border rounded-lg p-4">
+        <div className="xl:row-span-2">
+        <ExpandablePanel className="relative border rounded-lg p-4 h-full">
           <h2 className="font-bold mb-3">Tendencias temporales</h2>
           <div className="flex flex-col gap-5">
             <DSLineChart data={healthTrend} xAxisKey="anio" lines={[{ dataKey: 'valor', name: priority.label, color: priority.color }]} xAxisLabel="Año" yAxisLabel={priority.axisLabel} height={260} highlightX={effectiveYear ?? undefined} />
             {activeDss && <DSLineChart data={dssTrend} xAxisKey="anio" lines={[{ dataKey: 'valor', name: activeDss.label, color: activeDss.color }]} xAxisLabel="Año" yAxisLabel={activeDss.axisLabel} height={260} highlightX={effectiveYear ?? undefined} />}
           </div>
         </ExpandablePanel>
+        </div>
 
-        <ExpandablePanel className="relative border rounded-lg p-4">
+        <div className="xl:row-span-2">
+        <ExpandablePanel className="relative border rounded-lg p-4 h-full">
           <h2 className="font-bold">Mapa bivariado</h2>
           <p className="text-xs text-gray-500 mb-3">
             Distribución conjunta de {priority.label} y {activeDss?.label ?? 'DSS'} en los países de las Américas ({effectiveYear}).
@@ -158,9 +161,9 @@ export const AnalyticsPageContent = ({ forestPlotData, analyticsData, scatterDat
           {activeDss && effectiveYear !== null ? (
             <DSChoroplethMap
               geojsonUrl={`/dss-dashboard-regional/data/geojson/bivariate-${priority.slug}-${activeDss.slug}-${effectiveYear}.geojson`}
-              center={[10, -75]}
-              zoom={3}
-              height="500px"
+              center={[5, -82]}
+              zoom={2}
+              height="820px"
               nameProperty="territorio"
               valueProperty="value"
               valueName={activeDss.axisLabel}
@@ -171,6 +174,7 @@ export const AnalyticsPageContent = ({ forestPlotData, analyticsData, scatterDat
             <p className="text-gray-500 italic py-8">Sin mapa disponible.</p>
           )}
         </ExpandablePanel>
+        </div>
 
         <ExpandablePanel className="relative border rounded-lg p-4">
           <h2 className="font-bold">Datos por país</h2>
