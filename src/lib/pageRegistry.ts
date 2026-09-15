@@ -63,10 +63,12 @@ const staticEntries: Record<string, PageRegistryEntry> = {
   // ─── Section index pages ───────────────────────────────────────────────────
   'determinantes-de-la-salud': {
     component: PrioritySDoH,
-    resolveProps: ({ title, text, allStratifiedData }) => ({
+    resolveProps: ({ title, text, forestPlotData, analyticsData, scatterData }) => ({
       title,
       text,
-      allStratifiedData: allStratifiedData ?? {},
+      forestPlotData: forestPlotData ?? [],
+      analyticsData: analyticsData ?? [],
+      scatterData: scatterData ?? [],
     }),
   },
   analisis: {
