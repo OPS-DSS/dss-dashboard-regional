@@ -70,8 +70,12 @@ const staticEntries: Record<string, PageRegistryEntry> = {
     }),
   },
   analisis: {
-    component: PrioritySelector,
-    resolveProps: ({ title, text, slug }) => ({ title, text, section: slug }),
+    component: Analytics,
+    resolveProps: ({ title, text, allStratifiedData }) => ({
+      title,
+      text,
+      allStratifiedData: allStratifiedData ?? {},
+    }),
   },
 }
 

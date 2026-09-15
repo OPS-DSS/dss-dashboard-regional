@@ -102,7 +102,7 @@
     }
   ],
   "features": {
-    "map": true,
+    "map": false,
     "scatter": true
   },
   "data": {
