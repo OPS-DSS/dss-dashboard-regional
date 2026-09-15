@@ -24,7 +24,7 @@ export const AnalyticsPageContent = ({ forestPlotData, analyticsData, scatterDat
     forestPlotData
       .filter((r) => r.priorizado === priority?.slug)
       .map((r) => Number(r.anio)),
-  )].sort((a, b) => b - a), [forestPlotData, priority])
+  )].sort((a, b) => b - a).slice(0, 15), [forestPlotData, priority])
 
   const [year, setYear] = useState<number | null>(null)
   const effectiveYear = year !== null && years.includes(year) ? year : (years[0] ?? null)
@@ -65,7 +65,7 @@ export const AnalyticsPageContent = ({ forestPlotData, analyticsData, scatterDat
     return [...grouped].map(([anio, values]) => ({
       anio,
       valor: values.reduce((a, b) => a + b, 0) / values.length,
-    })).sort((a, b) => a.anio - b.anio)
+    })).sort((a, b) => b.anio - a.anio).slice(0, 15).sort((a, b) => a.anio - b.anio)
   }, [analyticsData, priority])
 
   const dssTrend = useMemo(() => {
@@ -79,7 +79,7 @@ export const AnalyticsPageContent = ({ forestPlotData, analyticsData, scatterDat
     return [...grouped].map(([anio, values]) => ({
       anio,
       valor: values.reduce((a, b) => a + b, 0) / values.length,
-    })).sort((a, b) => a.anio - b.anio)
+    })).sort((a, b) => b.anio - a.anio).slice(0, 15).sort((a, b) => a.anio - b.anio)
   }, [analyticsData, activeDss])
 
   if (!priority || forestPlotData.length === 0) {
