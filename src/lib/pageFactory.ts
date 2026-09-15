@@ -127,6 +127,7 @@ export function buildPages(datasets: PageDatasets): PageDefinition[] {
       description: 'Análisis de relaciones',
       date: '2026-01-01',
       navbar: true,
+      allStratifiedData: datasets.stratifiedData,
     },
   ]
 
