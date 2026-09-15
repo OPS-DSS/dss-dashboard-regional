@@ -157,7 +157,7 @@ export const AnalyticsPageContent = ({ forestPlotData, analyticsData, scatterDat
           </p>
           {activeDss && effectiveYear !== null ? (
             <DSChoroplethMap
-              geojsonUrl={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/data/geojson/bivariate-${priority.slug}-${activeDss.slug}-${effectiveYear}.geojson`}
+              geojsonUrl={`/dss-dashboard-regional/data/geojson/bivariate-${priority.slug}-${activeDss.slug}-${effectiveYear}.geojson`}
               center={[10, -75]}
               zoom={3}
               height="500px"
