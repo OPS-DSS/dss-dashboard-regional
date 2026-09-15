@@ -249,16 +249,6 @@ export const AnalyticsPageContent = ({ forestPlotData, analyticsData, scatterDat
         </ExpandablePanel>
         </div>
 
-        <ExpandablePanel className="relative border rounded-lg p-4">
-          <h2 className="font-bold">Datos por país</h2>
-          <p className="text-xs text-gray-500 mb-3">Valores utilizados por R para la dispersión y el análisis de correlación.</p>
-          <div className="max-h-[540px] overflow-auto">
-            <table className="w-full text-xs">
-              <thead className="sticky top-0 bg-white"><tr className="border-b"><th className="text-left p-2">País</th><th>{activeDss?.axisLabel}</th><th>{priority.axisLabel}</th></tr></thead>
-              <tbody>{points.map((p) => <tr key={p.iso3} className="border-b"><td className="p-2">{p.territorio}</td><td className="text-center">{Number(p.valor_dss).toLocaleString('es-CL')}</td><td className="text-center">{Number(p.valor_salud).toLocaleString('es-CL')}</td></tr>)}</tbody>
-            </table>
-          </div>
-        </ExpandablePanel>
       </div>
     </div>
   )
