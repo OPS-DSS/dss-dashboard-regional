@@ -1,0 +1,505 @@
+priorizado,dss,iso3,territorio,anio,valor_salud,valor_dss
+razon-mortalidad-materna,gasto-educ-pib,ARG,Argentina,2000,57.80834,4.58030986785889
+razon-mortalidad-materna,gasto-educ-pib,BHS,Bahamas,2000,51.26978,2.23284006118774
+razon-mortalidad-materna,gasto-educ-pib,BRB,Barbados,2000,45.66083,4.71585988998413
+razon-mortalidad-materna,gasto-educ-pib,BLZ,Belice,2000,78.12834,3.68356990814209
+razon-mortalidad-materna,gasto-educ-pib,BRA,Brasil,2000,68.64623,3.94893002510071
+razon-mortalidad-materna,gasto-educ-pib,CAN,Canadá,2000,8.98736,5.42330980300903
+razon-mortalidad-materna,gasto-educ-pib,CHL,Chile,2000,32.94284,3.75707006454468
+razon-mortalidad-materna,gasto-educ-pib,COL,Colombia,2000,95.11151,3.5112099647522
+razon-mortalidad-materna,gasto-educ-pib,CRI,Costa Rica,2000,35.52167,4.66695022583008
+razon-mortalidad-materna,gasto-educ-pib,CUB,Cuba,2000,48.19773,7.70481014251709
+razon-mortalidad-materna,gasto-educ-pib,ECU,Ecuador,2000,122.73784,1.20265996456146
+razon-mortalidad-materna,gasto-educ-pib,SLV,El Salvador,2000,47.69612,2.8386800289154
+razon-mortalidad-materna,gasto-educ-pib,GUY,Guyana,2000,170.55123,8.48414993286133
+razon-mortalidad-materna,gasto-educ-pib,JAM,Jamaica,2000,81.86244,4.98346996307373
+razon-mortalidad-materna,gasto-educ-pib,MEX,México,2000,56.39246,3.80870008468628
+razon-mortalidad-materna,gasto-educ-pib,NIC,Nicaragua,2000,213.31067,3.00160002708435
+razon-mortalidad-materna,gasto-educ-pib,PAN,Panamá,2000,64.08376,4.89397001266479
+razon-mortalidad-materna,gasto-educ-pib,PRY,Paraguay,2000,206.76168,4.2302098274231
+razon-mortalidad-materna,gasto-educ-pib,PER,Perú,2000,115.33938,3.22802996635437
+razon-mortalidad-materna,gasto-educ-pib,DOM,República Dominicana,2000,75.59829,1.88829004764557
+razon-mortalidad-materna,gasto-educ-pib,URY,Uruguay,2000,23.46975,2.42254996299744
+razon-mortalidad-materna,gasto-educ-pib,ARG,Argentina,2001,60.25133,4.833740234375
+razon-mortalidad-materna,gasto-educ-pib,BRB,Barbados,2001,45.84178,6.05536985397339
+razon-mortalidad-materna,gasto-educ-pib,BLZ,Belice,2001,76.22194,4.23519992828369
+razon-mortalidad-materna,gasto-educ-pib,BRA,Brasil,2001,66.43235,3.84467005729675
+razon-mortalidad-materna,gasto-educ-pib,CAN,Canadá,2001,9.54336,4.95304012298584
+razon-mortalidad-materna,gasto-educ-pib,COL,Colombia,2001,93.80357,3.70867991447449
+razon-mortalidad-materna,gasto-educ-pib,CRI,Costa Rica,2001,35.31408,4.83203983306885
+razon-mortalidad-materna,gasto-educ-pib,CUB,Cuba,2001,46.23062,8.3580904006958
+razon-mortalidad-materna,gasto-educ-pib,GUY,Guyana,2001,162.77843,8.39729022979736
+razon-mortalidad-materna,gasto-educ-pib,JAM,Jamaica,2001,82.32536,5.38103008270264
+razon-mortalidad-materna,gasto-educ-pib,MEX,México,2001,55.3538,4.0313401222229
+razon-mortalidad-materna,gasto-educ-pib,PAN,Panamá,2001,61.56771,4.18935012817383
+razon-mortalidad-materna,gasto-educ-pib,PRY,Paraguay,2001,206.85486,3.8335599899292
+razon-mortalidad-materna,gasto-educ-pib,PER,Perú,2001,109.38935,3.03712010383606
+razon-mortalidad-materna,gasto-educ-pib,DOM,República Dominicana,2001,68.08629,1.96782994270325
+razon-mortalidad-materna,gasto-educ-pib,URY,Uruguay,2001,24.01111,2.80096006393433
+razon-mortalidad-materna,gasto-educ-pib,ARG,Argentina,2002,59.15006,4.01734018325806
+razon-mortalidad-materna,gasto-educ-pib,BRB,Barbados,2002,43.19389,5.88062000274658
+razon-mortalidad-materna,gasto-educ-pib,BRA,Brasil,2002,65.96649,3.75037002563477
+razon-mortalidad-materna,gasto-educ-pib,CAN,Canadá,2002,9.96334,4.99306011199951
+razon-mortalidad-materna,gasto-educ-pib,CHL,Chile,2002,30.39744,4.04881000518799
+razon-mortalidad-materna,gasto-educ-pib,COL,Colombia,2002,91.27231,4.26812982559204
+razon-mortalidad-materna,gasto-educ-pib,CRI,Costa Rica,2002,33.9861,5.15044021606445
+razon-mortalidad-materna,gasto-educ-pib,CUB,Cuba,2002,45.36349,9.57116985321045
+razon-mortalidad-materna,gasto-educ-pib,SLV,El Salvador,2002,39.8673,3.242840051651
+razon-mortalidad-materna,gasto-educ-pib,GUY,Guyana,2002,164.26439,8.36553955078125
+razon-mortalidad-materna,gasto-educ-pib,JAM,Jamaica,2002,80.84112,5.37522983551025
+razon-mortalidad-materna,gasto-educ-pib,MEX,México,2002,54.96576,4.24307012557983
+razon-mortalidad-materna,gasto-educ-pib,NIC,Nicaragua,2002,170.15452,2.39101004600525
+razon-mortalidad-materna,gasto-educ-pib,PAN,Panamá,2002,59.406,4.2549901008606
+razon-mortalidad-materna,gasto-educ-pib,PRY,Paraguay,2002,205.51113,3.40773010253906
+razon-mortalidad-materna,gasto-educ-pib,PER,Perú,2002,105.71584,2.82056999206543
+razon-mortalidad-materna,gasto-educ-pib,DOM,República Dominicana,2002,68.24472,1.9140100479126
+razon-mortalidad-materna,gasto-educ-pib,URY,Uruguay,2002,23.32382,2.32220005989075
+razon-mortalidad-materna,gasto-educ-pib,ARG,Argentina,2003,60.93268,3.53504991531372
+razon-mortalidad-materna,gasto-educ-pib,BRB,Barbados,2003,44.65167,6.24569988250732
+razon-mortalidad-materna,gasto-educ-pib,BLZ,Belice,2003,66.76509,3.90120005607605
+razon-mortalidad-materna,gasto-educ-pib,CHL,Chile,2003,29.27009,3.91868996620178
+razon-mortalidad-materna,gasto-educ-pib,COL,Colombia,2003,86.7687,4.32513999938965
+razon-mortalidad-materna,gasto-educ-pib,CRI,Costa Rica,2003,33.22327,5.13373994827271
+razon-mortalidad-materna,gasto-educ-pib,CUB,Cuba,2003,44.37065,9.9408597946167
+razon-mortalidad-materna,gasto-educ-pib,SLV,El Salvador,2003,37.74841,3.13467001914978
+razon-mortalidad-materna,gasto-educ-pib,GRD,Granada,2003,42.13301,3.92673993110657
+razon-mortalidad-materna,gasto-educ-pib,GUY,Guyana,2003,163.66381,6.95590019226074
+razon-mortalidad-materna,gasto-educ-pib,JAM,Jamaica,2003,78.85198,4.25684976577759
+razon-mortalidad-materna,gasto-educ-pib,MEX,México,2003,54.03961,4.83262014389038
+razon-mortalidad-materna,gasto-educ-pib,NIC,Nicaragua,2003,153.99707,2.42200994491577
+razon-mortalidad-materna,gasto-educ-pib,PAN,Panamá,2003,58.3954,4.19644021987915
+razon-mortalidad-materna,gasto-educ-pib,PRY,Paraguay,2003,202.99771,3.3827600479126
+razon-mortalidad-materna,gasto-educ-pib,PER,Perú,2003,104.18467,2.93779993057251
+razon-mortalidad-materna,gasto-educ-pib,DOM,República Dominicana,2003,71.36468,1.84465003013611
+razon-mortalidad-materna,gasto-educ-pib,URY,Uruguay,2003,22.55953,2.0682098865509
+razon-mortalidad-materna,gasto-educ-pib,ARG,Argentina,2004,58.43938,3.48652005195618
+razon-mortalidad-materna,gasto-educ-pib,BRB,Barbados,2004,42.71906,6.02428007125854
+razon-mortalidad-materna,gasto-educ-pib,BLZ,Belice,2004,62.76015,4.0096697807312
+razon-mortalidad-materna,gasto-educ-pib,BRA,Brasil,2004,69.58024,3.97448992729187
+razon-mortalidad-materna,gasto-educ-pib,CHL,Chile,2004,28.09702,3.54307007789612
+razon-mortalidad-materna,gasto-educ-pib,COL,Colombia,2004,84.15008,4.07934999465942
+razon-mortalidad-materna,gasto-educ-pib,CRI,Costa Rica,2004,32.8554,4.89062976837158
+razon-mortalidad-materna,gasto-educ-pib,CUB,Cuba,2004,44.12797,10.2682304382324
+razon-mortalidad-materna,gasto-educ-pib,GUY,Guyana,2004,162.31179,5.51291990280151
+razon-mortalidad-materna,gasto-educ-pib,JAM,Jamaica,2004,77.07226,3.91254997253418
+razon-mortalidad-materna,gasto-educ-pib,MEX,México,2004,53.06311,4.51204013824463
+razon-mortalidad-materna,gasto-educ-pib,PAN,Panamá,2004,57.42359,3.55807995796204
+razon-mortalidad-materna,gasto-educ-pib,PRY,Paraguay,2004,198.88059,2.86989998817444
+razon-mortalidad-materna,gasto-educ-pib,PER,Perú,2004,106.66304,2.95787000656128
+razon-mortalidad-materna,gasto-educ-pib,URY,Uruguay,2004,21.41815,2.49954009056091
+razon-mortalidad-materna,gasto-educ-pib,ARG,Argentina,2005,57.45685,3.86000990867615
+razon-mortalidad-materna,gasto-educ-pib,BRB,Barbados,2005,43.72432,5.66965007781982
+razon-mortalidad-materna,gasto-educ-pib,BRA,Brasil,2005,71.49638,4.47909021377563
+razon-mortalidad-materna,gasto-educ-pib,CAN,Canadá,2005,11.17144,4.76589012145996
+razon-mortalidad-materna,gasto-educ-pib,CHL,Chile,2005,27.48591,3.28016996383667
+razon-mortalidad-materna,gasto-educ-pib,COL,Colombia,2005,81.6156,4.02098989486694
+razon-mortalidad-materna,gasto-educ-pib,CUB,Cuba,2005,42.95019,10.5577802658081
+razon-mortalidad-materna,gasto-educ-pib,SLV,El Salvador,2005,33.77924,3.17785000801086
+razon-mortalidad-materna,gasto-educ-pib,GUY,Guyana,2005,166.40215,8.13973045349121
+razon-mortalidad-materna,gasto-educ-pib,JAM,Jamaica,2005,80.63942,4.61641979217529
+razon-mortalidad-materna,gasto-educ-pib,MEX,México,2005,51.64543,4.63395023345947
+razon-mortalidad-materna,gasto-educ-pib,PER,Perú,2005,103.02851,2.83903002738953
+razon-mortalidad-materna,gasto-educ-pib,URY,Uruguay,2005,20.32274,2.71476006507873
+razon-mortalidad-materna,gasto-educ-pib,ARG,Argentina,2006,60.04397,4.12821006774902
+razon-mortalidad-materna,gasto-educ-pib,BRA,Brasil,2006,72.18568,4.87060022354126
+razon-mortalidad-materna,gasto-educ-pib,CHL,Chile,2006,26.75998,3.04014992713928
+razon-mortalidad-materna,gasto-educ-pib,COL,Colombia,2006,80.63076,3.91671991348267
+razon-mortalidad-materna,gasto-educ-pib,CRI,Costa Rica,2006,30.0963,4.61614990234375
+razon-mortalidad-materna,gasto-educ-pib,CUB,Cuba,2006,41.98547,9.05716991424561
+razon-mortalidad-materna,gasto-educ-pib,SLV,El Salvador,2006,33.13052,3.49298000335693
+razon-mortalidad-materna,gasto-educ-pib,GTM,Guatemala,2006,141.7435,3.03285002708435
+razon-mortalidad-materna,gasto-educ-pib,GUY,Guyana,2006,166.50129,3.11891007423401
+razon-mortalidad-materna,gasto-educ-pib,MEX,México,2006,50.60049,4.49317979812622
+razon-mortalidad-materna,gasto-educ-pib,PER,Perú,2006,98.84666,2.65281009674072
+razon-mortalidad-materna,gasto-educ-pib,URY,Uruguay,2006,19.679,2.85664010047913
+razon-mortalidad-materna,gasto-educ-pib,ARG,Argentina,2007,61.7407,4.46260976791382
+razon-mortalidad-materna,gasto-educ-pib,BRB,Barbados,2007,41.89977,5.22061014175415
+razon-mortalidad-materna,gasto-educ-pib,BRA,Brasil,2007,72.50563,4.97426986694336
+razon-mortalidad-materna,gasto-educ-pib,CAN,Canadá,2007,11.39832,4.76642990112305
+razon-mortalidad-materna,gasto-educ-pib,CHL,Chile,2007,25.68844,3.2331600189209
+razon-mortalidad-materna,gasto-educ-pib,COL,Colombia,2007,79.83739,4.08301019668579
+razon-mortalidad-materna,gasto-educ-pib,CRI,Costa Rica,2007,30.31843,4.63449001312256
+razon-mortalidad-materna,gasto-educ-pib,CUB,Cuba,2007,41.88979,11.8682098388672
+razon-mortalidad-materna,gasto-educ-pib,SLV,El Salvador,2007,33.18813,3.60984992980957
+razon-mortalidad-materna,gasto-educ-pib,GTM,Guatemala,2007,135.01586,3.08809995651245
+razon-mortalidad-materna,gasto-educ-pib,GUY,Guyana,2007,157.5225,2.39117002487183
+razon-mortalidad-materna,gasto-educ-pib,JAM,Jamaica,2007,88.54986,5.49022006988525
+razon-mortalidad-materna,gasto-educ-pib,MEX,México,2007,49.59504,4.47919988632202
+razon-mortalidad-materna,gasto-educ-pib,PRY,Paraguay,2007,176.89627,2.73951005935669
+razon-mortalidad-materna,gasto-educ-pib,PER,Perú,2007,94.22268,2.62940001487732
+razon-mortalidad-materna,gasto-educ-pib,DOM,República Dominicana,2007,90.0094,2.04678010940552
+razon-mortalidad-materna,gasto-educ-pib,ARG,Argentina,2008,59.32073,4.84438991546631
+razon-mortalidad-materna,gasto-educ-pib,BRB,Barbados,2008,41.50407,4.92074012756348
+razon-mortalidad-materna,gasto-educ-pib,BLZ,Belice,2008,47.7854,4.29996013641357
+razon-mortalidad-materna,gasto-educ-pib,BRA,Brasil,2008,71.39691,5.26884984970093
+razon-mortalidad-materna,gasto-educ-pib,CAN,Canadá,2008,11.89835,4.62612009048462
+razon-mortalidad-materna,gasto-educ-pib,CHL,Chile,2008,24.40544,3.79189991950989
+razon-mortalidad-materna,gasto-educ-pib,COL,Colombia,2008,78.15605,3.9387800693512
+razon-mortalidad-materna,gasto-educ-pib,CRI,Costa Rica,2008,29.9525,4.88697004318237
+razon-mortalidad-materna,gasto-educ-pib,CUB,Cuba,2008,43.6271,14.0590801239014
+razon-mortalidad-materna,gasto-educ-pib,SLV,El Salvador,2008,33.20441,4.45810985565185
+razon-mortalidad-materna,gasto-educ-pib,GTM,Guatemala,2008,133.38754,3.23686003684998
+razon-mortalidad-materna,gasto-educ-pib,JAM,Jamaica,2008,90.95328,6.19131994247437
+razon-mortalidad-materna,gasto-educ-pib,MEX,México,2008,50.63943,4.60607004165649
+razon-mortalidad-materna,gasto-educ-pib,PAN,Panamá,2008,55.12235,3.42529010772705
+razon-mortalidad-materna,gasto-educ-pib,PER,Perú,2008,90.72159,2.8677499294281
+razon-mortalidad-materna,gasto-educ-pib,ARG,Argentina,2009,62.10812,5.53105020523071
+razon-mortalidad-materna,gasto-educ-pib,BRB,Barbados,2009,41.77438,5.11040019989014
+razon-mortalidad-materna,gasto-educ-pib,BLZ,Belice,2009,44.53123,4.8011999130249
+razon-mortalidad-materna,gasto-educ-pib,BRA,Brasil,2009,69.12705,5.46355009078979
+razon-mortalidad-materna,gasto-educ-pib,CAN,Canadá,2009,12.05524,4.84057998657227
+razon-mortalidad-materna,gasto-educ-pib,CHL,Chile,2009,23.90557,4.25475978851318
+razon-mortalidad-materna,gasto-educ-pib,COL,Colombia,2009,76.84698,4.77651977539062
+razon-mortalidad-materna,gasto-educ-pib,CRI,Costa Rica,2009,28.97739,6.01031017303467
+razon-mortalidad-materna,gasto-educ-pib,CUB,Cuba,2009,44.993,13.1248598098755
+razon-mortalidad-materna,gasto-educ-pib,ECU,Ecuador,2009,81.52688,4.51763010025024
+razon-mortalidad-materna,gasto-educ-pib,SLV,El Salvador,2009,34.55275,4.65950012207031
+razon-mortalidad-materna,gasto-educ-pib,GUY,Guyana,2009,146.31503,2.15057992935181
+razon-mortalidad-materna,gasto-educ-pib,JAM,Jamaica,2009,92.72836,6.19848012924194
+razon-mortalidad-materna,gasto-educ-pib,MEX,México,2009,50.60608,4.94934988021851
+razon-mortalidad-materna,gasto-educ-pib,PER,Perú,2009,89.31913,3.13994002342224
+razon-mortalidad-materna,gasto-educ-pib,ARG,Argentina,2010,54.74272,5.01972007751465
+razon-mortalidad-materna,gasto-educ-pib,BHS,Bahamas,2010,79.49573,2.45165990475209
+razon-mortalidad-materna,gasto-educ-pib,BRB,Barbados,2010,41.70716,6.05261993408203
+razon-mortalidad-materna,gasto-educ-pib,BLZ,Belice,2010,40.88922,5.24251985549927
+razon-mortalidad-materna,gasto-educ-pib,BRA,Brasil,2010,65.95196,5.64879989624023
+razon-mortalidad-materna,gasto-educ-pib,CAN,Canadá,2010,11.3825,5.35637998580933
+razon-mortalidad-materna,gasto-educ-pib,CHL,Chile,2010,21.70381,4.18953990936279
+razon-mortalidad-materna,gasto-educ-pib,COL,Colombia,2010,76.38049,4.83382987976074
+razon-mortalidad-materna,gasto-educ-pib,CRI,Costa Rica,2010,28.84048,6.56575012207031
+razon-mortalidad-materna,gasto-educ-pib,CUB,Cuba,2010,43.88002,12.8373098373413
+razon-mortalidad-materna,gasto-educ-pib,ECU,Ecuador,2010,79.70975,4.60028982162476
+razon-mortalidad-materna,gasto-educ-pib,SLV,El Salvador,2010,34.32537,4.04807996749878
+razon-mortalidad-materna,gasto-educ-pib,GRD,Granada,2010,43.01116,5.07508233496978
+razon-mortalidad-materna,gasto-educ-pib,GTM,Guatemala,2010,126.99096,2.84864997863769
+razon-mortalidad-materna,gasto-educ-pib,GUY,Guyana,2010,140.98245,2.40938997268677
+razon-mortalidad-materna,gasto-educ-pib,JAM,Jamaica,2010,94.20798,6.37058019638062
+razon-mortalidad-materna,gasto-educ-pib,MEX,México,2010,49.73802,4.93697023391724
+razon-mortalidad-materna,gasto-educ-pib,NIC,Nicaragua,2010,96.46102,4.48422002792358
+razon-mortalidad-materna,gasto-educ-pib,PRY,Paraguay,2010,135.98734,2.7707200050354
+razon-mortalidad-materna,gasto-educ-pib,PER,Perú,2010,85.92868,2.86730003356934
+razon-mortalidad-materna,gasto-educ-pib,DOM,República Dominicana,2010,91.65964,1.88728788680129
+razon-mortalidad-materna,gasto-educ-pib,ARG,Argentina,2011,48.47361,5.29063987731934
+razon-mortalidad-materna,gasto-educ-pib,BHS,Bahamas,2011,74.34305,2.35576638581195
+razon-mortalidad-materna,gasto-educ-pib,BLZ,Belice,2011,39.26565,5.51786910233588
+razon-mortalidad-materna,gasto-educ-pib,BRA,Brasil,2011,61.86484,5.73741006851196
+razon-mortalidad-materna,gasto-educ-pib,CAN,Canadá,2011,11.33171,5.26204013824463
+razon-mortalidad-materna,gasto-educ-pib,CHL,Chile,2011,19.96513,4.06173992156982
+razon-mortalidad-materna,gasto-educ-pib,COL,Colombia,2011,75.07368,4.46608018875122
+razon-mortalidad-materna,gasto-educ-pib,CRI,Costa Rica,2011,28.43681,6.37988996505737
+razon-mortalidad-materna,gasto-educ-pib,ECU,Ecuador,2011,76.62996,4.74424982070923
+razon-mortalidad-materna,gasto-educ-pib,SLV,El Salvador,2011,35.43197,3.89854001998901
+razon-mortalidad-materna,gasto-educ-pib,GRD,Granada,2011,43.92505,5.48532342071091
+razon-mortalidad-materna,gasto-educ-pib,GTM,Guatemala,2011,120.02704,2.96865010261536
+razon-mortalidad-materna,gasto-educ-pib,GUY,Guyana,2011,135.16405,2.50669002532959
+razon-mortalidad-materna,gasto-educ-pib,JAM,Jamaica,2011,89.41778,6.26664018630981
+razon-mortalidad-materna,gasto-educ-pib,MEX,México,2011,47.28058,4.9040699005127
+razon-mortalidad-materna,gasto-educ-pib,PAN,Panamá,2011,54.77635,3.07034993171692
+razon-mortalidad-materna,gasto-educ-pib,PRY,Paraguay,2011,120.28351,3.69283008575439
+razon-mortalidad-materna,gasto-educ-pib,PER,Perú,2011,83.21231,2.6635000705719
+razon-mortalidad-materna,gasto-educ-pib,DOM,República Dominicana,2011,90.67073,1.87925755786153
+razon-mortalidad-materna,gasto-educ-pib,URY,Uruguay,2011,16.6331,4.14937019348145
+razon-mortalidad-materna,gasto-educ-pib,ARG,Argentina,2012,49.27162,5.3458399772644
+razon-mortalidad-materna,gasto-educ-pib,BHS,Bahamas,2012,70.75463,2.30391197238935
+razon-mortalidad-materna,gasto-educ-pib,BRB,Barbados,2012,39.53492,4.58823013305664
+razon-mortalidad-materna,gasto-educ-pib,BLZ,Belice,2012,40.26288,5.47351989539787
+razon-mortalidad-materna,gasto-educ-pib,BRA,Brasil,2012,59.73186,5.85510015487671
+razon-mortalidad-materna,gasto-educ-pib,COL,Colombia,2012,72.96662,4.37038993835449
+razon-mortalidad-materna,gasto-educ-pib,CRI,Costa Rica,2012,27.46544,6.58239984512329
+razon-mortalidad-materna,gasto-educ-pib,CUB,Cuba,2012,42.49497,11.5516604913797
+razon-mortalidad-materna,gasto-educ-pib,DMA,Dominica,2012,51.43396,4.52896287885139
+razon-mortalidad-materna,gasto-educ-pib,ECU,Ecuador,2012,72.43839,4.65310001373291
+razon-mortalidad-materna,gasto-educ-pib,SLV,El Salvador,2012,36.24238,3.7124400138855
+razon-mortalidad-materna,gasto-educ-pib,GRD,Granada,2012,43.652589999999996,5.07225880686028
+razon-mortalidad-materna,gasto-educ-pib,GTM,Guatemala,2012,114.71297,3.00524997711182
+razon-mortalidad-materna,gasto-educ-pib,GUY,Guyana,2012,132.98054,2.24131989479065
+razon-mortalidad-materna,gasto-educ-pib,HND,Honduras,2012,64.36368,6.29972793577391
+razon-mortalidad-materna,gasto-educ-pib,JAM,Jamaica,2012,88.924,6.1124701499939
+razon-mortalidad-materna,gasto-educ-pib,MEX,México,2012,45.78834,4.88349008560181
+razon-mortalidad-materna,gasto-educ-pib,PRY,Paraguay,2012,99.71234,3.66877007484436
+razon-mortalidad-materna,gasto-educ-pib,PER,Perú,2012,78.76699,2.92276000976562
+razon-mortalidad-materna,gasto-educ-pib,URY,Uruguay,2012,16.48729,4.09353338283242
+razon-mortalidad-materna,gasto-educ-pib,ARG,Argentina,2013,46.72781,5.43660020828247
+razon-mortalidad-materna,gasto-educ-pib,BHS,Bahamas,2013,74.16211,2.4242884241713
+razon-mortalidad-materna,gasto-educ-pib,BRB,Barbados,2013,39.66056,4.50306987762451
+razon-mortalidad-materna,gasto-educ-pib,BLZ,Belice,2013,41.36256,5.12474012374878
+razon-mortalidad-materna,gasto-educ-pib,BRA,Brasil,2013,61.03989,5.8388500213623
+razon-mortalidad-materna,gasto-educ-pib,CAN,Canadá,2013,11.1419,4.58899021148682
+razon-mortalidad-materna,gasto-educ-pib,CHL,Chile,2013,16.94691,4.54814004898071
+razon-mortalidad-materna,gasto-educ-pib,COL,Colombia,2013,71.75142,4.87855005264282
+razon-mortalidad-materna,gasto-educ-pib,CRI,Costa Rica,2013,26.58293,6.68738985061646
+razon-mortalidad-materna,gasto-educ-pib,CUB,Cuba,2013,42.28007,10.67169596101
+razon-mortalidad-materna,gasto-educ-pib,DMA,Dominica,2013,49.8509,4.35428103166344
+razon-mortalidad-materna,gasto-educ-pib,ECU,Ecuador,2013,68.12781,4.92997980117798
+razon-mortalidad-materna,gasto-educ-pib,SLV,El Salvador,2013,38.73457,3.80149006843567
+razon-mortalidad-materna,gasto-educ-pib,GTM,Guatemala,2013,111.22997,2.88808989524841
+razon-mortalidad-materna,gasto-educ-pib,HND,Honduras,2013,61.85652,5.87493991851807
+razon-mortalidad-materna,gasto-educ-pib,JAM,Jamaica,2013,93.90488,6.25106000900269
+razon-mortalidad-materna,gasto-educ-pib,MEX,México,2013,44.95863,4.50858020782471
+razon-mortalidad-materna,gasto-educ-pib,PRY,Paraguay,2013,83.61236,2.67871193892232
+razon-mortalidad-materna,gasto-educ-pib,PER,Perú,2013,75.02815,3.29729008674622
+razon-mortalidad-materna,gasto-educ-pib,PRI,Puerto Rico,2013,15.83413,6.48106002807617
+razon-mortalidad-materna,gasto-educ-pib,DOM,República Dominicana,2013,90.95711,3.62818152019188
+razon-mortalidad-materna,gasto-educ-pib,URY,Uruguay,2013,16.22154,4.23893022537231
+razon-mortalidad-materna,gasto-educ-pib,ARG,Argentina,2014,43.4515,5.36144018173218
+razon-mortalidad-materna,gasto-educ-pib,BHS,Bahamas,2014,77.69537,2.24714705533939
+razon-mortalidad-materna,gasto-educ-pib,BRB,Barbados,2014,38.54943,5.35950994491577
+razon-mortalidad-materna,gasto-educ-pib,BLZ,Belice,2014,43.66217,5.1395001411438
+razon-mortalidad-materna,gasto-educ-pib,BRA,Brasil,2014,63.39032,5.94848012924194
+razon-mortalidad-materna,gasto-educ-pib,CAN,Canadá,2014,11.51086,4.84358978271484
+razon-mortalidad-materna,gasto-educ-pib,CHL,Chile,2014,15.7487,4.75168991088867
+razon-mortalidad-materna,gasto-educ-pib,COL,Colombia,2014,70.72659,4.62945985794067
+razon-mortalidad-materna,gasto-educ-pib,CRI,Costa Rica,2014,26.57139,6.67953014373779
+razon-mortalidad-materna,gasto-educ-pib,CUB,Cuba,2014,42.14867,9.6074568445536
+razon-mortalidad-materna,gasto-educ-pib,DMA,Dominica,2014,52.83572,4.33216630134647
+razon-mortalidad-materna,gasto-educ-pib,ECU,Ecuador,2014,64.88269,5.21019983291626
+razon-mortalidad-materna,gasto-educ-pib,SLV,El Salvador,2014,40.74637,3.82416009902954
+razon-mortalidad-materna,gasto-educ-pib,GRD,Granada,2014,44.87656,4.47756594772942
+razon-mortalidad-materna,gasto-educ-pib,GTM,Guatemala,2014,110.58089,2.98563003540039
+razon-mortalidad-materna,gasto-educ-pib,GUY,Guyana,2014,120.58509,4.36033010482788
+razon-mortalidad-materna,gasto-educ-pib,HTI,Haití,2014,372.7467,1.75226998329163
+razon-mortalidad-materna,gasto-educ-pib,HND,Honduras,2014,59.71337,7.09010982513428
+razon-mortalidad-materna,gasto-educ-pib,JAM,Jamaica,2014,99.81889,6.01584005355835
+razon-mortalidad-materna,gasto-educ-pib,MEX,México,2014,43.70399,5.06807994842529
+razon-mortalidad-materna,gasto-educ-pib,NIC,Nicaragua,2014,82.61405,4.08329010009766
+razon-mortalidad-materna,gasto-educ-pib,PAN,Panamá,2014,49.01167,3.08107995986939
+razon-mortalidad-materna,gasto-educ-pib,PRY,Paraguay,2014,70.40385,2.59655894629063
+razon-mortalidad-materna,gasto-educ-pib,PER,Perú,2014,72.96355,3.69599008560181
+razon-mortalidad-materna,gasto-educ-pib,PRI,Puerto Rico,2014,15.95047,6.07265996932983
+razon-mortalidad-materna,gasto-educ-pib,DOM,República Dominicana,2014,95.29755,3.62243443144513
+razon-mortalidad-materna,gasto-educ-pib,URY,Uruguay,2014,16.32017,4.26735019683838
+razon-mortalidad-materna,gasto-educ-pib,ARG,Argentina,2015,38.61611,5.77611017227173
+razon-mortalidad-materna,gasto-educ-pib,BHS,Bahamas,2015,82.83132,2.2723175918231
+razon-mortalidad-materna,gasto-educ-pib,BRB,Barbados,2015,37.02361,5.15997517232471
+razon-mortalidad-materna,gasto-educ-pib,BLZ,Belice,2015,47.15458,5.35711002349854
+razon-mortalidad-materna,gasto-educ-pib,BRA,Brasil,2015,62.95876,6.24105978012085
+razon-mortalidad-materna,gasto-educ-pib,CAN,Canadá,2015,11.31237,4.73936986923218
+razon-mortalidad-materna,gasto-educ-pib,CHL,Chile,2015,14.44723,4.90390014648438
+razon-mortalidad-materna,gasto-educ-pib,COL,Colombia,2015,70.25705,4.47038984298706
+razon-mortalidad-materna,gasto-educ-pib,CRI,Costa Rica,2015,25.54293,6.87349987030029
+razon-mortalidad-materna,gasto-educ-pib,CUB,Cuba,2015,41.48397,8.9633578559392
+razon-mortalidad-materna,gasto-educ-pib,DMA,Dominica,2015,62.77061,3.09856009483337
+razon-mortalidad-materna,gasto-educ-pib,ECU,Ecuador,2015,64.22836,5.10570001602173
+razon-mortalidad-materna,gasto-educ-pib,SLV,El Salvador,2015,42.94738,3.90987992286682
+razon-mortalidad-materna,gasto-educ-pib,GRD,Granada,2015,46.20516,4.23861035989182
+razon-mortalidad-materna,gasto-educ-pib,GTM,Guatemala,2015,111.9959,3.03032994270325
+razon-mortalidad-materna,gasto-educ-pib,GUY,Guyana,2015,117.17014,3.89569997787476
+razon-mortalidad-materna,gasto-educ-pib,HTI,Haití,2015,363.74783,1.85497999191284
+razon-mortalidad-materna,gasto-educ-pib,HND,Honduras,2015,57.10412,6.41298007965088
+razon-mortalidad-materna,gasto-educ-pib,JAM,Jamaica,2015,100.26626,5.45523023605347
+razon-mortalidad-materna,gasto-educ-pib,MEX,México,2015,43.15536,5.05087995529175
+razon-mortalidad-materna,gasto-educ-pib,NIC,Nicaragua,2015,80.67301,4.07843017578125
+razon-mortalidad-materna,gasto-educ-pib,PAN,Panamá,2015,48.08212,3.26552009582519
+razon-mortalidad-materna,gasto-educ-pib,PRY,Paraguay,2015,63.68524,3.33377822870463
+razon-mortalidad-materna,gasto-educ-pib,PER,Perú,2015,71.46575,3.96933007240295
+razon-mortalidad-materna,gasto-educ-pib,PRI,Puerto Rico,2015,15.15107,3.34032241682023
+razon-mortalidad-materna,gasto-educ-pib,DOM,República Dominicana,2015,102.25961,3.60400277306673
+razon-mortalidad-materna,gasto-educ-pib,SUR,Surinam,2015,115.13538,5.53479610522553
+razon-mortalidad-materna,gasto-educ-pib,URY,Uruguay,2015,15.97752,4.20636987686157
+razon-mortalidad-materna,gasto-educ-pib,ARG,Argentina,2016,39.5128,5.54548978805542
+razon-mortalidad-materna,gasto-educ-pib,BHS,Bahamas,2016,77.20687,2.58786212973921
+razon-mortalidad-materna,gasto-educ-pib,BRB,Barbados,2016,36.26096,4.19719982147217
+razon-mortalidad-materna,gasto-educ-pib,BLZ,Belice,2016,51.40328,5.72603988647461
+razon-mortalidad-materna,gasto-educ-pib,BRA,Brasil,2016,63.64146,6.31403017044067
+razon-mortalidad-materna,gasto-educ-pib,CAN,Canadá,2016,12.0039,4.81642007827759
+razon-mortalidad-materna,gasto-educ-pib,CHL,Chile,2016,13.16912,5.36645984649658
+razon-mortalidad-materna,gasto-educ-pib,COL,Colombia,2016,68.82124,4.47721004486084
+razon-mortalidad-materna,gasto-educ-pib,CRI,Costa Rica,2016,27.03126,6.89395999908447
+razon-mortalidad-materna,gasto-educ-pib,CUB,Cuba,2016,40.45728,9.01309318032688
+razon-mortalidad-materna,gasto-educ-pib,DMA,Dominica,2016,47.78684,5.12971951862684
+razon-mortalidad-materna,gasto-educ-pib,ECU,Ecuador,2016,64.70521,4.46397668804552
+razon-mortalidad-materna,gasto-educ-pib,SLV,El Salvador,2016,43.40186,3.82523989677429
+razon-mortalidad-materna,gasto-educ-pib,GTM,Guatemala,2016,110.10903,2.94474005699158
+razon-mortalidad-materna,gasto-educ-pib,GUY,Guyana,2016,114.12205,4.73775005340576
+razon-mortalidad-materna,gasto-educ-pib,HTI,Haití,2016,356.13676,1.38776004314423
+razon-mortalidad-materna,gasto-educ-pib,HND,Honduras,2016,54.65124,6.09509492079297
+razon-mortalidad-materna,gasto-educ-pib,JAM,Jamaica,2016,102.13734,5.31459999084473
+razon-mortalidad-materna,gasto-educ-pib,MEX,México,2016,43.15522,4.75795984268188
+razon-mortalidad-materna,gasto-educ-pib,NIC,Nicaragua,2016,76.77425,4.08114004135132
+razon-mortalidad-materna,gasto-educ-pib,PAN,Panamá,2016,46.56604,3.32278990745544
+razon-mortalidad-materna,gasto-educ-pib,PRY,Paraguay,2016,59.62665,3.43498992919922
+razon-mortalidad-materna,gasto-educ-pib,PER,Perú,2016,68.76235,3.81316995620727
+razon-mortalidad-materna,gasto-educ-pib,PRI,Puerto Rico,2016,15.37008,2.78358429967595
+razon-mortalidad-materna,gasto-educ-pib,DOM,República Dominicana,2016,105.72369,3.85049560792469
+razon-mortalidad-materna,gasto-educ-pib,SUR,Surinam,2016,108.56336,5.64051904970974
+razon-mortalidad-materna,gasto-educ-pib,URY,Uruguay,2016,16.14472,4.36420011520386
+razon-mortalidad-materna,gasto-educ-pib,ARG,Argentina,2017,38.34257,5.45432996749878
+razon-mortalidad-materna,gasto-educ-pib,BHS,Bahamas,2017,78.97838,2.69510162053495
+razon-mortalidad-materna,gasto-educ-pib,BRB,Barbados,2017,36.58056,3.956209897995
+razon-mortalidad-materna,gasto-educ-pib,BLZ,Belice,2017,55.84857,5.95071983337402
+razon-mortalidad-materna,gasto-educ-pib,BRA,Brasil,2017,61.02473,6.32047986984253
+razon-mortalidad-materna,gasto-educ-pib,CAN,Canadá,2017,12.26458,4.95998001098633
+razon-mortalidad-materna,gasto-educ-pib,CHL,Chile,2017,12.10446,5.43278980255127
+razon-mortalidad-materna,gasto-educ-pib,COL,Colombia,2017,68.04436,4.53551006317139
+razon-mortalidad-materna,gasto-educ-pib,CRI,Costa Rica,2017,26.99787,7.06981992721558
+razon-mortalidad-materna,gasto-educ-pib,CUB,Cuba,2017,39.2643,8.44413540438793
+razon-mortalidad-materna,gasto-educ-pib,DMA,Dominica,2017,43.59389,4.71605005720456
+razon-mortalidad-materna,gasto-educ-pib,ECU,Ecuador,2017,61.50861,4.60667733499397
+razon-mortalidad-materna,gasto-educ-pib,SLV,El Salvador,2017,43.87454,3.7252299785614
+razon-mortalidad-materna,gasto-educ-pib,GRD,Granada,2017,44.92742,3.17379999160767
+razon-mortalidad-materna,gasto-educ-pib,GTM,Guatemala,2017,106.93783,2.95009994506836
+razon-mortalidad-materna,gasto-educ-pib,GUY,Guyana,2017,109.86793,4.6647801399231
+razon-mortalidad-materna,gasto-educ-pib,HTI,Haití,2017,350.62073,1.49846994876862
+razon-mortalidad-materna,gasto-educ-pib,HND,Honduras,2017,52.96214,5.74434396129576
+razon-mortalidad-materna,gasto-educ-pib,JAM,Jamaica,2017,105.55131,5.26015996932983
+razon-mortalidad-materna,gasto-educ-pib,MEX,México,2017,43.93981,4.39752006530762
+razon-mortalidad-materna,gasto-educ-pib,NIC,Nicaragua,2017,72.42528,4.35768985748291
+razon-mortalidad-materna,gasto-educ-pib,PAN,Panamá,2017,46.60967,3.37834000587463
+razon-mortalidad-materna,gasto-educ-pib,PRY,Paraguay,2017,58.41089,3.09062070242279
+razon-mortalidad-materna,gasto-educ-pib,PER,Perú,2017,66.663,3.93130993843079
+razon-mortalidad-materna,gasto-educ-pib,PRI,Puerto Rico,2017,16.54053,2.72538873126429
+razon-mortalidad-materna,gasto-educ-pib,DOM,República Dominicana,2017,103.77688,3.92026752279272
+razon-mortalidad-materna,gasto-educ-pib,SUR,Surinam,2017,104.81762,5.45861311514349
+razon-mortalidad-materna,gasto-educ-pib,URY,Uruguay,2017,16.40602,4.41787004470825
+razon-mortalidad-materna,gasto-educ-pib,ARG,Argentina,2018,38.48333,4.87773990631104
+razon-mortalidad-materna,gasto-educ-pib,BHS,Bahamas,2018,82.14974,2.49264112462151
+razon-mortalidad-materna,gasto-educ-pib,BRB,Barbados,2018,36.70521,5.40447825597088
+razon-mortalidad-materna,gasto-educ-pib,BLZ,Belice,2018,59.97342,6.12779998779297
+razon-mortalidad-materna,gasto-educ-pib,BRA,Brasil,2018,62.3322,6.08851003646851
+razon-mortalidad-materna,gasto-educ-pib,CAN,Canadá,2018,12.58052,4.88898992538452
+razon-mortalidad-materna,gasto-educ-pib,CHL,Chile,2018,11.39816,5.473060131073
+razon-mortalidad-materna,gasto-educ-pib,COL,Colombia,2018,67.3379,4.44910001754761
+razon-mortalidad-materna,gasto-educ-pib,CRI,Costa Rica,2018,28.37408,6.76992988586426
+razon-mortalidad-materna,gasto-educ-pib,CUB,Cuba,2018,39.17947,8.02498461098619
+razon-mortalidad-materna,gasto-educ-pib,DMA,Dominica,2018,42.62802,5.1536046272165
+razon-mortalidad-materna,gasto-educ-pib,ECU,Ecuador,2018,60.93285,4.6250260585881
+razon-mortalidad-materna,gasto-educ-pib,SLV,El Salvador,2018,42.82344,3.60575008392334
+razon-mortalidad-materna,gasto-educ-pib,GRD,Granada,2018,46.42027,3.55919341882594
+razon-mortalidad-materna,gasto-educ-pib,GTM,Guatemala,2018,107.1139,3.13193988800049
+razon-mortalidad-materna,gasto-educ-pib,GUY,Guyana,2018,105.12369,4.45058012008667
+razon-mortalidad-materna,gasto-educ-pib,HTI,Haití,2018,358.46475,1.63715994358063
+razon-mortalidad-materna,gasto-educ-pib,HND,Honduras,2018,51.75144,6.05646991729736
+razon-mortalidad-materna,gasto-educ-pib,JAM,Jamaica,2018,112.23032,5.41379022598267
+razon-mortalidad-materna,gasto-educ-pib,MEX,México,2018,44.00298,4.13944005966187
+razon-mortalidad-materna,gasto-educ-pib,NIC,Nicaragua,2018,66.82026,4.47380693256251
+razon-mortalidad-materna,gasto-educ-pib,PAN,Panamá,2018,43.42175,3.4524199962616
+razon-mortalidad-materna,gasto-educ-pib,PRY,Paraguay,2018,57.68947,3.2961960606943
+razon-mortalidad-materna,gasto-educ-pib,PER,Perú,2018,66.17149,3.71392011642456
+razon-mortalidad-materna,gasto-educ-pib,PRI,Puerto Rico,2018,14.01131,2.60388715714737
+razon-mortalidad-materna,gasto-educ-pib,DOM,República Dominicana,2018,106.73394,3.92849467476802
+razon-mortalidad-materna,gasto-educ-pib,SUR,Surinam,2018,101.16503,4.92259355761269
+razon-mortalidad-materna,gasto-educ-pib,URY,Uruguay,2018,15.98041,4.60361003875732
+razon-mortalidad-materna,gasto-educ-pib,ARG,Argentina,2019,36.41051,4.77165985107422
+razon-mortalidad-materna,gasto-educ-pib,BHS,Bahamas,2019,82.14319,2.62573176503127
+razon-mortalidad-materna,gasto-educ-pib,BRB,Barbados,2019,36.4975,3.72228002548218
+razon-mortalidad-materna,gasto-educ-pib,BLZ,Belice,2019,61.29752,5.96377992630005
+razon-mortalidad-materna,gasto-educ-pib,BRA,Brasil,2019,64.63298,5.96346998214722
+razon-mortalidad-materna,gasto-educ-pib,CAN,Canadá,2019,12.26644,4.77293014526367
+razon-mortalidad-materna,gasto-educ-pib,CHL,Chile,2019,11.09544,5.62629985809326
+razon-mortalidad-materna,gasto-educ-pib,COL,Colombia,2019,66.19187,4.51068019866943
+razon-mortalidad-materna,gasto-educ-pib,CRI,Costa Rica,2019,25.72865,6.73809003829956
+razon-mortalidad-materna,gasto-educ-pib,CUB,Cuba,2019,39.72424,9.04700486137163
+razon-mortalidad-materna,gasto-educ-pib,DMA,Dominica,2019,40.82373,4.88721990585327
+razon-mortalidad-materna,gasto-educ-pib,ECU,Ecuador,2019,61.52598,4.24576997756958
+razon-mortalidad-materna,gasto-educ-pib,SLV,El Salvador,2019,40.28957,3.38710999488831
+razon-mortalidad-materna,gasto-educ-pib,GTM,Guatemala,2019,106.15478,3.19297003746033
+razon-mortalidad-materna,gasto-educ-pib,HTI,Haití,2019,350.62432,1.08414978067408
+razon-mortalidad-materna,gasto-educ-pib,HND,Honduras,2019,51.12075,5.98198266311593
+razon-mortalidad-materna,gasto-educ-pib,JAM,Jamaica,2019,120.11501,5.16364002227783
+razon-mortalidad-materna,gasto-educ-pib,NIC,Nicaragua,2019,69.49821,4.59991969121332
+razon-mortalidad-materna,gasto-educ-pib,PAN,Panamá,2019,40.72978,3.28122011579173
+razon-mortalidad-materna,gasto-educ-pib,PRY,Paraguay,2019,57.57454,3.48983027194334
+razon-mortalidad-materna,gasto-educ-pib,PER,Perú,2019,60.19835,3.822429895401
+razon-mortalidad-materna,gasto-educ-pib,PRI,Puerto Rico,2019,13.06405,3.32791002069889
+razon-mortalidad-materna,gasto-educ-pib,DOM,República Dominicana,2019,118.09314,4.04276873126053
+razon-mortalidad-materna,gasto-educ-pib,SUR,Surinam,2019,97.15345,6.77857289012664
+razon-mortalidad-materna,gasto-educ-pib,URY,Uruguay,2019,15.93727,4.62834978103638
+razon-mortalidad-materna,gasto-educ-pib,ARG,Argentina,2020,39.67996,5.27689981460571
+razon-mortalidad-materna,gasto-educ-pib,BHS,Bahamas,2020,84.35691,3.7125229961238
+razon-mortalidad-materna,gasto-educ-pib,BRB,Barbados,2020,38.65383,3.86529994010925
+razon-mortalidad-materna,gasto-educ-pib,BLZ,Belice,2020,88.48717,5.21301984786987
+razon-mortalidad-materna,gasto-educ-pib,BRA,Brasil,2020,84.88166,5.7714900970459
+razon-mortalidad-materna,gasto-educ-pib,CAN,Canadá,2020,16.65174,4.88794994354248
+razon-mortalidad-materna,gasto-educ-pib,CHL,Chile,2020,12.30187,5.62992000579834
+razon-mortalidad-materna,gasto-educ-pib,COL,Colombia,2020,93.67608,5.26166009902954
+razon-mortalidad-materna,gasto-educ-pib,CRI,Costa Rica,2020,34.08731,6.62899017333984
+razon-mortalidad-materna,gasto-educ-pib,CUB,Cuba,2020,39.95422,11.5248184008093
+razon-mortalidad-materna,gasto-educ-pib,DMA,Dominica,2020,46.64251,4.45777988433838
+razon-mortalidad-materna,gasto-educ-pib,ECU,Ecuador,2020,91.49858,4.26103019714355
+razon-mortalidad-materna,gasto-educ-pib,SLV,El Salvador,2020,48.01989,3.66088008880615
+razon-mortalidad-materna,gasto-educ-pib,GTM,Guatemala,2020,102.4683,3.29485011100769
+razon-mortalidad-materna,gasto-educ-pib,HTI,Haití,2020,346.25727,1.11353641558643
+razon-mortalidad-materna,gasto-educ-pib,HND,Honduras,2020,57.15552,6.09801328648889
+razon-mortalidad-materna,gasto-educ-pib,JAM,Jamaica,2020,126.19424,5.38065828197341
+razon-mortalidad-materna,gasto-educ-pib,MEX,México,2020,61.48252,4.4996600151062
+razon-mortalidad-materna,gasto-educ-pib,NIC,Nicaragua,2020,86.79423,4.58034059162685
+razon-mortalidad-materna,gasto-educ-pib,PAN,Panamá,2020,74.18438,4.30487012863159
+razon-mortalidad-materna,gasto-educ-pib,PRY,Paraguay,2020,68.64985,3.93615007400513
+razon-mortalidad-materna,gasto-educ-pib,PER,Perú,2020,75.04343,4.25937986373901
+razon-mortalidad-materna,gasto-educ-pib,PRI,Puerto Rico,2020,10.50316,4.28663184360846
+razon-mortalidad-materna,gasto-educ-pib,DOM,República Dominicana,2020,121.46605,4.51769850778985
+razon-mortalidad-materna,gasto-educ-pib,SUR,Surinam,2020,94.49409,4.58425708265782
+razon-mortalidad-materna,gasto-educ-pib,URY,Uruguay,2020,19.56055,4.55217981338501
+razon-mortalidad-materna,gasto-educ-pib,ARG,Argentina,2021,76.48618,4.65393018722534
+razon-mortalidad-materna,gasto-educ-pib,BHS,Bahamas,2021,174.29421,3.04890655208507
+razon-mortalidad-materna,gasto-educ-pib,BRB,Barbados,2021,38.48689,4.49793004989624
+razon-mortalidad-materna,gasto-educ-pib,BLZ,Belice,2021,156.63585,5.96298980712891
+razon-mortalidad-materna,gasto-educ-pib,BRA,Brasil,2021,127.99026,5.4969801902771
+razon-mortalidad-materna,gasto-educ-pib,CAN,Canadá,2021,13.58174,4.74858999252319
+razon-mortalidad-materna,gasto-educ-pib,CHL,Chile,2021,14.38931,5.00225019454956
+razon-mortalidad-materna,gasto-educ-pib,CRI,Costa Rica,2021,43.94856,6.24842977523804
+razon-mortalidad-materna,gasto-educ-pib,CUB,Cuba,2021,171.67994,9.3858620562531
+razon-mortalidad-materna,gasto-educ-pib,DMA,Dominica,2021,110.22343,5.71689183034862
+razon-mortalidad-materna,gasto-educ-pib,ECU,Ecuador,2021,93.3707,3.65649008750915
+razon-mortalidad-materna,gasto-educ-pib,SLV,El Salvador,2021,58.47763,3.57766008377075
+razon-mortalidad-materna,gasto-educ-pib,GRD,Granada,2021,52.00749,4.09030334217367
+razon-mortalidad-materna,gasto-educ-pib,GTM,Guatemala,2021,125.27008,3.09189009666443
+razon-mortalidad-materna,gasto-educ-pib,HTI,Haití,2021,384.6512,1.24275181117048
+razon-mortalidad-materna,gasto-educ-pib,HND,Honduras,2021,88.2459,5.88160201792279
+razon-mortalidad-materna,gasto-educ-pib,JAM,Jamaica,2021,186.25268,5.63122987747192
+razon-mortalidad-materna,gasto-educ-pib,MEX,México,2021,103.87792,4.23823976516724
+razon-mortalidad-materna,gasto-educ-pib,NIC,Nicaragua,2021,123.59525,4.08717467298944
+razon-mortalidad-materna,gasto-educ-pib,PAN,Panamá,2021,59.22772,3.71198010444641
+razon-mortalidad-materna,gasto-educ-pib,PRY,Paraguay,2021,139.9224,3.41070008277893
+razon-mortalidad-materna,gasto-educ-pib,PER,Perú,2021,141.45583,3.92765998840332
+razon-mortalidad-materna,gasto-educ-pib,PRI,Puerto Rico,2021,49.80809,3.7296700261025
+razon-mortalidad-materna,gasto-educ-pib,DOM,República Dominicana,2021,152.54161,3.58043271614957
+razon-mortalidad-materna,gasto-educ-pib,SUR,Surinam,2021,144.27119,4.13154972947739
+razon-mortalidad-materna,gasto-educ-pib,URY,Uruguay,2021,49.46617,4.46211004257202
+razon-mortalidad-materna,gasto-educ-pib,ARG,Argentina,2022,39.32267,4.79263019561768
+razon-mortalidad-materna,gasto-educ-pib,BHS,Bahamas,2022,80.06993,2.62367021406169
+razon-mortalidad-materna,gasto-educ-pib,BRB,Barbados,2022,37.93933,4.14000988006592
+razon-mortalidad-materna,gasto-educ-pib,BLZ,Belice,2022,109.63405,4.60415983200073
+razon-mortalidad-materna,gasto-educ-pib,BRA,Brasil,2022,103.96809,5.61920976638794
+razon-mortalidad-materna,gasto-educ-pib,CAN,Canadá,2022,14.63701,4.84426021575928
+razon-mortalidad-materna,gasto-educ-pib,CHL,Chile,2022,11.7096,4.91201019287109
+razon-mortalidad-materna,gasto-educ-pib,CRI,Costa Rica,2022,27.41604,5.5472297668457
+razon-mortalidad-materna,gasto-educ-pib,CUB,Cuba,2022,40.95331,8.44086351669284
+razon-mortalidad-materna,gasto-educ-pib,DMA,Dominica,2022,43.89311,6.04314243406571
+razon-mortalidad-materna,gasto-educ-pib,ECU,Ecuador,2022,68.72916,3.61301994323731
+razon-mortalidad-materna,gasto-educ-pib,SLV,El Salvador,2022,38.76226,3.26848006248474
+razon-mortalidad-materna,gasto-educ-pib,GRD,Granada,2022,49.9391,4.03767284869161
+razon-mortalidad-materna,gasto-educ-pib,GTM,Guatemala,2022,96.5693,3.20787000656128
+razon-mortalidad-materna,gasto-educ-pib,HTI,Haití,2022,330.84864,1.02689812206798
+razon-mortalidad-materna,gasto-educ-pib,HND,Honduras,2022,48.08667,4.48280030802056
+razon-mortalidad-materna,gasto-educ-pib,JAM,Jamaica,2022,137.5833,5.35435009002685
+razon-mortalidad-materna,gasto-educ-pib,MEX,México,2022,45.44723,4.05987977981567
+razon-mortalidad-materna,gasto-educ-pib,NIC,Nicaragua,2022,61.13118,3.80001496174069
+razon-mortalidad-materna,gasto-educ-pib,PAN,Panamá,2022,40.19728,3.37781000137329
+razon-mortalidad-materna,gasto-educ-pib,PRY,Paraguay,2022,77.71228,3.39619994163513
+razon-mortalidad-materna,gasto-educ-pib,PER,Perú,2022,80.57387,3.83975005149841
+razon-mortalidad-materna,gasto-educ-pib,PRI,Puerto Rico,2022,55.33396,3.86129930773508
+razon-mortalidad-materna,gasto-educ-pib,DOM,República Dominicana,2022,124.12434,3.61088872070271
+razon-mortalidad-materna,gasto-educ-pib,SUR,Surinam,2022,87.71918,3.43460841988051
+razon-mortalidad-materna,gasto-educ-pib,URY,Uruguay,2022,19.75276,4.4795298576355
+razon-mortalidad-materna,gasto-educ-pib,ARG,Argentina,2023,33.22814,5.00324010848999
+razon-mortalidad-materna,gasto-educ-pib,BHS,Bahamas,2023,75.95361,2.74191570247934
+razon-mortalidad-materna,gasto-educ-pib,BRB,Barbados,2023,34.88119,3.7754499912262
+razon-mortalidad-materna,gasto-educ-pib,BLZ,Belice,2023,66.80087,4.23143005371094
+razon-mortalidad-materna,gasto-educ-pib,CRI,Costa Rica,2023,24.1198,5.31208992004395
+razon-mortalidad-materna,gasto-educ-pib,DMA,Dominica,2023,35.54812,4.69423746286593
+razon-mortalidad-materna,gasto-educ-pib,ECU,Ecuador,2023,55.37107,3.81964993476868
+razon-mortalidad-materna,gasto-educ-pib,SLV,El Salvador,2023,39.10834,3.18734002113342
+razon-mortalidad-materna,gasto-educ-pib,GRD,Granada,2023,48.24919,5.12544845968893
+razon-mortalidad-materna,gasto-educ-pib,GTM,Guatemala,2023,93.71639,3.10877990722656
+razon-mortalidad-materna,gasto-educ-pib,HTI,Haití,2023,327.56383,0.964648012977964
+razon-mortalidad-materna,gasto-educ-pib,HND,Honduras,2023,46.74992,4.54962037172702
+razon-mortalidad-materna,gasto-educ-pib,JAM,Jamaica,2023,130.14276,5.65453693979426
+razon-mortalidad-materna,gasto-educ-pib,NIC,Nicaragua,2023,60.3484,2.86954998970032
+razon-mortalidad-materna,gasto-educ-pib,PAN,Panamá,2023,37.00633,2.47225999832153
+razon-mortalidad-materna,gasto-educ-pib,PRY,Paraguay,2023,58.27149,3.393709897995
+razon-mortalidad-materna,gasto-educ-pib,PER,Perú,2023,51.44545,4.24538993835449
+razon-mortalidad-materna,gasto-educ-pib,PRI,Puerto Rico,2023,11.02504,4.26898753959873
+razon-mortalidad-materna,gasto-educ-pib,DOM,República Dominicana,2023,124.47325,3.7606477375256
+razon-mortalidad-materna,gasto-educ-pib,SUR,Surinam,2023,83.64146,2.86623341491363
+razon-mortalidad-materna,gasto-educ-pib,URY,Uruguay,2023,15.30536,4.76461982727051

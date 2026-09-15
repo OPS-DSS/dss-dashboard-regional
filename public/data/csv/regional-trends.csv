@@ -1,0 +1,1688 @@
+tipo,indicador,iso3,territorio,anio,valor
+dss,gasto-educ-pib,ARG,Argentina,1970,1.4580899477005
+dss,gasto-educ-pib,ECU,Ecuador,1970,2.00283002853394
+dss,gasto-educ-pib,GTM,Guatemala,1970,1.85871994495392
+dss,gasto-educ-pib,GUY,Guyana,1970,4.32897996902466
+dss,gasto-educ-pib,NIC,Nicaragua,1970,2.03858995437622
+dss,gasto-educ-pib,PAN,Panamá,1970,4.04328012466431
+dss,gasto-educ-pib,PRY,Paraguay,1970,2.10519003868103
+dss,gasto-educ-pib,DOM,República Dominicana,1970,2.64078998565674
+dss,gasto-educ-pib,VEN,Venezuela,1970,4.16286993026733
+dss,gasto-educ-pib,BRB,Barbados,1971,6.15065002441406
+dss,gasto-educ-pib,CAN,Canadá,1971,7.6842999458313
+dss,gasto-educ-pib,ECU,Ecuador,1971,1.87940001487732
+dss,gasto-educ-pib,GTM,Guatemala,1971,2.0255401134491
+dss,gasto-educ-pib,NIC,Nicaragua,1971,2.49202990531921
+dss,gasto-educ-pib,PAN,Panamá,1971,3.35391998291016
+dss,gasto-educ-pib,PRY,Paraguay,1971,2.26543998718262
+dss,gasto-educ-pib,PRI,Puerto Rico,1971,7.2505202293396
+dss,gasto-educ-pib,VEN,Venezuela,1971,4.1799201965332
+dss,gasto-educ-pib,ARG,Argentina,1972,1.93620002269745
+dss,gasto-educ-pib,BRB,Barbados,1972,6.79071998596191
+dss,gasto-educ-pib,CAN,Canadá,1972,7.58980989456177
+dss,gasto-educ-pib,PAN,Panamá,1972,3.9828200340271
+dss,gasto-educ-pib,PRI,Puerto Rico,1972,7.21458005905151
+dss,gasto-educ-pib,VEN,Venezuela,1972,4.83728981018066
+dss,gasto-educ-pib,ARG,Argentina,1973,1.78051996231079
+dss,gasto-educ-pib,BRB,Barbados,1973,6.72242021560669
+dss,gasto-educ-pib,BMU,Bermudas,1973,4.10790014266968
+dss,gasto-educ-pib,CAN,Canadá,1973,7.01386022567749
+dss,gasto-educ-pib,JAM,Jamaica,1973,3.63143992424011
+dss,gasto-educ-pib,PAN,Panamá,1973,3.48574995994568
+dss,gasto-educ-pib,PER,Perú,1973,3.39172005653381
+dss,gasto-educ-pib,PRI,Puerto Rico,1973,6.47992992401123
+dss,gasto-educ-pib,ARG,Argentina,1974,1.92351996898651
+dss,gasto-educ-pib,BRB,Barbados,1974,7.52374982833862
+dss,gasto-educ-pib,CAN,Canadá,1974,6.66714000701904
+dss,gasto-educ-pib,CHL,Chile,1974,3.66648006439209
+dss,gasto-educ-pib,JAM,Jamaica,1974,4.24897003173828
+dss,gasto-educ-pib,PAN,Panamá,1974,3.81979990005493
+dss,gasto-educ-pib,PRI,Puerto Rico,1974,7.28690004348755
+dss,gasto-educ-pib,VEN,Venezuela,1974,3.94795989990234
+dss,gasto-educ-pib,ARG,Argentina,1975,1.84360003471374
+dss,gasto-educ-pib,BMU,Bermudas,1975,3.43442010879517
+dss,gasto-educ-pib,CAN,Canadá,1975,6.42132997512817
+dss,gasto-educ-pib,CHL,Chile,1975,3.50703001022339
+dss,gasto-educ-pib,SLV,El Salvador,1975,0.904510021209717
+dss,gasto-educ-pib,JAM,Jamaica,1975,5.22878980636597
+dss,gasto-educ-pib,PAN,Panamá,1975,4.15451002120972
+dss,gasto-educ-pib,PRI,Puerto Rico,1975,6.22974014282227
+dss,gasto-educ-pib,VEN,Venezuela,1975,5.19851016998291
+dss,gasto-educ-pib,ARG,Argentina,1976,1.16563999652863
+dss,gasto-educ-pib,BRB,Barbados,1976,5.94479990005493
+dss,gasto-educ-pib,CAN,Canadá,1976,6.69841003417969
+dss,gasto-educ-pib,GTM,Guatemala,1976,1.62729001045227
+dss,gasto-educ-pib,JAM,Jamaica,1976,5.85832977294922
+dss,gasto-educ-pib,PAN,Panamá,1976,4.31272983551025
+dss,gasto-educ-pib,PRI,Puerto Rico,1976,7.14049005508423
+dss,gasto-educ-pib,ARG,Argentina,1977,1.71984004974365
+dss,gasto-educ-pib,BRB,Barbados,1977,6.51715993881226
+dss,gasto-educ-pib,CAN,Canadá,1977,6.71090984344482
+dss,gasto-educ-pib,ECU,Ecuador,1977,2.41883993148804
+dss,gasto-educ-pib,GUY,Guyana,1977,7.08872985839844
+dss,gasto-educ-pib,JAM,Jamaica,1977,6.02651977539062
+dss,gasto-educ-pib,PAN,Panamá,1977,4.28096008300781
+dss,gasto-educ-pib,PRI,Puerto Rico,1977,6.38756990432739
+dss,gasto-educ-pib,VEN,Venezuela,1977,5.25665998458862
+dss,gasto-educ-pib,ARG,Argentina,1978,1.93554997444153
+dss,gasto-educ-pib,CAN,Canadá,1978,7.07383012771606
+dss,gasto-educ-pib,CHL,Chile,1978,2.9989900588989298
+dss,gasto-educ-pib,HND,Honduras,1978,2.01904988288879
+dss,gasto-educ-pib,PAN,Panamá,1978,3.60597991943359
+dss,gasto-educ-pib,PRI,Puerto Rico,1978,6.68102979660034
+dss,gasto-educ-pib,ARG,Argentina,1979,2.4002799987793
+dss,gasto-educ-pib,CAN,Canadá,1979,6.69220018386841
+dss,gasto-educ-pib,CHL,Chile,1979,3.41297006607056
+dss,gasto-educ-pib,COL,Colombia,1979,1.75434005260468
+dss,gasto-educ-pib,GUY,Guyana,1979,9.37786960601807
+dss,gasto-educ-pib,HND,Honduras,1979,2.01298999786377
+dss,gasto-educ-pib,PAN,Panamá,1979,3.64254999160767
+dss,gasto-educ-pib,URY,Uruguay,1979,1.98713004589081
+dss,gasto-educ-pib,ARG,Argentina,1980,2.6071500778198202
+dss,gasto-educ-pib,CAN,Canadá,1980,6.46289014816284
+dss,gasto-educ-pib,CHL,Chile,1980,4.14156007766724
+dss,gasto-educ-pib,COL,Colombia,1980,1.72912001609802
+dss,gasto-educ-pib,CRI,Costa Rica,1980,7.34716987609863
+dss,gasto-educ-pib,CUB,Cuba,1980,8.36909008026123
+dss,gasto-educ-pib,HND,Honduras,1980,1.93636000156403
+dss,gasto-educ-pib,PAN,Panamá,1980,3.53567004203796
+dss,gasto-educ-pib,TTO,Trinidad y Tobago,1980,3.76807999610901
+dss,gasto-educ-pib,URY,Uruguay,1980,2.15950989723206
+dss,gasto-educ-pib,VEN,Venezuela,1980,4.40072011947632
+dss,gasto-educ-pib,CAN,Canadá,1981,6.40900993347168
+dss,gasto-educ-pib,CHL,Chile,1981,4.82065010070801
+dss,gasto-educ-pib,COL,Colombia,1981,2.59723997116089
+dss,gasto-educ-pib,HTI,Haití,1981,1.39374005794525
+dss,gasto-educ-pib,PAN,Panamá,1981,3.43179988861084
+dss,gasto-educ-pib,VEN,Venezuela,1981,5.18743991851807
+dss,gasto-educ-pib,ARG,Argentina,1982,1.59786999225616
+dss,gasto-educ-pib,CAN,Canadá,1982,6.49725008010864
+dss,gasto-educ-pib,CRI,Costa Rica,1982,4.88506984710693
+dss,gasto-educ-pib,HTI,Haití,1982,1.07954001426697
+dss,gasto-educ-pib,PAN,Panamá,1982,3.41850996017456
+dss,gasto-educ-pib,DOM,República Dominicana,1982,1.53891003131866
+dss,gasto-educ-pib,LCA,Santa Lucía,1982,5.53879022598267
+dss,gasto-educ-pib,TTO,Trinidad y Tobago,1982,5.45739984512329
+dss,gasto-educ-pib,VEN,Venezuela,1982,5.00895023345947
+dss,gasto-educ-pib,ARG,Argentina,1983,1.61749994754791
+dss,gasto-educ-pib,CAN,Canadá,1983,6.85547018051147
+dss,gasto-educ-pib,CRI,Costa Rica,1983,4.95777988433838
+dss,gasto-educ-pib,GUY,Guyana,1983,8.2534704208374
+dss,gasto-educ-pib,HTI,Haití,1983,1.0222100019455
+dss,gasto-educ-pib,PAN,Panamá,1983,3.55090999603271
+dss,gasto-educ-pib,DOM,República Dominicana,1983,1.46382999420166
+dss,gasto-educ-pib,TTO,Trinidad y Tobago,1983,5.76660013198853
+dss,gasto-educ-pib,VEN,Venezuela,1983,6.0598201751709
+dss,gasto-educ-pib,ARG,Argentina,1984,2.56972002983093
+dss,gasto-educ-pib,CAN,Canadá,1984,6.61841011047363
+dss,gasto-educ-pib,COL,Colombia,1984,3.00429010391235
+dss,gasto-educ-pib,ECU,Ecuador,1984,4.20342016220093
+dss,gasto-educ-pib,GUY,Guyana,1984,7.22747993469238
+dss,gasto-educ-pib,HTI,Haití,1984,0.986190021038055
+dss,gasto-educ-pib,PAN,Panamá,1984,3.46870994567871
+dss,gasto-educ-pib,DOM,República Dominicana,1984,1.33455002307892
+dss,gasto-educ-pib,TTO,Trinidad y Tobago,1984,5.87390995025635
+dss,gasto-educ-pib,URY,Uruguay,1984,2.37338995933533
+dss,gasto-educ-pib,VEN,Venezuela,1984,4.06372976303101
+dss,gasto-educ-pib,ARG,Argentina,1985,1.36186003684998
+dss,gasto-educ-pib,BMU,Bermudas,1985,3.03449010848999
+dss,gasto-educ-pib,CAN,Canadá,1985,6.18943023681641
+dss,gasto-educ-pib,COL,Colombia,1985,2.71527004241943
+dss,gasto-educ-pib,ECU,Ecuador,1985,5.23334980010986
+dss,gasto-educ-pib,HTI,Haití,1985,0.969290018081665
+dss,gasto-educ-pib,JAM,Jamaica,1985,5.39190006256104
+dss,gasto-educ-pib,PAN,Panamá,1985,3.52146005630493
+dss,gasto-educ-pib,PRY,Paraguay,1985,1.39584004878998
+dss,gasto-educ-pib,DOM,República Dominicana,1985,1.21019005775452
+dss,gasto-educ-pib,KNA,San Cristóbal y Nieves,1985,3.96502995491028
+dss,gasto-educ-pib,TTO,Trinidad y Tobago,1985,5.76774978637695
+dss,gasto-educ-pib,URY,Uruguay,1985,2.56679010391235
+dss,gasto-educ-pib,ARG,Argentina,1986,1.261549949646
+dss,gasto-educ-pib,CAN,Canadá,1986,6.02058982849121
+dss,gasto-educ-pib,CRI,Costa Rica,1986,4.42026996612549
+dss,gasto-educ-pib,ECU,Ecuador,1986,6.87237977981567
+dss,gasto-educ-pib,JAM,Jamaica,1986,4.60398006439209
+dss,gasto-educ-pib,PAN,Panamá,1986,3.34574007987976
+dss,gasto-educ-pib,VCT,San Vicente y las Granadinas,1986,4.42911005020142
+dss,gasto-educ-pib,LCA,Santa Lucía,1986,4.15467977523804
+dss,gasto-educ-pib,URY,Uruguay,1986,3.1028299331665
+dss,gasto-educ-pib,ARG,Argentina,1987,1.28229999542236
+dss,gasto-educ-pib,CAN,Canadá,1987,6.29827976226807
+dss,gasto-educ-pib,CHL,Chile,1987,2.7789900302887
+dss,gasto-educ-pib,NIC,Nicaragua,1987,5.35174989700317
+dss,gasto-educ-pib,PAN,Panamá,1987,3.87012004852295
+dss,gasto-educ-pib,KNA,San Cristóbal y Nieves,1987,2.64112997055054
+dss,gasto-educ-pib,VEN,Venezuela,1987,3.92751002311706
+dss,gasto-educ-pib,CAN,Canadá,1988,6.15022993087769
+dss,gasto-educ-pib,CRI,Costa Rica,1988,4.01322984695435
+dss,gasto-educ-pib,JAM,Jamaica,1988,3.94086003303528
+dss,gasto-educ-pib,VEN,Venezuela,1988,3.62941002845764
+dss,gasto-educ-pib,ARG,Argentina,1989,1.04612004756927
+dss,gasto-educ-pib,CAN,Canadá,1989,6.07406997680664
+dss,gasto-educ-pib,COL,Colombia,1989,2.70525002479553
+dss,gasto-educ-pib,CRI,Costa Rica,1989,4.07784986495972
+dss,gasto-educ-pib,DMA,Dominica,1989,4.28990983963013
+dss,gasto-educ-pib,JAM,Jamaica,1989,5.18397998809815
+dss,gasto-educ-pib,MEX,México,1989,2.2820100784301798
+dss,gasto-educ-pib,KNA,San Cristóbal y Nieves,1989,2.19795989990234
+dss,gasto-educ-pib,VCT,San Vicente y las Granadinas,1989,4.46868991851807
+dss,gasto-educ-pib,TTO,Trinidad y Tobago,1989,4.1998701095581
+dss,gasto-educ-pib,ARG,Argentina,1990,1.06737995147705
+dss,gasto-educ-pib,BMU,Bermudas,1990,3.13619995117188
+dss,gasto-educ-pib,CAN,Canadá,1990,5.96922016143799
+dss,gasto-educ-pib,CHL,Chile,1990,2.23059010505676
+dss,gasto-educ-pib,JAM,Jamaica,1990,4.7791600227356
+dss,gasto-educ-pib,MEX,México,1990,2.32498002052307
+dss,gasto-educ-pib,PRY,Paraguay,1990,1.04070997238159
+dss,gasto-educ-pib,TTO,Trinidad y Tobago,1990,3.65412998199463
+dss,gasto-educ-pib,VEN,Venezuela,1990,2.44671010971069
+dss,gasto-educ-pib,BRB,Barbados,1991,6.63870000839233
+dss,gasto-educ-pib,BMU,Bermudas,1991,3.15065002441406
+dss,gasto-educ-pib,CAN,Canadá,1991,6.85951995849609
+dss,gasto-educ-pib,CUB,Cuba,1991,7.14496994018555
+dss,gasto-educ-pib,HTI,Haití,1991,1.07398998737335
+dss,gasto-educ-pib,JAM,Jamaica,1991,4.38306999206543
+dss,gasto-educ-pib,MEX,México,1991,2.54800009727478
+dss,gasto-educ-pib,KNA,San Cristóbal y Nieves,1991,1.99845004081726
+dss,gasto-educ-pib,VCT,San Vicente y las Granadinas,1991,4.87377023696899
+dss,gasto-educ-pib,URY,Uruguay,1991,2.47907996177673
+dss,gasto-educ-pib,BMU,Bermudas,1992,3.47604990005493
+dss,gasto-educ-pib,CAN,Canadá,1992,6.74663019180298
+dss,gasto-educ-pib,JAM,Jamaica,1992,3.33665990829468
+dss,gasto-educ-pib,MEX,México,1992,3.00500988960266
+dss,gasto-educ-pib,NIC,Nicaragua,1992,2.98497009277344
+dss,gasto-educ-pib,KNA,San Cristóbal y Nieves,1992,2.30386996269226
+dss,gasto-educ-pib,URY,Uruguay,1992,2.41153001785278
+dss,gasto-educ-pib,VEN,Venezuela,1992,4.31067991256714
+dss,gasto-educ-pib,CAN,Canadá,1993,7.67834997177124
+dss,gasto-educ-pib,CHL,Chile,1993,2.35279989242554
+dss,gasto-educ-pib,CUB,Cuba,1993,7.07476997375488
+dss,gasto-educ-pib,GTM,Guatemala,1993,1.66575002670288
+dss,gasto-educ-pib,JAM,Jamaica,1993,3.21403002738953
+dss,gasto-educ-pib,DOM,República Dominicana,1993,0.773949980735779
+dss,gasto-educ-pib,VEN,Venezuela,1993,3.81783008575439
+dss,gasto-educ-pib,CAN,Canadá,1994,6.65829992294312
+dss,gasto-educ-pib,CHL,Chile,1994,2.49258995056152
+dss,gasto-educ-pib,CUB,Cuba,1994,5.61948013305664
+dss,gasto-educ-pib,GTM,Guatemala,1994,1.43998003005981
+dss,gasto-educ-pib,GUY,Guyana,1994,3.72445011138916
+dss,gasto-educ-pib,HND,Honduras,1994,2.51263999938965
+dss,gasto-educ-pib,JAM,Jamaica,1994,4.06418991088867
+dss,gasto-educ-pib,MEX,México,1994,3.47706007957458
+dss,gasto-educ-pib,PAN,Panamá,1994,3.47054004669189
+dss,gasto-educ-pib,DOM,República Dominicana,1994,0.893369972705841
+dss,gasto-educ-pib,LCA,Santa Lucía,1994,6.53238010406494
+dss,gasto-educ-pib,TTO,Trinidad y Tobago,1994,3.43180990219116
+dss,gasto-educ-pib,URY,Uruguay,1994,2.27171993255615
+dss,gasto-educ-pib,VEN,Venezuela,1994,5.00603008270264
+dss,gasto-educ-pib,BRA,Brasil,1995,4.56816005706787
+dss,gasto-educ-pib,CAN,Canadá,1995,6.30476999282837
+dss,gasto-educ-pib,CHL,Chile,1995,2.55165004730225
+dss,gasto-educ-pib,CRI,Costa Rica,1995,3.35273003578186
+dss,gasto-educ-pib,ECU,Ecuador,1995,1.99764001369476
+dss,gasto-educ-pib,GTM,Guatemala,1995,1.60479998588562
+dss,gasto-educ-pib,GUY,Guyana,1995,3.60933995246887
+dss,gasto-educ-pib,HND,Honduras,1995,2.61744999885559
+dss,gasto-educ-pib,JAM,Jamaica,1995,3.38908004760742
+dss,gasto-educ-pib,MEX,México,1995,3.4974699020385702
+dss,gasto-educ-pib,PAN,Panamá,1995,3.94780993461609
+dss,gasto-educ-pib,DOM,República Dominicana,1995,1.03330004215241
+dss,gasto-educ-pib,KNA,San Cristóbal y Nieves,1995,2.57641005516052
+dss,gasto-educ-pib,TTO,Trinidad y Tobago,1995,3.55854988098144
+dss,gasto-educ-pib,URY,Uruguay,1995,2.521399974823
+dss,gasto-educ-pib,ARG,Argentina,1996,3.73198008537292
+dss,gasto-educ-pib,CHL,Chile,1996,2.77720999717712
+dss,gasto-educ-pib,CRI,Costa Rica,1996,3.89071011543274
+dss,gasto-educ-pib,GTM,Guatemala,1996,1.56369996070862
+dss,gasto-educ-pib,JAM,Jamaica,1996,3.67773008346558
+dss,gasto-educ-pib,PAN,Panamá,1996,4.39390993118286
+dss,gasto-educ-pib,PER,Perú,1996,3.11879992485046
+dss,gasto-educ-pib,DOM,República Dominicana,1996,1.22724997997284
+dss,gasto-educ-pib,TTO,Trinidad y Tobago,1996,3.24876999855042
+dss,gasto-educ-pib,URY,Uruguay,1996,2.86985993385315
+dss,gasto-educ-pib,CHL,Chile,1997,2.98516988754273
+dss,gasto-educ-pib,JAM,Jamaica,1997,4.37953996658325
+dss,gasto-educ-pib,PAN,Panamá,1997,4.08364009857178
+dss,gasto-educ-pib,TTO,Trinidad y Tobago,1997,3.3252100944519
+dss,gasto-educ-pib,ARG,Argentina,1998,4.03986978530884
+dss,gasto-educ-pib,ABW,Aruba,1998,4.76316022872925
+dss,gasto-educ-pib,BMU,Bermudas,1998,2.15227007865906
+dss,gasto-educ-pib,BRA,Brasil,1998,4.75666999816895
+dss,gasto-educ-pib,CAN,Canadá,1998,5.49377012252808
+dss,gasto-educ-pib,CHL,Chile,1998,3.32312989234924
+dss,gasto-educ-pib,COL,Colombia,1998,3.92645001411438
+dss,gasto-educ-pib,CUB,Cuba,1998,6.20873022079468
+dss,gasto-educ-pib,DMA,Dominica,1998,5.73984003067017
+dss,gasto-educ-pib,ECU,Ecuador,1998,2.19536995887756
+dss,gasto-educ-pib,SLV,El Salvador,1998,2.54725003242493
+dss,gasto-educ-pib,MEX,México,1998,3.17838001251221
+dss,gasto-educ-pib,NIC,Nicaragua,1998,2.22585010528564
+dss,gasto-educ-pib,PRY,Paraguay,1998,4.19833993911743
+dss,gasto-educ-pib,PER,Perú,1998,3.27817988395691
+dss,gasto-educ-pib,KNA,San Cristóbal y Nieves,1998,4.02056980133057
+dss,gasto-educ-pib,VCT,San Vicente y las Granadinas,1998,4.03337001800537
+dss,gasto-educ-pib,LCA,Santa Lucía,1998,5.52894020080566
+dss,gasto-educ-pib,TTO,Trinidad y Tobago,1998,2.43892002105713
+dss,gasto-educ-pib,URY,Uruguay,1998,2.24337005615234
+dss,gasto-educ-pib,ATG,Antigua y Barbuda,1999,2.52540993690491
+dss,gasto-educ-pib,ARG,Argentina,1999,4.52167987823486
+dss,gasto-educ-pib,ABW,Aruba,1999,4.39526987075806
+dss,gasto-educ-pib,BRB,Barbados,1999,4.34123992919922
+dss,gasto-educ-pib,BLZ,Belice,1999,4.0349497795105
+dss,gasto-educ-pib,BRA,Brasil,1999,3.80062007904053
+dss,gasto-educ-pib,CAN,Canadá,1999,5.53079986572266
+dss,gasto-educ-pib,CHL,Chile,1999,3.7083899974823
+dss,gasto-educ-pib,COL,Colombia,1999,4.44080018997192
+dss,gasto-educ-pib,CRI,Costa Rica,1999,5.39436006546021
+dss,gasto-educ-pib,CUB,Cuba,1999,6.75523996353149
+dss,gasto-educ-pib,DMA,Dominica,1999,4.02858018875122
+dss,gasto-educ-pib,ECU,Ecuador,1999,1.54734003543854
+dss,gasto-educ-pib,SLV,El Salvador,1999,2.56260991096497
+dss,gasto-educ-pib,GUY,Guyana,1999,8.56105995178223
+dss,gasto-educ-pib,MEX,México,1999,3.36164999008179
+dss,gasto-educ-pib,NIC,Nicaragua,1999,2.92365002632141
+dss,gasto-educ-pib,PAN,Panamá,1999,4.75114011764526
+dss,gasto-educ-pib,PRY,Paraguay,1999,4.23087978363037
+dss,gasto-educ-pib,PER,Perú,1999,3.44133996963501
+dss,gasto-educ-pib,KNA,San Cristóbal y Nieves,1999,3.32266998291016
+dss,gasto-educ-pib,VCT,San Vicente y las Granadinas,1999,5.75268983840942
+dss,gasto-educ-pib,LCA,Santa Lucía,1999,5.44994020462036
+dss,gasto-educ-pib,TTO,Trinidad y Tobago,1999,2.75611996650696
+dss,gasto-educ-pib,ARG,Argentina,2000,4.58030986785889
+dss,gasto-educ-pib,ABW,Aruba,2000,4.71468019485474
+dss,gasto-educ-pib,BHS,Bahamas,2000,2.23284006118774
+dss,gasto-educ-pib,BRB,Barbados,2000,4.71585988998413
+dss,gasto-educ-pib,BLZ,Belice,2000,3.68356990814209
+dss,gasto-educ-pib,BRA,Brasil,2000,3.94893002510071
+dss,gasto-educ-pib,CAN,Canadá,2000,5.42330980300903
+dss,gasto-educ-pib,CHL,Chile,2000,3.75707006454468
+dss,gasto-educ-pib,COL,Colombia,2000,3.5112099647522
+dss,gasto-educ-pib,CRI,Costa Rica,2000,4.66695022583008
+dss,gasto-educ-pib,CUB,Cuba,2000,7.70481014251709
+dss,gasto-educ-pib,ECU,Ecuador,2000,1.20265996456146
+dss,gasto-educ-pib,SLV,El Salvador,2000,2.8386800289154
+dss,gasto-educ-pib,GUY,Guyana,2000,8.48414993286133
+dss,gasto-educ-pib,TCA,Islas Turcas y Caicos,2000,4.71883010864258
+dss,gasto-educ-pib,JAM,Jamaica,2000,4.98346996307373
+dss,gasto-educ-pib,MEX,México,2000,3.80870008468628
+dss,gasto-educ-pib,NIC,Nicaragua,2000,3.00160002708435
+dss,gasto-educ-pib,PAN,Panamá,2000,4.89397001266479
+dss,gasto-educ-pib,PRY,Paraguay,2000,4.2302098274231
+dss,gasto-educ-pib,PER,Perú,2000,3.22802996635437
+dss,gasto-educ-pib,DOM,República Dominicana,2000,1.88829004764557
+dss,gasto-educ-pib,KNA,San Cristóbal y Nieves,2000,4.74038982391357
+dss,gasto-educ-pib,VCT,San Vicente y las Granadinas,2000,7.32787990570068
+dss,gasto-educ-pib,TTO,Trinidad y Tobago,2000,2.75565004348755
+dss,gasto-educ-pib,URY,Uruguay,2000,2.42254996299744
+dss,gasto-educ-pib,ARG,Argentina,2001,4.833740234375
+dss,gasto-educ-pib,ABW,Aruba,2001,4.79898023605347
+dss,gasto-educ-pib,BRB,Barbados,2001,6.05536985397339
+dss,gasto-educ-pib,BLZ,Belice,2001,4.23519992828369
+dss,gasto-educ-pib,BRA,Brasil,2001,3.84467005729675
+dss,gasto-educ-pib,CAN,Canadá,2001,4.95304012298584
+dss,gasto-educ-pib,COL,Colombia,2001,3.70867991447449
+dss,gasto-educ-pib,CRI,Costa Rica,2001,4.83203983306885
+dss,gasto-educ-pib,CUB,Cuba,2001,8.3580904006958
+dss,gasto-educ-pib,GUY,Guyana,2001,8.39729022979736
+dss,gasto-educ-pib,TCA,Islas Turcas y Caicos,2001,4.84300994873047
+dss,gasto-educ-pib,JAM,Jamaica,2001,5.38103008270264
+dss,gasto-educ-pib,MEX,México,2001,4.0313401222229
+dss,gasto-educ-pib,PAN,Panamá,2001,4.18935012817383
+dss,gasto-educ-pib,PRY,Paraguay,2001,3.8335599899292
+dss,gasto-educ-pib,PER,Perú,2001,3.03712010383606
+dss,gasto-educ-pib,DOM,República Dominicana,2001,1.96782994270325
+dss,gasto-educ-pib,KNA,San Cristóbal y Nieves,2001,4.4215497970581
+dss,gasto-educ-pib,LCA,Santa Lucía,2001,5.70733022689819
+dss,gasto-educ-pib,TTO,Trinidad y Tobago,2001,3.06528997421265
+dss,gasto-educ-pib,URY,Uruguay,2001,2.80096006393433
+dss,gasto-educ-pib,ATG,Antigua y Barbuda,2002,3.07877993583679
+dss,gasto-educ-pib,ARG,Argentina,2002,4.01734018325806
+dss,gasto-educ-pib,ABW,Aruba,2002,4.87220001220703
+dss,gasto-educ-pib,BRB,Barbados,2002,5.88062000274658
+dss,gasto-educ-pib,BRA,Brasil,2002,3.75037002563477
+dss,gasto-educ-pib,CAN,Canadá,2002,4.99306011199951
+dss,gasto-educ-pib,CHL,Chile,2002,4.04881000518799
+dss,gasto-educ-pib,COL,Colombia,2002,4.26812982559204
+dss,gasto-educ-pib,CRI,Costa Rica,2002,5.15044021606445
+dss,gasto-educ-pib,CUB,Cuba,2002,9.57116985321045
+dss,gasto-educ-pib,SLV,El Salvador,2002,3.242840051651
+dss,gasto-educ-pib,GUY,Guyana,2002,8.36553955078125
+dss,gasto-educ-pib,TCA,Islas Turcas y Caicos,2002,5.06913995742798
+dss,gasto-educ-pib,JAM,Jamaica,2002,5.37522983551025
+dss,gasto-educ-pib,MEX,México,2002,4.24307012557983
+dss,gasto-educ-pib,NIC,Nicaragua,2002,2.39101004600525
+dss,gasto-educ-pib,PAN,Panamá,2002,4.2549901008606
+dss,gasto-educ-pib,PRY,Paraguay,2002,3.40773010253906
+dss,gasto-educ-pib,PER,Perú,2002,2.82056999206543
+dss,gasto-educ-pib,DOM,República Dominicana,2002,1.9140100479126
+dss,gasto-educ-pib,KNA,San Cristóbal y Nieves,2002,3.92051005363464
+dss,gasto-educ-pib,VCT,San Vicente y las Granadinas,2002,7.38802003860474
+dss,gasto-educ-pib,TTO,Trinidad y Tobago,2002,3.54300999641419
+dss,gasto-educ-pib,URY,Uruguay,2002,2.32220005989075
+dss,gasto-educ-pib,ARG,Argentina,2003,3.53504991531372
+dss,gasto-educ-pib,BRB,Barbados,2003,6.24569988250732
+dss,gasto-educ-pib,BLZ,Belice,2003,3.90120005607605
+dss,gasto-educ-pib,BMU,Bermudas,2003,1.6662700176239
+dss,gasto-educ-pib,CHL,Chile,2003,3.91868996620178
+dss,gasto-educ-pib,COL,Colombia,2003,4.32513999938965
+dss,gasto-educ-pib,CRI,Costa Rica,2003,5.13373994827271
+dss,gasto-educ-pib,CUB,Cuba,2003,9.9408597946167
+dss,gasto-educ-pib,SLV,El Salvador,2003,3.13467001914978
+dss,gasto-educ-pib,GRD,Granada,2003,3.92673993110657
+dss,gasto-educ-pib,GUY,Guyana,2003,6.95590019226074
+dss,gasto-educ-pib,TCA,Islas Turcas y Caicos,2003,4.72877979278565
+dss,gasto-educ-pib,JAM,Jamaica,2003,4.25684976577759
+dss,gasto-educ-pib,MEX,México,2003,4.83262014389038
+dss,gasto-educ-pib,NIC,Nicaragua,2003,2.42200994491577
+dss,gasto-educ-pib,PAN,Panamá,2003,4.19644021987915
+dss,gasto-educ-pib,PRY,Paraguay,2003,3.3827600479126
+dss,gasto-educ-pib,PER,Perú,2003,2.93779993057251
+dss,gasto-educ-pib,DOM,República Dominicana,2003,1.84465003013611
+dss,gasto-educ-pib,KNA,San Cristóbal y Nieves,2003,3.79099011421204
+dss,gasto-educ-pib,VCT,San Vicente y las Granadinas,2003,8.17488956451416
+dss,gasto-educ-pib,LCA,Santa Lucía,2003,3.53449010848999
+dss,gasto-educ-pib,TTO,Trinidad y Tobago,2003,3.13660001754761
+dss,gasto-educ-pib,URY,Uruguay,2003,2.0682098865509
+dss,gasto-educ-pib,ARG,Argentina,2004,3.48652005195618
+dss,gasto-educ-pib,ABW,Aruba,2004,4.35698986053467
+dss,gasto-educ-pib,BRB,Barbados,2004,6.02428007125854
+dss,gasto-educ-pib,BLZ,Belice,2004,4.0096697807312
+dss,gasto-educ-pib,BMU,Bermudas,2004,1.77587997913361
+dss,gasto-educ-pib,BRA,Brasil,2004,3.97448992729187
+dss,gasto-educ-pib,CHL,Chile,2004,3.54307007789612
+dss,gasto-educ-pib,COL,Colombia,2004,4.07934999465942
+dss,gasto-educ-pib,CRI,Costa Rica,2004,4.89062976837158
+dss,gasto-educ-pib,CUB,Cuba,2004,10.2682304382324
+dss,gasto-educ-pib,GUY,Guyana,2004,5.51291990280151
+dss,gasto-educ-pib,JAM,Jamaica,2004,3.91254997253418
+dss,gasto-educ-pib,MEX,México,2004,4.51204013824463
+dss,gasto-educ-pib,PAN,Panamá,2004,3.55807995796204
+dss,gasto-educ-pib,PRY,Paraguay,2004,2.86989998817444
+dss,gasto-educ-pib,PER,Perú,2004,2.95787000656128
+dss,gasto-educ-pib,KNA,San Cristóbal y Nieves,2004,3.9713499546051
+dss,gasto-educ-pib,LCA,Santa Lucía,2004,3.43646001815796
+dss,gasto-educ-pib,URY,Uruguay,2004,2.49954009056091
+dss,gasto-educ-pib,ARG,Argentina,2005,3.86000990867615
+dss,gasto-educ-pib,ABW,Aruba,2005,4.62321996688843
+dss,gasto-educ-pib,BRB,Barbados,2005,5.66965007781982
+dss,gasto-educ-pib,BMU,Bermudas,2005,1.98877000808716
+dss,gasto-educ-pib,BRA,Brasil,2005,4.47909021377563
+dss,gasto-educ-pib,CAN,Canadá,2005,4.76589012145996
+dss,gasto-educ-pib,CHL,Chile,2005,3.28016996383667
+dss,gasto-educ-pib,COL,Colombia,2005,4.02098989486694
+dss,gasto-educ-pib,CUB,Cuba,2005,10.5577802658081
+dss,gasto-educ-pib,SLV,El Salvador,2005,3.17785000801086
+dss,gasto-educ-pib,GUY,Guyana,2005,8.13973045349121
+dss,gasto-educ-pib,TCA,Islas Turcas y Caicos,2005,2.54099988937378
+dss,gasto-educ-pib,JAM,Jamaica,2005,4.61641979217529
+dss,gasto-educ-pib,MEX,México,2005,4.63395023345947
+dss,gasto-educ-pib,PER,Perú,2005,2.83903002738953
+dss,gasto-educ-pib,KNA,San Cristóbal y Nieves,2005,3.83144998550415
+dss,gasto-educ-pib,VCT,San Vicente y las Granadinas,2005,6.03082990646362
+dss,gasto-educ-pib,LCA,Santa Lucía,2005,4.23895978927612
+dss,gasto-educ-pib,URY,Uruguay,2005,2.71476006507873
+dss,gasto-educ-pib,ARG,Argentina,2006,4.12821006774902
+dss,gasto-educ-pib,BOL,Bolivia,2006,6.43421983718872
+dss,gasto-educ-pib,BRA,Brasil,2006,4.87060022354126
+dss,gasto-educ-pib,CHL,Chile,2006,3.04014992713928
+dss,gasto-educ-pib,COL,Colombia,2006,3.91671991348267
+dss,gasto-educ-pib,CRI,Costa Rica,2006,4.61614990234375
+dss,gasto-educ-pib,CUB,Cuba,2006,9.05716991424561
+dss,gasto-educ-pib,SLV,El Salvador,2006,3.49298000335693
+dss,gasto-educ-pib,GTM,Guatemala,2006,3.03285002708435
+dss,gasto-educ-pib,GUY,Guyana,2006,3.11891007423401
+dss,gasto-educ-pib,MEX,México,2006,4.49317979812622
+dss,gasto-educ-pib,PER,Perú,2006,2.65281009674072
+dss,gasto-educ-pib,KNA,San Cristóbal y Nieves,2006,4.05925989151001
+dss,gasto-educ-pib,LCA,Santa Lucía,2006,4.69669008255005
+dss,gasto-educ-pib,URY,Uruguay,2006,2.85664010047913
+dss,gasto-educ-pib,VEN,Venezuela,2006,3.66905999183655
+dss,gasto-educ-pib,ARG,Argentina,2007,4.46260976791382
+dss,gasto-educ-pib,ABW,Aruba,2007,4.70254993438721
+dss,gasto-educ-pib,BRB,Barbados,2007,5.22061014175415
+dss,gasto-educ-pib,BOL,Bolivia,2007,6.7204999923706
+dss,gasto-educ-pib,BRA,Brasil,2007,4.97426986694336
+dss,gasto-educ-pib,CAN,Canadá,2007,4.76642990112305
+dss,gasto-educ-pib,CHL,Chile,2007,3.2331600189209
+dss,gasto-educ-pib,COL,Colombia,2007,4.08301019668579
+dss,gasto-educ-pib,CRI,Costa Rica,2007,4.63449001312256
+dss,gasto-educ-pib,CUB,Cuba,2007,11.8682098388672
+dss,gasto-educ-pib,SLV,El Salvador,2007,3.60984992980957
+dss,gasto-educ-pib,GTM,Guatemala,2007,3.08809995651245
+dss,gasto-educ-pib,GUY,Guyana,2007,2.39117002487183
+dss,gasto-educ-pib,JAM,Jamaica,2007,5.49022006988525
+dss,gasto-educ-pib,MEX,México,2007,4.47919988632202
+dss,gasto-educ-pib,PRY,Paraguay,2007,2.73951005935669
+dss,gasto-educ-pib,PER,Perú,2007,2.62940001487732
+dss,gasto-educ-pib,DOM,República Dominicana,2007,2.04678010940552
+dss,gasto-educ-pib,KNA,San Cristóbal y Nieves,2007,4.1938099861145
+dss,gasto-educ-pib,VCT,San Vicente y las Granadinas,2007,5.43937015533447
+dss,gasto-educ-pib,VEN,Venezuela,2007,3.62732005119324
+dss,gasto-educ-pib,ARG,Argentina,2008,4.84438991546631
+dss,gasto-educ-pib,ABW,Aruba,2008,4.82730007171631
+dss,gasto-educ-pib,BRB,Barbados,2008,4.92074012756348
+dss,gasto-educ-pib,BLZ,Belice,2008,4.29996013641357
+dss,gasto-educ-pib,BOL,Bolivia,2008,6.72301006317139
+dss,gasto-educ-pib,BRA,Brasil,2008,5.26884984970093
+dss,gasto-educ-pib,CAN,Canadá,2008,4.62612009048462
+dss,gasto-educ-pib,CHL,Chile,2008,3.79189991950989
+dss,gasto-educ-pib,COL,Colombia,2008,3.9387800693512
+dss,gasto-educ-pib,CRI,Costa Rica,2008,4.88697004318237
+dss,gasto-educ-pib,CUB,Cuba,2008,14.0590801239014
+dss,gasto-educ-pib,SLV,El Salvador,2008,4.45810985565185
+dss,gasto-educ-pib,GTM,Guatemala,2008,3.23686003684998
+dss,gasto-educ-pib,JAM,Jamaica,2008,6.19131994247437
+dss,gasto-educ-pib,MEX,México,2008,4.60607004165649
+dss,gasto-educ-pib,PAN,Panamá,2008,3.42529010772705
+dss,gasto-educ-pib,PER,Perú,2008,2.8677499294281
+dss,gasto-educ-pib,LCA,Santa Lucía,2008,4.48353004455566
+dss,gasto-educ-pib,ATG,Antigua y Barbuda,2009,2.22264003753662
+dss,gasto-educ-pib,ARG,Argentina,2009,5.53105020523071
+dss,gasto-educ-pib,ABW,Aruba,2009,5.79739999771118
+dss,gasto-educ-pib,BRB,Barbados,2009,5.11040019989014
+dss,gasto-educ-pib,BLZ,Belice,2009,4.8011999130249
+dss,gasto-educ-pib,BMU,Bermudas,2009,2.28920006752014
+dss,gasto-educ-pib,BOL,Bolivia,2009,7.57484006881714
+dss,gasto-educ-pib,BRA,Brasil,2009,5.46355009078979
+dss,gasto-educ-pib,CAN,Canadá,2009,4.84057998657227
+dss,gasto-educ-pib,CHL,Chile,2009,4.25475978851318
+dss,gasto-educ-pib,COL,Colombia,2009,4.77651977539062
+dss,gasto-educ-pib,CRI,Costa Rica,2009,6.01031017303467
+dss,gasto-educ-pib,CUB,Cuba,2009,13.1248598098755
+dss,gasto-educ-pib,ECU,Ecuador,2009,4.51763010025024
+dss,gasto-educ-pib,SLV,El Salvador,2009,4.65950012207031
+dss,gasto-educ-pib,GUY,Guyana,2009,2.15057992935181
+dss,gasto-educ-pib,JAM,Jamaica,2009,6.19848012924194
+dss,gasto-educ-pib,MEX,México,2009,4.94934988021851
+dss,gasto-educ-pib,PER,Perú,2009,3.13994002342224
+dss,gasto-educ-pib,VCT,San Vicente y las Granadinas,2009,5.3761100769043
+dss,gasto-educ-pib,LCA,Santa Lucía,2009,3.0676600933075
+dss,gasto-educ-pib,VEN,Venezuela,2009,6.87467002868652
+dss,gasto-educ-pib,ARG,Argentina,2010,5.01972007751465
+dss,gasto-educ-pib,ABW,Aruba,2010,6.75109004974365
+dss,gasto-educ-pib,BHS,Bahamas,2010,2.45165990475209
+dss,gasto-educ-pib,BRB,Barbados,2010,6.05261993408203
+dss,gasto-educ-pib,BLZ,Belice,2010,5.24251985549927
+dss,gasto-educ-pib,BMU,Bermudas,2010,2.30668997764587
+dss,gasto-educ-pib,BOL,Bolivia,2010,6.97377014160156
+dss,gasto-educ-pib,BRA,Brasil,2010,5.64879989624023
+dss,gasto-educ-pib,CAN,Canadá,2010,5.35637998580933
+dss,gasto-educ-pib,CHL,Chile,2010,4.18953990936279
+dss,gasto-educ-pib,COL,Colombia,2010,4.83382987976074
+dss,gasto-educ-pib,CRI,Costa Rica,2010,6.56575012207031
+dss,gasto-educ-pib,CUB,Cuba,2010,12.8373098373413
+dss,gasto-educ-pib,ECU,Ecuador,2010,4.60028982162476
+dss,gasto-educ-pib,SLV,El Salvador,2010,4.04807996749878
+dss,gasto-educ-pib,GRD,Granada,2010,5.07508233496978
+dss,gasto-educ-pib,GTM,Guatemala,2010,2.84864997863769
+dss,gasto-educ-pib,GUY,Guyana,2010,2.40938997268677
+dss,gasto-educ-pib,VGB,Islas Vírgenes Británicas,2010,3.48700818755313
+dss,gasto-educ-pib,JAM,Jamaica,2010,6.37058019638062
+dss,gasto-educ-pib,MEX,México,2010,4.93697023391724
+dss,gasto-educ-pib,NIC,Nicaragua,2010,4.48422002792358
+dss,gasto-educ-pib,PRY,Paraguay,2010,2.7707200050354
+dss,gasto-educ-pib,PER,Perú,2010,2.86730003356934
+dss,gasto-educ-pib,DOM,República Dominicana,2010,1.88728788680129
+dss,gasto-educ-pib,KNA,San Cristóbal y Nieves,2010,2.54554015619203
+dss,gasto-educ-pib,VCT,San Vicente y las Granadinas,2010,4.80839014053345
+dss,gasto-educ-pib,LCA,Santa Lucía,2010,3.4828999042511
+dss,gasto-educ-pib,TTO,Trinidad y Tobago,2010,4.21155458844183
+dss,gasto-educ-pib,ARG,Argentina,2011,5.29063987731934
+dss,gasto-educ-pib,ABW,Aruba,2011,5.91466999053955
+dss,gasto-educ-pib,BHS,Bahamas,2011,2.35576638581195
+dss,gasto-educ-pib,BLZ,Belice,2011,5.51786910233588
+dss,gasto-educ-pib,BMU,Bermudas,2011,2.19656988306324
+dss,gasto-educ-pib,BOL,Bolivia,2011,6.45054006576538
+dss,gasto-educ-pib,BRA,Brasil,2011,5.73741006851196
+dss,gasto-educ-pib,CAN,Canadá,2011,5.26204013824463
+dss,gasto-educ-pib,CHL,Chile,2011,4.06173992156982
+dss,gasto-educ-pib,COL,Colombia,2011,4.46608018875122
+dss,gasto-educ-pib,CRI,Costa Rica,2011,6.37988996505737
+dss,gasto-educ-pib,CUW,Curazao,2011,5.64725392834695
+dss,gasto-educ-pib,ECU,Ecuador,2011,4.74424982070923
+dss,gasto-educ-pib,SLV,El Salvador,2011,3.89854001998901
+dss,gasto-educ-pib,GRD,Granada,2011,5.48532342071091
+dss,gasto-educ-pib,GTM,Guatemala,2011,2.96865010261536
+dss,gasto-educ-pib,GUY,Guyana,2011,2.50669002532959
+dss,gasto-educ-pib,TCA,Islas Turcas y Caicos,2011,3.16663368961357
+dss,gasto-educ-pib,JAM,Jamaica,2011,6.26664018630981
+dss,gasto-educ-pib,MEX,México,2011,4.9040699005127
+dss,gasto-educ-pib,PAN,Panamá,2011,3.07034993171692
+dss,gasto-educ-pib,PRY,Paraguay,2011,3.69283008575439
+dss,gasto-educ-pib,PER,Perú,2011,2.6635000705719
+dss,gasto-educ-pib,DOM,República Dominicana,2011,1.87925755786153
+dss,gasto-educ-pib,KNA,San Cristóbal y Nieves,2011,2.49706527276352
+dss,gasto-educ-pib,LCA,Santa Lucía,2011,3.5988199710846
+dss,gasto-educ-pib,TTO,Trinidad y Tobago,2011,3.85078840215008
+dss,gasto-educ-pib,URY,Uruguay,2011,4.14937019348145
+dss,gasto-educ-pib,ATG,Antigua y Barbuda,2012,2.13043025907083
+dss,gasto-educ-pib,ARG,Argentina,2012,5.3458399772644
+dss,gasto-educ-pib,ABW,Aruba,2012,6.3472900390625
+dss,gasto-educ-pib,BHS,Bahamas,2012,2.30391197238935
+dss,gasto-educ-pib,BRB,Barbados,2012,4.58823013305664
+dss,gasto-educ-pib,BLZ,Belice,2012,5.47351989539787
+dss,gasto-educ-pib,BMU,Bermudas,2012,2.38597137100485
+dss,gasto-educ-pib,BOL,Bolivia,2012,6.62799978256226
+dss,gasto-educ-pib,BRA,Brasil,2012,5.85510015487671
+dss,gasto-educ-pib,COL,Colombia,2012,4.37038993835449
+dss,gasto-educ-pib,CRI,Costa Rica,2012,6.58239984512329
+dss,gasto-educ-pib,CUB,Cuba,2012,11.5516604913797
+dss,gasto-educ-pib,CUW,Curazao,2012,5.38283590387706
+dss,gasto-educ-pib,DMA,Dominica,2012,4.52896287885139
+dss,gasto-educ-pib,ECU,Ecuador,2012,4.65310001373291
+dss,gasto-educ-pib,SLV,El Salvador,2012,3.7124400138855
+dss,gasto-educ-pib,GRD,Granada,2012,5.07225880686028
+dss,gasto-educ-pib,GTM,Guatemala,2012,3.00524997711182
+dss,gasto-educ-pib,GUY,Guyana,2012,2.24131989479065
+dss,gasto-educ-pib,HND,Honduras,2012,6.29972793577391
+dss,gasto-educ-pib,TCA,Islas Turcas y Caicos,2012,2.69749326490282
+dss,gasto-educ-pib,VGB,Islas Vírgenes Británicas,2012,3.55560728835564
+dss,gasto-educ-pib,JAM,Jamaica,2012,6.1124701499939
+dss,gasto-educ-pib,MEX,México,2012,4.88349008560181
+dss,gasto-educ-pib,PRY,Paraguay,2012,3.66877007484436
+dss,gasto-educ-pib,PER,Perú,2012,2.92276000976562
+dss,gasto-educ-pib,KNA,San Cristóbal y Nieves,2012,2.49200145387318
+dss,gasto-educ-pib,SXM,San Martín (Países Bajos),2012,4.61834872782909
+dss,gasto-educ-pib,LCA,Santa Lucía,2012,3.29098010063171
+dss,gasto-educ-pib,TTO,Trinidad y Tobago,2012,3.57398000577018
+dss,gasto-educ-pib,URY,Uruguay,2012,4.09353338283242
+dss,gasto-educ-pib,ATG,Antigua y Barbuda,2013,2.35972143126598
+dss,gasto-educ-pib,ARG,Argentina,2013,5.43660020828247
+dss,gasto-educ-pib,ABW,Aruba,2013,6.44295978546143
+dss,gasto-educ-pib,BHS,Bahamas,2013,2.4242884241713
+dss,gasto-educ-pib,BRB,Barbados,2013,4.50306987762451
+dss,gasto-educ-pib,BLZ,Belice,2013,5.12474012374878
+dss,gasto-educ-pib,BMU,Bermudas,2013,2.2795032068669
+dss,gasto-educ-pib,BOL,Bolivia,2013,6.80321979522705
+dss,gasto-educ-pib,BRA,Brasil,2013,5.8388500213623
+dss,gasto-educ-pib,CAN,Canadá,2013,4.58899021148682
+dss,gasto-educ-pib,CHL,Chile,2013,4.54814004898071
+dss,gasto-educ-pib,COL,Colombia,2013,4.87855005264282
+dss,gasto-educ-pib,CRI,Costa Rica,2013,6.68738985061646
+dss,gasto-educ-pib,CUB,Cuba,2013,10.67169596101
+dss,gasto-educ-pib,CUW,Curazao,2013,5.11633014678955
+dss,gasto-educ-pib,DMA,Dominica,2013,4.35428103166344
+dss,gasto-educ-pib,ECU,Ecuador,2013,4.92997980117798
+dss,gasto-educ-pib,SLV,El Salvador,2013,3.80149006843567
+dss,gasto-educ-pib,GTM,Guatemala,2013,2.88808989524841
+dss,gasto-educ-pib,HND,Honduras,2013,5.87493991851807
+dss,gasto-educ-pib,TCA,Islas Turcas y Caicos,2013,2.80478695053816
+dss,gasto-educ-pib,VGB,Islas Vírgenes Británicas,2013,4.45811210742524
+dss,gasto-educ-pib,JAM,Jamaica,2013,6.25106000900269
+dss,gasto-educ-pib,MEX,México,2013,4.50858020782471
+dss,gasto-educ-pib,PRY,Paraguay,2013,2.67871193892232
+dss,gasto-educ-pib,PER,Perú,2013,3.29729008674622
+dss,gasto-educ-pib,PRI,Puerto Rico,2013,6.48106002807617
+dss,gasto-educ-pib,DOM,República Dominicana,2013,3.62818152019188
+dss,gasto-educ-pib,KNA,San Cristóbal y Nieves,2013,3.26205857202123
+dss,gasto-educ-pib,LCA,Santa Lucía,2013,3.87661004066467
+dss,gasto-educ-pib,TTO,Trinidad y Tobago,2013,3.75275872925405
+dss,gasto-educ-pib,URY,Uruguay,2013,4.23893022537231
+dss,gasto-educ-pib,ATG,Antigua y Barbuda,2014,2.3044409375638
+dss,gasto-educ-pib,ARG,Argentina,2014,5.36144018173218
+dss,gasto-educ-pib,ABW,Aruba,2014,5.85128021240234
+dss,gasto-educ-pib,BHS,Bahamas,2014,2.24714705533939
+dss,gasto-educ-pib,BRB,Barbados,2014,5.35950994491577
+dss,gasto-educ-pib,BLZ,Belice,2014,5.1395001411438
+dss,gasto-educ-pib,BMU,Bermudas,2014,1.5368800163269
+dss,gasto-educ-pib,BOL,Bolivia,2014,7.47811985015869
+dss,gasto-educ-pib,BRA,Brasil,2014,5.94848012924194
+dss,gasto-educ-pib,CAN,Canadá,2014,4.84358978271484
+dss,gasto-educ-pib,CHL,Chile,2014,4.75168991088867
+dss,gasto-educ-pib,COL,Colombia,2014,4.62945985794067
+dss,gasto-educ-pib,CRI,Costa Rica,2014,6.67953014373779
+dss,gasto-educ-pib,CUB,Cuba,2014,9.6074568445536
+dss,gasto-educ-pib,CUW,Curazao,2014,5.95464718602819
+dss,gasto-educ-pib,DMA,Dominica,2014,4.33216630134647
+dss,gasto-educ-pib,ECU,Ecuador,2014,5.21019983291626
+dss,gasto-educ-pib,SLV,El Salvador,2014,3.82416009902954
+dss,gasto-educ-pib,GRD,Granada,2014,4.47756594772942
+dss,gasto-educ-pib,GTM,Guatemala,2014,2.98563003540039
+dss,gasto-educ-pib,GUY,Guyana,2014,4.36033010482788
+dss,gasto-educ-pib,HTI,Haití,2014,1.75226998329163
+dss,gasto-educ-pib,HND,Honduras,2014,7.09010982513428
+dss,gasto-educ-pib,TCA,Islas Turcas y Caicos,2014,2.74654631561921
+dss,gasto-educ-pib,VGB,Islas Vírgenes Británicas,2014,4.00919804063438
+dss,gasto-educ-pib,JAM,Jamaica,2014,6.01584005355835
+dss,gasto-educ-pib,MEX,México,2014,5.06807994842529
+dss,gasto-educ-pib,NIC,Nicaragua,2014,4.08329010009766
+dss,gasto-educ-pib,PAN,Panamá,2014,3.08107995986939
+dss,gasto-educ-pib,PRY,Paraguay,2014,2.59655894629063
+dss,gasto-educ-pib,PER,Perú,2014,3.69599008560181
+dss,gasto-educ-pib,PRI,Puerto Rico,2014,6.07265996932983
+dss,gasto-educ-pib,DOM,República Dominicana,2014,3.62243443144513
+dss,gasto-educ-pib,KNA,San Cristóbal y Nieves,2014,2.85307503792741
+dss,gasto-educ-pib,SXM,San Martín (Países Bajos),2014,3.06759489680727
+dss,gasto-educ-pib,LCA,Santa Lucía,2014,3.89103007316589
+dss,gasto-educ-pib,TTO,Trinidad y Tobago,2014,3.59013796983043
+dss,gasto-educ-pib,URY,Uruguay,2014,4.26735019683838
+dss,gasto-educ-pib,ATG,Antigua y Barbuda,2015,1.9934755302761
+dss,gasto-educ-pib,ARG,Argentina,2015,5.77611017227173
+dss,gasto-educ-pib,ABW,Aruba,2015,5.88826990127563
+dss,gasto-educ-pib,BHS,Bahamas,2015,2.2723175918231
+dss,gasto-educ-pib,BRB,Barbados,2015,5.15997517232471
+dss,gasto-educ-pib,BLZ,Belice,2015,5.35711002349854
+dss,gasto-educ-pib,BMU,Bermudas,2015,1.50163996219635
+dss,gasto-educ-pib,BOL,Bolivia,2015,8.1434497833252
+dss,gasto-educ-pib,BRA,Brasil,2015,6.24105978012085
+dss,gasto-educ-pib,CAN,Canadá,2015,4.73936986923218
+dss,gasto-educ-pib,CHL,Chile,2015,4.90390014648438
+dss,gasto-educ-pib,COL,Colombia,2015,4.47038984298706
+dss,gasto-educ-pib,CRI,Costa Rica,2015,6.87349987030029
+dss,gasto-educ-pib,CUB,Cuba,2015,8.9633578559392
+dss,gasto-educ-pib,CUW,Curazao,2015,5.95011209033324
+dss,gasto-educ-pib,DMA,Dominica,2015,3.09856009483337
+dss,gasto-educ-pib,ECU,Ecuador,2015,5.10570001602173
+dss,gasto-educ-pib,SLV,El Salvador,2015,3.90987992286682
+dss,gasto-educ-pib,USA,Estados Unidos,2015,4.93064022064209
+dss,gasto-educ-pib,GRD,Granada,2015,4.23861035989182
+dss,gasto-educ-pib,GTM,Guatemala,2015,3.03032994270325
+dss,gasto-educ-pib,GUY,Guyana,2015,3.89569997787476
+dss,gasto-educ-pib,HTI,Haití,2015,1.85497999191284
+dss,gasto-educ-pib,HND,Honduras,2015,6.41298007965088
+dss,gasto-educ-pib,TCA,Islas Turcas y Caicos,2015,3.09093999862671
+dss,gasto-educ-pib,VGB,Islas Vírgenes Británicas,2015,4.70449999843962
+dss,gasto-educ-pib,JAM,Jamaica,2015,5.45523023605347
+dss,gasto-educ-pib,MEX,México,2015,5.05087995529175
+dss,gasto-educ-pib,NIC,Nicaragua,2015,4.07843017578125
+dss,gasto-educ-pib,PAN,Panamá,2015,3.26552009582519
+dss,gasto-educ-pib,PRY,Paraguay,2015,3.33377822870463
+dss,gasto-educ-pib,PER,Perú,2015,3.96933007240295
+dss,gasto-educ-pib,PRI,Puerto Rico,2015,3.34032241682023
+dss,gasto-educ-pib,DOM,República Dominicana,2015,3.60400277306673
+dss,gasto-educ-pib,KNA,San Cristóbal y Nieves,2015,2.54938006401062
+dss,gasto-educ-pib,VCT,San Vicente y las Granadinas,2015,4.95614634835429
+dss,gasto-educ-pib,LCA,Santa Lucía,2015,3.88088011741638
+dss,gasto-educ-pib,SUR,Surinam,2015,5.53479610522553
+dss,gasto-educ-pib,TTO,Trinidad y Tobago,2015,4.42459330779419
+dss,gasto-educ-pib,URY,Uruguay,2015,4.20636987686157
+dss,gasto-educ-pib,ATG,Antigua y Barbuda,2016,2.17149931504636
+dss,gasto-educ-pib,ARG,Argentina,2016,5.54548978805542
+dss,gasto-educ-pib,ABW,Aruba,2016,5.49136018753052
+dss,gasto-educ-pib,BHS,Bahamas,2016,2.58786212973921
+dss,gasto-educ-pib,BRB,Barbados,2016,4.19719982147217
+dss,gasto-educ-pib,BLZ,Belice,2016,5.72603988647461
+dss,gasto-educ-pib,BMU,Bermudas,2016,2.03905874199287
+dss,gasto-educ-pib,BOL,Bolivia,2016,8.15062046051025
+dss,gasto-educ-pib,BRA,Brasil,2016,6.31403017044067
+dss,gasto-educ-pib,CAN,Canadá,2016,4.81642007827759
+dss,gasto-educ-pib,CHL,Chile,2016,5.36645984649658
+dss,gasto-educ-pib,COL,Colombia,2016,4.47721004486084
+dss,gasto-educ-pib,CRI,Costa Rica,2016,6.89395999908447
+dss,gasto-educ-pib,CUB,Cuba,2016,9.01309318032688
+dss,gasto-educ-pib,CUW,Curazao,2016,6.23495389518939
+dss,gasto-educ-pib,DMA,Dominica,2016,5.12971951862684
+dss,gasto-educ-pib,ECU,Ecuador,2016,4.46397668804552
+dss,gasto-educ-pib,SLV,El Salvador,2016,3.82523989677429
+dss,gasto-educ-pib,USA,Estados Unidos,2016,4.78327989578247
+dss,gasto-educ-pib,GTM,Guatemala,2016,2.94474005699158
+dss,gasto-educ-pib,GUY,Guyana,2016,4.73775005340576
+dss,gasto-educ-pib,HTI,Haití,2016,1.38776004314423
+dss,gasto-educ-pib,HND,Honduras,2016,6.09509492079297
+dss,gasto-educ-pib,TCA,Islas Turcas y Caicos,2016,2.90744573120893
+dss,gasto-educ-pib,VGB,Islas Vírgenes Británicas,2016,3.25467711875258
+dss,gasto-educ-pib,JAM,Jamaica,2016,5.31459999084473
+dss,gasto-educ-pib,MEX,México,2016,4.75795984268188
+dss,gasto-educ-pib,NIC,Nicaragua,2016,4.08114004135132
+dss,gasto-educ-pib,PAN,Panamá,2016,3.32278990745544
+dss,gasto-educ-pib,PRY,Paraguay,2016,3.43498992919922
+dss,gasto-educ-pib,PER,Perú,2016,3.81316995620727
+dss,gasto-educ-pib,PRI,Puerto Rico,2016,2.78358429967595
+dss,gasto-educ-pib,DOM,República Dominicana,2016,3.85049560792469
+dss,gasto-educ-pib,KNA,San Cristóbal y Nieves,2016,3.00076147453842
+dss,gasto-educ-pib,VCT,San Vicente y las Granadinas,2016,5.45265007019043
+dss,gasto-educ-pib,LCA,Santa Lucía,2016,5.20954990386963
+dss,gasto-educ-pib,SUR,Surinam,2016,5.64051904970974
+dss,gasto-educ-pib,TTO,Trinidad y Tobago,2016,4.21428227509361
+dss,gasto-educ-pib,URY,Uruguay,2016,4.36420011520386
+dss,gasto-educ-pib,ATG,Antigua y Barbuda,2017,2.28158315038897
+dss,gasto-educ-pib,ARG,Argentina,2017,5.45432996749878
+dss,gasto-educ-pib,ABW,Aruba,2017,4.45581996127504
+dss,gasto-educ-pib,BHS,Bahamas,2017,2.69510162053495
+dss,gasto-educ-pib,BRB,Barbados,2017,3.956209897995
+dss,gasto-educ-pib,BLZ,Belice,2017,5.95071983337402
+dss,gasto-educ-pib,BMU,Bermudas,2017,1.32495999336243
+dss,gasto-educ-pib,BOL,Bolivia,2017,8.09722995758057
+dss,gasto-educ-pib,BRA,Brasil,2017,6.32047986984253
+dss,gasto-educ-pib,CAN,Canadá,2017,4.95998001098633
+dss,gasto-educ-pib,CHL,Chile,2017,5.43278980255127
+dss,gasto-educ-pib,COL,Colombia,2017,4.53551006317139
+dss,gasto-educ-pib,CRI,Costa Rica,2017,7.06981992721558
+dss,gasto-educ-pib,CUB,Cuba,2017,8.44413540438793
+dss,gasto-educ-pib,CUW,Curazao,2017,5.91444785594951
+dss,gasto-educ-pib,DMA,Dominica,2017,4.71605005720456
+dss,gasto-educ-pib,ECU,Ecuador,2017,4.60667733499397
+dss,gasto-educ-pib,SLV,El Salvador,2017,3.7252299785614
+dss,gasto-educ-pib,USA,Estados Unidos,2017,5.09296989440918
+dss,gasto-educ-pib,GRD,Granada,2017,3.17379999160767
+dss,gasto-educ-pib,GTM,Guatemala,2017,2.95009994506836
+dss,gasto-educ-pib,GUY,Guyana,2017,4.6647801399231
+dss,gasto-educ-pib,HTI,Haití,2017,1.49846994876862
+dss,gasto-educ-pib,HND,Honduras,2017,5.74434396129576
+dss,gasto-educ-pib,TCA,Islas Turcas y Caicos,2017,2.47278207606746
+dss,gasto-educ-pib,VGB,Islas Vírgenes Británicas,2017,2.4570894097885
+dss,gasto-educ-pib,JAM,Jamaica,2017,5.26015996932983
+dss,gasto-educ-pib,MEX,México,2017,4.39752006530762
+dss,gasto-educ-pib,NIC,Nicaragua,2017,4.35768985748291
+dss,gasto-educ-pib,PAN,Panamá,2017,3.37834000587463
+dss,gasto-educ-pib,PRY,Paraguay,2017,3.09062070242279
+dss,gasto-educ-pib,PER,Perú,2017,3.93130993843079
+dss,gasto-educ-pib,PRI,Puerto Rico,2017,2.72538873126429
+dss,gasto-educ-pib,DOM,República Dominicana,2017,3.92026752279272
+dss,gasto-educ-pib,KNA,San Cristóbal y Nieves,2017,2.77100327979144
+dss,gasto-educ-pib,VCT,San Vicente y las Granadinas,2017,5.37974977493286
+dss,gasto-educ-pib,LCA,Santa Lucía,2017,3.6273152206015
+dss,gasto-educ-pib,SUR,Surinam,2017,5.45861311514349
+dss,gasto-educ-pib,TTO,Trinidad y Tobago,2017,3.3293687903123
+dss,gasto-educ-pib,URY,Uruguay,2017,4.41787004470825
+dss,gasto-educ-pib,ATG,Antigua y Barbuda,2018,2.26922708436893
+dss,gasto-educ-pib,ARG,Argentina,2018,4.87773990631104
+dss,gasto-educ-pib,ABW,Aruba,2018,4.54876355243615
+dss,gasto-educ-pib,BHS,Bahamas,2018,2.49264112462151
+dss,gasto-educ-pib,BRB,Barbados,2018,5.40447825597088
+dss,gasto-educ-pib,BLZ,Belice,2018,6.12779998779297
+dss,gasto-educ-pib,BMU,Bermudas,2018,1.93595466792564
+dss,gasto-educ-pib,BOL,Bolivia,2018,8.01585960388184
+dss,gasto-educ-pib,BRA,Brasil,2018,6.08851003646851
+dss,gasto-educ-pib,CAN,Canadá,2018,4.88898992538452
+dss,gasto-educ-pib,CHL,Chile,2018,5.473060131073
+dss,gasto-educ-pib,COL,Colombia,2018,4.44910001754761
+dss,gasto-educ-pib,CRI,Costa Rica,2018,6.76992988586426
+dss,gasto-educ-pib,CUB,Cuba,2018,8.02498461098619
+dss,gasto-educ-pib,CUW,Curazao,2018,5.93873270793721
+dss,gasto-educ-pib,DMA,Dominica,2018,5.1536046272165
+dss,gasto-educ-pib,ECU,Ecuador,2018,4.6250260585881
+dss,gasto-educ-pib,SLV,El Salvador,2018,3.60575008392334
+dss,gasto-educ-pib,USA,Estados Unidos,2018,4.89502000808716
+dss,gasto-educ-pib,GRD,Granada,2018,3.55919341882594
+dss,gasto-educ-pib,GTM,Guatemala,2018,3.13193988800049
+dss,gasto-educ-pib,GUY,Guyana,2018,4.45058012008667
+dss,gasto-educ-pib,HTI,Haití,2018,1.63715994358063
+dss,gasto-educ-pib,HND,Honduras,2018,6.05646991729736
+dss,gasto-educ-pib,CYM,Islas Caimán,2018,2.16376945997106
+dss,gasto-educ-pib,TCA,Islas Turcas y Caicos,2018,2.7437698841095
+dss,gasto-educ-pib,VGB,Islas Vírgenes Británicas,2018,2.42556060278319
+dss,gasto-educ-pib,JAM,Jamaica,2018,5.41379022598267
+dss,gasto-educ-pib,MEX,México,2018,4.13944005966187
+dss,gasto-educ-pib,NIC,Nicaragua,2018,4.47380693256251
+dss,gasto-educ-pib,PAN,Panamá,2018,3.4524199962616
+dss,gasto-educ-pib,PRY,Paraguay,2018,3.2961960606943
+dss,gasto-educ-pib,PER,Perú,2018,3.71392011642456
+dss,gasto-educ-pib,PRI,Puerto Rico,2018,2.60388715714737
+dss,gasto-educ-pib,DOM,República Dominicana,2018,3.92849467476802
+dss,gasto-educ-pib,KNA,San Cristóbal y Nieves,2018,3.03524983830349
+dss,gasto-educ-pib,VCT,San Vicente y las Granadinas,2018,5.22357988357544
+dss,gasto-educ-pib,LCA,Santa Lucía,2018,3.33277988433838
+dss,gasto-educ-pib,SUR,Surinam,2018,4.92259355761269
+dss,gasto-educ-pib,TTO,Trinidad y Tobago,2018,3.47141762674052
+dss,gasto-educ-pib,URY,Uruguay,2018,4.60361003875732
+dss,gasto-educ-pib,ATG,Antigua y Barbuda,2019,3.35725653382563
+dss,gasto-educ-pib,ARG,Argentina,2019,4.77165985107422
+dss,gasto-educ-pib,ABW,Aruba,2019,4.43503686776957
+dss,gasto-educ-pib,BHS,Bahamas,2019,2.62573176503127
+dss,gasto-educ-pib,BRB,Barbados,2019,3.72228002548218
+dss,gasto-educ-pib,BLZ,Belice,2019,5.96377992630005
+dss,gasto-educ-pib,BMU,Bermudas,2019,1.92679827239971
+dss,gasto-educ-pib,BOL,Bolivia,2019,8.09103012084961
+dss,gasto-educ-pib,BRA,Brasil,2019,5.96346998214722
+dss,gasto-educ-pib,CAN,Canadá,2019,4.77293014526367
+dss,gasto-educ-pib,CHL,Chile,2019,5.62629985809326
+dss,gasto-educ-pib,COL,Colombia,2019,4.51068019866943
+dss,gasto-educ-pib,CRI,Costa Rica,2019,6.73809003829956
+dss,gasto-educ-pib,CUB,Cuba,2019,9.04700486137163
+dss,gasto-educ-pib,CUW,Curazao,2019,5.81155632881729
+dss,gasto-educ-pib,DMA,Dominica,2019,4.88721990585327
+dss,gasto-educ-pib,ECU,Ecuador,2019,4.24576997756958
+dss,gasto-educ-pib,SLV,El Salvador,2019,3.38710999488831
+dss,gasto-educ-pib,USA,Estados Unidos,2019,4.95746994018555
+dss,gasto-educ-pib,GTM,Guatemala,2019,3.19297003746033
+dss,gasto-educ-pib,HTI,Haití,2019,1.08414978067408
+dss,gasto-educ-pib,HND,Honduras,2019,5.98198266311593
+dss,gasto-educ-pib,CYM,Islas Caimán,2019,1.13670003414154
+dss,gasto-educ-pib,TCA,Islas Turcas y Caicos,2019,2.12170004844665
+dss,gasto-educ-pib,VGB,Islas Vírgenes Británicas,2019,2.500967871937
+dss,gasto-educ-pib,JAM,Jamaica,2019,5.16364002227783
+dss,gasto-educ-pib,NIC,Nicaragua,2019,4.59991969121332
+dss,gasto-educ-pib,PAN,Panamá,2019,3.28122011579173
+dss,gasto-educ-pib,PRY,Paraguay,2019,3.48983027194334
+dss,gasto-educ-pib,PER,Perú,2019,3.822429895401
+dss,gasto-educ-pib,PRI,Puerto Rico,2019,3.32791002069889
+dss,gasto-educ-pib,DOM,República Dominicana,2019,4.04276873126053
+dss,gasto-educ-pib,KNA,San Cristóbal y Nieves,2019,2.72889566429639
+dss,gasto-educ-pib,LCA,Santa Lucía,2019,3.27267003059387
+dss,gasto-educ-pib,SUR,Surinam,2019,6.77857289012664
+dss,gasto-educ-pib,TTO,Trinidad y Tobago,2019,3.55386116245268
+dss,gasto-educ-pib,URY,Uruguay,2019,4.62834978103638
+dss,gasto-educ-pib,ATG,Antigua y Barbuda,2020,3.0051830460864
+dss,gasto-educ-pib,ARG,Argentina,2020,5.27689981460571
+dss,gasto-educ-pib,BHS,Bahamas,2020,3.7125229961238
+dss,gasto-educ-pib,BRB,Barbados,2020,3.86529994010925
+dss,gasto-educ-pib,BLZ,Belice,2020,5.21301984786987
+dss,gasto-educ-pib,BMU,Bermudas,2020,1.74834797496856
+dss,gasto-educ-pib,BOL,Bolivia,2020,8.43710994720459
+dss,gasto-educ-pib,BRA,Brasil,2020,5.7714900970459
+dss,gasto-educ-pib,CAN,Canadá,2020,4.88794994354248
+dss,gasto-educ-pib,CHL,Chile,2020,5.62992000579834
+dss,gasto-educ-pib,COL,Colombia,2020,5.26166009902954
+dss,gasto-educ-pib,CRI,Costa Rica,2020,6.62899017333984
+dss,gasto-educ-pib,CUB,Cuba,2020,11.5248184008093
+dss,gasto-educ-pib,CUW,Curazao,2020,7.11645238834347
+dss,gasto-educ-pib,DMA,Dominica,2020,4.45777988433838
+dss,gasto-educ-pib,ECU,Ecuador,2020,4.26103019714355
+dss,gasto-educ-pib,SLV,El Salvador,2020,3.66088008880615
+dss,gasto-educ-pib,USA,Estados Unidos,2020,5.39530992507935
+dss,gasto-educ-pib,GTM,Guatemala,2020,3.29485011100769
+dss,gasto-educ-pib,HTI,Haití,2020,1.11353641558643
+dss,gasto-educ-pib,HND,Honduras,2020,6.09801328648889
+dss,gasto-educ-pib,CYM,Islas Caimán,2020,1.45542001724243
+dss,gasto-educ-pib,TCA,Islas Turcas y Caicos,2020,2.46213795190062
+dss,gasto-educ-pib,VGB,Islas Vírgenes Británicas,2020,2.70539282589676
+dss,gasto-educ-pib,JAM,Jamaica,2020,5.38065828197341
+dss,gasto-educ-pib,MEX,México,2020,4.4996600151062
+dss,gasto-educ-pib,NIC,Nicaragua,2020,4.58034059162685
+dss,gasto-educ-pib,PAN,Panamá,2020,4.30487012863159
+dss,gasto-educ-pib,PRY,Paraguay,2020,3.93615007400513
+dss,gasto-educ-pib,PER,Perú,2020,4.25937986373901
+dss,gasto-educ-pib,PRI,Puerto Rico,2020,4.28663184360846
+dss,gasto-educ-pib,DOM,República Dominicana,2020,4.51769850778985
+dss,gasto-educ-pib,KNA,San Cristóbal y Nieves,2020,3.10568635584663
+dss,gasto-educ-pib,VCT,San Vicente y las Granadinas,2020,5.46376310406546
+dss,gasto-educ-pib,LCA,Santa Lucía,2020,3.61522006988525
+dss,gasto-educ-pib,SUR,Surinam,2020,4.58425708265782
+dss,gasto-educ-pib,TTO,Trinidad y Tobago,2020,4.22041988372803
+dss,gasto-educ-pib,URY,Uruguay,2020,4.55217981338501
+dss,gasto-educ-pib,ATG,Antigua y Barbuda,2021,2.50897393198865
+dss,gasto-educ-pib,ARG,Argentina,2021,4.65393018722534
+dss,gasto-educ-pib,ABW,Aruba,2021,3.61855755636695
+dss,gasto-educ-pib,BHS,Bahamas,2021,3.04890655208507
+dss,gasto-educ-pib,BRB,Barbados,2021,4.49793004989624
+dss,gasto-educ-pib,BLZ,Belice,2021,5.96298980712891
+dss,gasto-educ-pib,BMU,Bermudas,2021,1.94565325816336
+dss,gasto-educ-pib,BOL,Bolivia,2021,7.96216011047363
+dss,gasto-educ-pib,BRA,Brasil,2021,5.4969801902771
+dss,gasto-educ-pib,CAN,Canadá,2021,4.74858999252319
+dss,gasto-educ-pib,CHL,Chile,2021,5.00225019454956
+dss,gasto-educ-pib,CRI,Costa Rica,2021,6.24842977523804
+dss,gasto-educ-pib,CUB,Cuba,2021,9.3858620562531
+dss,gasto-educ-pib,CUW,Curazao,2021,6.18160236726664
+dss,gasto-educ-pib,DMA,Dominica,2021,5.71689183034862
+dss,gasto-educ-pib,ECU,Ecuador,2021,3.65649008750915
+dss,gasto-educ-pib,SLV,El Salvador,2021,3.57766008377075
+dss,gasto-educ-pib,USA,Estados Unidos,2021,5.42038011550903
+dss,gasto-educ-pib,GRD,Granada,2021,4.09030334217367
+dss,gasto-educ-pib,GTM,Guatemala,2021,3.09189009666443
+dss,gasto-educ-pib,HTI,Haití,2021,1.24275181117048
+dss,gasto-educ-pib,HND,Honduras,2021,5.88160201792279
+dss,gasto-educ-pib,CYM,Islas Caimán,2021,1.31253004074097
+dss,gasto-educ-pib,TCA,Islas Turcas y Caicos,2021,3.27759003639221
+dss,gasto-educ-pib,VGB,Islas Vírgenes Británicas,2021,3.0245532067775
+dss,gasto-educ-pib,JAM,Jamaica,2021,5.63122987747192
+dss,gasto-educ-pib,MEX,México,2021,4.23823976516724
+dss,gasto-educ-pib,NIC,Nicaragua,2021,4.08717467298944
+dss,gasto-educ-pib,PAN,Panamá,2021,3.71198010444641
+dss,gasto-educ-pib,PRY,Paraguay,2021,3.41070008277893
+dss,gasto-educ-pib,PER,Perú,2021,3.92765998840332
+dss,gasto-educ-pib,PRI,Puerto Rico,2021,3.7296700261025
+dss,gasto-educ-pib,DOM,República Dominicana,2021,3.58043271614957
+dss,gasto-educ-pib,KNA,San Cristóbal y Nieves,2021,2.78379011154175
+dss,gasto-educ-pib,LCA,Santa Lucía,2021,5.86197746335882
+dss,gasto-educ-pib,SUR,Surinam,2021,4.13154972947739
+dss,gasto-educ-pib,TTO,Trinidad y Tobago,2021,3.04397988319397
+dss,gasto-educ-pib,URY,Uruguay,2021,4.46211004257202
+dss,gasto-educ-pib,ATG,Antigua y Barbuda,2022,2.50368755552383
+dss,gasto-educ-pib,ARG,Argentina,2022,4.79263019561768
+dss,gasto-educ-pib,BHS,Bahamas,2022,2.62367021406169
+dss,gasto-educ-pib,BRB,Barbados,2022,4.14000988006592
+dss,gasto-educ-pib,BLZ,Belice,2022,4.60415983200073
+dss,gasto-educ-pib,BMU,Bermudas,2022,1.77583338857166
+dss,gasto-educ-pib,BOL,Bolivia,2022,7.57551002502441
+dss,gasto-educ-pib,BRA,Brasil,2022,5.61920976638794
+dss,gasto-educ-pib,CAN,Canadá,2022,4.84426021575928
+dss,gasto-educ-pib,CHL,Chile,2022,4.91201019287109
+dss,gasto-educ-pib,CRI,Costa Rica,2022,5.5472297668457
+dss,gasto-educ-pib,CUB,Cuba,2022,8.44086351669284
+dss,gasto-educ-pib,CUW,Curazao,2022,6.08167033605813
+dss,gasto-educ-pib,DMA,Dominica,2022,6.04314243406571
+dss,gasto-educ-pib,ECU,Ecuador,2022,3.61301994323731
+dss,gasto-educ-pib,SLV,El Salvador,2022,3.26848006248474
+dss,gasto-educ-pib,GRD,Granada,2022,4.03767284869161
+dss,gasto-educ-pib,GTM,Guatemala,2022,3.20787000656128
+dss,gasto-educ-pib,HTI,Haití,2022,1.02689812206798
+dss,gasto-educ-pib,HND,Honduras,2022,4.48280030802056
+dss,gasto-educ-pib,CYM,Islas Caimán,2022,1.48894000053406
+dss,gasto-educ-pib,TCA,Islas Turcas y Caicos,2022,2.77640008926392
+dss,gasto-educ-pib,VGB,Islas Vírgenes Británicas,2022,2.48401807300907
+dss,gasto-educ-pib,JAM,Jamaica,2022,5.35435009002685
+dss,gasto-educ-pib,MEX,México,2022,4.05987977981567
+dss,gasto-educ-pib,NIC,Nicaragua,2022,3.80001496174069
+dss,gasto-educ-pib,PAN,Panamá,2022,3.37781000137329
+dss,gasto-educ-pib,PRY,Paraguay,2022,3.39619994163513
+dss,gasto-educ-pib,PER,Perú,2022,3.83975005149841
+dss,gasto-educ-pib,PRI,Puerto Rico,2022,3.86129930773508
+dss,gasto-educ-pib,DOM,República Dominicana,2022,3.61088872070271
+dss,gasto-educ-pib,KNA,San Cristóbal y Nieves,2022,3.5579615526858
+dss,gasto-educ-pib,SXM,San Martín (Países Bajos),2022,4.27420508508285
+dss,gasto-educ-pib,VCT,San Vicente y las Granadinas,2022,7.07575034584772
+dss,gasto-educ-pib,LCA,Santa Lucía,2022,4.64235019683838
+dss,gasto-educ-pib,SUR,Surinam,2022,3.43460841988051
+dss,gasto-educ-pib,TTO,Trinidad y Tobago,2022,2.81801009178162
+dss,gasto-educ-pib,URY,Uruguay,2022,4.4795298576355
+dss,gasto-educ-pib,ATG,Antigua y Barbuda,2023,3.10505161832136
+dss,gasto-educ-pib,ARG,Argentina,2023,5.00324010848999
+dss,gasto-educ-pib,BHS,Bahamas,2023,2.74191570247934
+dss,gasto-educ-pib,BRB,Barbados,2023,3.7754499912262
+dss,gasto-educ-pib,BLZ,Belice,2023,4.23143005371094
+dss,gasto-educ-pib,BMU,Bermudas,2023,1.86510440752276
+dss,gasto-educ-pib,BOL,Bolivia,2023,7.89381980895996
+dss,gasto-educ-pib,CRI,Costa Rica,2023,5.31208992004395
+dss,gasto-educ-pib,CUW,Curazao,2023,5.30074159005788
+dss,gasto-educ-pib,DMA,Dominica,2023,4.69423746286593
+dss,gasto-educ-pib,ECU,Ecuador,2023,3.81964993476868
+dss,gasto-educ-pib,SLV,El Salvador,2023,3.18734002113342
+dss,gasto-educ-pib,GRD,Granada,2023,5.12544845968893
+dss,gasto-educ-pib,GTM,Guatemala,2023,3.10877990722656
+dss,gasto-educ-pib,HTI,Haití,2023,0.964648012977964
+dss,gasto-educ-pib,HND,Honduras,2023,4.54962037172702
+dss,gasto-educ-pib,CYM,Islas Caimán,2023,1.57024002075195
+dss,gasto-educ-pib,TCA,Islas Turcas y Caicos,2023,2.68765461969981
+dss,gasto-educ-pib,VGB,Islas Vírgenes Británicas,2023,3.17283855528435
+dss,gasto-educ-pib,JAM,Jamaica,2023,5.65453693979426
+dss,gasto-educ-pib,NIC,Nicaragua,2023,2.86954998970032
+dss,gasto-educ-pib,PAN,Panamá,2023,2.47225999832153
+dss,gasto-educ-pib,PRY,Paraguay,2023,3.393709897995
+dss,gasto-educ-pib,PER,Perú,2023,4.24538993835449
+dss,gasto-educ-pib,PRI,Puerto Rico,2023,4.26898753959873
+dss,gasto-educ-pib,DOM,República Dominicana,2023,3.7606477375256
+dss,gasto-educ-pib,KNA,San Cristóbal y Nieves,2023,3.49726171629099
+dss,gasto-educ-pib,SXM,San Martín (Países Bajos),2023,3.92363832601723
+dss,gasto-educ-pib,VCT,San Vicente y las Granadinas,2023,6.4582691706334
+dss,gasto-educ-pib,LCA,Santa Lucía,2023,2.74211001396179
+dss,gasto-educ-pib,SUR,Surinam,2023,2.86623341491363
+dss,gasto-educ-pib,TTO,Trinidad y Tobago,2023,3.23358011245727
+dss,gasto-educ-pib,URY,Uruguay,2023,4.76461982727051
+dss,gasto-educ-pib,BRB,Barbados,2024,3.55593188106322
+dss,gasto-educ-pib,BLZ,Belice,2024,4.62276317232973
+dss,gasto-educ-pib,BOL,Bolivia,2024,7.53980016708374
+dss,gasto-educ-pib,CUW,Curazao,2024,5.44313725490196
+dss,gasto-educ-pib,DMA,Dominica,2024,5.38572189060925
+dss,gasto-educ-pib,ECU,Ecuador,2024,3.69074988365173
+dss,gasto-educ-pib,SLV,El Salvador,2024,3.31666994094849
+dss,gasto-educ-pib,GTM,Guatemala,2024,3.07588005065918
+dss,gasto-educ-pib,TCA,Islas Turcas y Caicos,2024,2.94998113247616
+dss,gasto-educ-pib,JAM,Jamaica,2024,5.51383018493652
+dss,gasto-educ-pib,PRY,Paraguay,2024,3.53410005569458
+dss,gasto-educ-pib,PER,Perú,2024,4.35778999328613
+dss,gasto-educ-pib,PRI,Puerto Rico,2024,4.27101949674789
+dss,gasto-educ-pib,LCA,Santa Lucía,2024,3.84700018653403
+priorizado,razon-mortalidad-materna,ARG,Argentina,2000,57.80834
+priorizado,razon-mortalidad-materna,BHS,Bahamas,2000,51.26978
+priorizado,razon-mortalidad-materna,BRB,Barbados,2000,45.66083
+priorizado,razon-mortalidad-materna,BLZ,Belice,2000,78.12834
+priorizado,razon-mortalidad-materna,BRA,Brasil,2000,68.64623
+priorizado,razon-mortalidad-materna,CAN,Canadá,2000,8.98736
+priorizado,razon-mortalidad-materna,CHL,Chile,2000,32.94284
+priorizado,razon-mortalidad-materna,COL,Colombia,2000,95.11151
+priorizado,razon-mortalidad-materna,CRI,Costa Rica,2000,35.52167
+priorizado,razon-mortalidad-materna,CUB,Cuba,2000,48.19773
+priorizado,razon-mortalidad-materna,DMA,Dominica,2000,61.05658
+priorizado,razon-mortalidad-materna,ECU,Ecuador,2000,122.73784
+priorizado,razon-mortalidad-materna,SLV,El Salvador,2000,47.69612
+priorizado,razon-mortalidad-materna,GRD,Granada,2000,45.5281
+priorizado,razon-mortalidad-materna,GTM,Guatemala,2000,165.81012
+priorizado,razon-mortalidad-materna,GUY,Guyana,2000,170.55123
+priorizado,razon-mortalidad-materna,HTI,Haití,2000,439.62343
+priorizado,razon-mortalidad-materna,HND,Honduras,2000,81.658690000000007
+priorizado,razon-mortalidad-materna,JAM,Jamaica,2000,81.86244
+priorizado,razon-mortalidad-materna,MEX,México,2000,56.39246
+priorizado,razon-mortalidad-materna,NIC,Nicaragua,2000,213.31067
+priorizado,razon-mortalidad-materna,PAN,Panamá,2000,64.08376
+priorizado,razon-mortalidad-materna,PRY,Paraguay,2000,206.76168
+priorizado,razon-mortalidad-materna,PER,Perú,2000,115.33938
+priorizado,razon-mortalidad-materna,PRI,Puerto Rico,2000,21.8012
+priorizado,razon-mortalidad-materna,DOM,República Dominicana,2000,75.59829
+priorizado,razon-mortalidad-materna,SUR,Surinam,2000,281.54746
+priorizado,razon-mortalidad-materna,URY,Uruguay,2000,23.46975
+priorizado,razon-mortalidad-materna,ARG,Argentina,2001,60.25133
+priorizado,razon-mortalidad-materna,BHS,Bahamas,2001,48.23636
+priorizado,razon-mortalidad-materna,BRB,Barbados,2001,45.84178
+priorizado,razon-mortalidad-materna,BLZ,Belice,2001,76.22194
+priorizado,razon-mortalidad-materna,BRA,Brasil,2001,66.43235
+priorizado,razon-mortalidad-materna,CAN,Canadá,2001,9.54336
+priorizado,razon-mortalidad-materna,CHL,Chile,2001,31.57899
+priorizado,razon-mortalidad-materna,COL,Colombia,2001,93.80357
+priorizado,razon-mortalidad-materna,CRI,Costa Rica,2001,35.31408
+priorizado,razon-mortalidad-materna,CUB,Cuba,2001,46.23062
+priorizado,razon-mortalidad-materna,DMA,Dominica,2001,58.22382
+priorizado,razon-mortalidad-materna,ECU,Ecuador,2001,116.18089
+priorizado,razon-mortalidad-materna,SLV,El Salvador,2001,45.28337
+priorizado,razon-mortalidad-materna,GRD,Granada,2001,44.96926
+priorizado,razon-mortalidad-materna,GTM,Guatemala,2001,162.13815
+priorizado,razon-mortalidad-materna,GUY,Guyana,2001,162.77843
+priorizado,razon-mortalidad-materna,HTI,Haití,2001,428.17496
+priorizado,razon-mortalidad-materna,HND,Honduras,2001,77.71595
+priorizado,razon-mortalidad-materna,JAM,Jamaica,2001,82.32536
+priorizado,razon-mortalidad-materna,MEX,México,2001,55.3538
+priorizado,razon-mortalidad-materna,NIC,Nicaragua,2001,194.1273
+priorizado,razon-mortalidad-materna,PAN,Panamá,2001,61.56771
+priorizado,razon-mortalidad-materna,PRY,Paraguay,2001,206.85486
+priorizado,razon-mortalidad-materna,PER,Perú,2001,109.38935
+priorizado,razon-mortalidad-materna,PRI,Puerto Rico,2001,20.75558
+priorizado,razon-mortalidad-materna,DOM,República Dominicana,2001,68.08629
+priorizado,razon-mortalidad-materna,SUR,Surinam,2001,269.7184
+priorizado,razon-mortalidad-materna,URY,Uruguay,2001,24.01111
+priorizado,razon-mortalidad-materna,ARG,Argentina,2002,59.15006
+priorizado,razon-mortalidad-materna,BHS,Bahamas,2002,46.27778
+priorizado,razon-mortalidad-materna,BRB,Barbados,2002,43.19389
+priorizado,razon-mortalidad-materna,BLZ,Belice,2002,68.21414
+priorizado,razon-mortalidad-materna,BRA,Brasil,2002,65.96649
+priorizado,razon-mortalidad-materna,CAN,Canadá,2002,9.96334
+priorizado,razon-mortalidad-materna,CHL,Chile,2002,30.39744
+priorizado,razon-mortalidad-materna,COL,Colombia,2002,91.27231
+priorizado,razon-mortalidad-materna,CRI,Costa Rica,2002,33.9861
+priorizado,razon-mortalidad-materna,CUB,Cuba,2002,45.36349
+priorizado,razon-mortalidad-materna,DMA,Dominica,2002,56.35855
+priorizado,razon-mortalidad-materna,ECU,Ecuador,2002,109.31655
+priorizado,razon-mortalidad-materna,SLV,El Salvador,2002,39.8673
+priorizado,razon-mortalidad-materna,GRD,Granada,2002,42.32388
+priorizado,razon-mortalidad-materna,GTM,Guatemala,2002,153.38861
+priorizado,razon-mortalidad-materna,GUY,Guyana,2002,164.26439
+priorizado,razon-mortalidad-materna,HTI,Haití,2002,410.38236
+priorizado,razon-mortalidad-materna,HND,Honduras,2002,75.36672
+priorizado,razon-mortalidad-materna,JAM,Jamaica,2002,80.84112
+priorizado,razon-mortalidad-materna,MEX,México,2002,54.96576
+priorizado,razon-mortalidad-materna,NIC,Nicaragua,2002,170.15452
+priorizado,razon-mortalidad-materna,PAN,Panamá,2002,59.406
+priorizado,razon-mortalidad-materna,PRY,Paraguay,2002,205.51113
+priorizado,razon-mortalidad-materna,PER,Perú,2002,105.71584
+priorizado,razon-mortalidad-materna,PRI,Puerto Rico,2002,19.43858
+priorizado,razon-mortalidad-materna,DOM,República Dominicana,2002,68.24472
+priorizado,razon-mortalidad-materna,SUR,Surinam,2002,253.19048
+priorizado,razon-mortalidad-materna,URY,Uruguay,2002,23.32382
+priorizado,razon-mortalidad-materna,ARG,Argentina,2003,60.93268
+priorizado,razon-mortalidad-materna,BHS,Bahamas,2003,57.30682
+priorizado,razon-mortalidad-materna,BRB,Barbados,2003,44.65167
+priorizado,razon-mortalidad-materna,BLZ,Belice,2003,66.76509
+priorizado,razon-mortalidad-materna,BRA,Brasil,2003,67.03581
+priorizado,razon-mortalidad-materna,CAN,Canadá,2003,10.2644
+priorizado,razon-mortalidad-materna,CHL,Chile,2003,29.27009
+priorizado,razon-mortalidad-materna,COL,Colombia,2003,86.7687
+priorizado,razon-mortalidad-materna,CRI,Costa Rica,2003,33.22327
+priorizado,razon-mortalidad-materna,CUB,Cuba,2003,44.37065
+priorizado,razon-mortalidad-materna,DMA,Dominica,2003,55.22598
+priorizado,razon-mortalidad-materna,ECU,Ecuador,2003,101.78602
+priorizado,razon-mortalidad-materna,SLV,El Salvador,2003,37.74841
+priorizado,razon-mortalidad-materna,GRD,Granada,2003,42.13301
+priorizado,razon-mortalidad-materna,GTM,Guatemala,2003,149.60913
+priorizado,razon-mortalidad-materna,GUY,Guyana,2003,163.66381
+priorizado,razon-mortalidad-materna,HTI,Haití,2003,384.71085
+priorizado,razon-mortalidad-materna,HND,Honduras,2003,75.22647
+priorizado,razon-mortalidad-materna,JAM,Jamaica,2003,78.85198
+priorizado,razon-mortalidad-materna,MEX,México,2003,54.03961
+priorizado,razon-mortalidad-materna,NIC,Nicaragua,2003,153.99707
+priorizado,razon-mortalidad-materna,PAN,Panamá,2003,58.3954
+priorizado,razon-mortalidad-materna,PRY,Paraguay,2003,202.99771
+priorizado,razon-mortalidad-materna,PER,Perú,2003,104.18467
+priorizado,razon-mortalidad-materna,PRI,Puerto Rico,2003,19.54747
+priorizado,razon-mortalidad-materna,DOM,República Dominicana,2003,71.36468
+priorizado,razon-mortalidad-materna,SUR,Surinam,2003,237.91532
+priorizado,razon-mortalidad-materna,URY,Uruguay,2003,22.55953
+priorizado,razon-mortalidad-materna,ARG,Argentina,2004,58.43938
+priorizado,razon-mortalidad-materna,BHS,Bahamas,2004,68.8499
+priorizado,razon-mortalidad-materna,BRB,Barbados,2004,42.71906
+priorizado,razon-mortalidad-materna,BLZ,Belice,2004,62.76015
+priorizado,razon-mortalidad-materna,BRA,Brasil,2004,69.58024
+priorizado,razon-mortalidad-materna,CAN,Canadá,2004,10.34216
+priorizado,razon-mortalidad-materna,CHL,Chile,2004,28.09702
+priorizado,razon-mortalidad-materna,COL,Colombia,2004,84.15008
+priorizado,razon-mortalidad-materna,CRI,Costa Rica,2004,32.8554
+priorizado,razon-mortalidad-materna,CUB,Cuba,2004,44.12797
+priorizado,razon-mortalidad-materna,DMA,Dominica,2004,54.46979
+priorizado,razon-mortalidad-materna,ECU,Ecuador,2004,96.85289
+priorizado,razon-mortalidad-materna,SLV,El Salvador,2004,34.61605
+priorizado,razon-mortalidad-materna,GRD,Granada,2004,48.47069
+priorizado,razon-mortalidad-materna,GTM,Guatemala,2004,148.04706
+priorizado,razon-mortalidad-materna,GUY,Guyana,2004,162.31179
+priorizado,razon-mortalidad-materna,HTI,Haití,2004,427.26796
+priorizado,razon-mortalidad-materna,HND,Honduras,2004,74.29204
+priorizado,razon-mortalidad-materna,JAM,Jamaica,2004,77.07226
+priorizado,razon-mortalidad-materna,MEX,México,2004,53.06311
+priorizado,razon-mortalidad-materna,NIC,Nicaragua,2004,140.03818
+priorizado,razon-mortalidad-materna,PAN,Panamá,2004,57.42359
+priorizado,razon-mortalidad-materna,PRY,Paraguay,2004,198.88059
+priorizado,razon-mortalidad-materna,PER,Perú,2004,106.66304
+priorizado,razon-mortalidad-materna,PRI,Puerto Rico,2004,19.93115
+priorizado,razon-mortalidad-materna,DOM,República Dominicana,2004,77.85296
+priorizado,razon-mortalidad-materna,SUR,Surinam,2004,218.7273
+priorizado,razon-mortalidad-materna,URY,Uruguay,2004,21.41815
+priorizado,razon-mortalidad-materna,ARG,Argentina,2005,57.45685
+priorizado,razon-mortalidad-materna,BHS,Bahamas,2005,69.50286
+priorizado,razon-mortalidad-materna,BRB,Barbados,2005,43.72432
+priorizado,razon-mortalidad-materna,BLZ,Belice,2005,60.07114
+priorizado,razon-mortalidad-materna,BRA,Brasil,2005,71.49638
+priorizado,razon-mortalidad-materna,CAN,Canadá,2005,11.17144
+priorizado,razon-mortalidad-materna,CHL,Chile,2005,27.48591
+priorizado,razon-mortalidad-materna,COL,Colombia,2005,81.6156
+priorizado,razon-mortalidad-materna,CRI,Costa Rica,2005,31.19951
+priorizado,razon-mortalidad-materna,CUB,Cuba,2005,42.95019
+priorizado,razon-mortalidad-materna,DMA,Dominica,2005,53.83393
+priorizado,razon-mortalidad-materna,ECU,Ecuador,2005,93.50637
+priorizado,razon-mortalidad-materna,SLV,El Salvador,2005,33.77924
+priorizado,razon-mortalidad-materna,GRD,Granada,2005,40.34661
+priorizado,razon-mortalidad-materna,GTM,Guatemala,2005,152.85182
+priorizado,razon-mortalidad-materna,GUY,Guyana,2005,166.40215
+priorizado,razon-mortalidad-materna,HTI,Haití,2005,355.07236
+priorizado,razon-mortalidad-materna,HND,Honduras,2005,73.476
+priorizado,razon-mortalidad-materna,JAM,Jamaica,2005,80.63942
+priorizado,razon-mortalidad-materna,MEX,México,2005,51.64543
+priorizado,razon-mortalidad-materna,NIC,Nicaragua,2005,124.30539
+priorizado,razon-mortalidad-materna,PAN,Panamá,2005,56.78298
+priorizado,razon-mortalidad-materna,PRY,Paraguay,2005,194.03042
+priorizado,razon-mortalidad-materna,PER,Perú,2005,103.02851
+priorizado,razon-mortalidad-materna,PRI,Puerto Rico,2005,20.242
+priorizado,razon-mortalidad-materna,DOM,República Dominicana,2005,83.45659
+priorizado,razon-mortalidad-materna,SUR,Surinam,2005,202.06635
+priorizado,razon-mortalidad-materna,URY,Uruguay,2005,20.32274
+priorizado,razon-mortalidad-materna,ARG,Argentina,2006,60.04397
+priorizado,razon-mortalidad-materna,BHS,Bahamas,2006,74.07226
+priorizado,razon-mortalidad-materna,BRB,Barbados,2006,44.62182
+priorizado,razon-mortalidad-materna,BLZ,Belice,2006,55.36324
+priorizado,razon-mortalidad-materna,BRA,Brasil,2006,72.18568
+priorizado,razon-mortalidad-materna,CAN,Canadá,2006,11.20822
+priorizado,razon-mortalidad-materna,CHL,Chile,2006,26.75998
+priorizado,razon-mortalidad-materna,COL,Colombia,2006,80.63076
+priorizado,razon-mortalidad-materna,CRI,Costa Rica,2006,30.0963
+priorizado,razon-mortalidad-materna,CUB,Cuba,2006,41.98547
+priorizado,razon-mortalidad-materna,DMA,Dominica,2006,53.76223
+priorizado,razon-mortalidad-materna,ECU,Ecuador,2006,90.02558
+priorizado,razon-mortalidad-materna,SLV,El Salvador,2006,33.13052
+priorizado,razon-mortalidad-materna,GRD,Granada,2006,38.86186
+priorizado,razon-mortalidad-materna,GTM,Guatemala,2006,141.7435
+priorizado,razon-mortalidad-materna,GUY,Guyana,2006,166.50129
+priorizado,razon-mortalidad-materna,HTI,Haití,2006,367.63447
+priorizado,razon-mortalidad-materna,HND,Honduras,2006,72.25393
+priorizado,razon-mortalidad-materna,JAM,Jamaica,2006,88.85183
+priorizado,razon-mortalidad-materna,MEX,México,2006,50.60049
+priorizado,razon-mortalidad-materna,NIC,Nicaragua,2006,112.98628
+priorizado,razon-mortalidad-materna,PAN,Panamá,2006,56.28085
+priorizado,razon-mortalidad-materna,PRY,Paraguay,2006,186.48486
+priorizado,razon-mortalidad-materna,PER,Perú,2006,98.84666
+priorizado,razon-mortalidad-materna,PRI,Puerto Rico,2006,18.82478
+priorizado,razon-mortalidad-materna,DOM,República Dominicana,2006,86.63941
+priorizado,razon-mortalidad-materna,SUR,Surinam,2006,186.55963
+priorizado,razon-mortalidad-materna,URY,Uruguay,2006,19.679
+priorizado,razon-mortalidad-materna,ARG,Argentina,2007,61.7407
+priorizado,razon-mortalidad-materna,BHS,Bahamas,2007,78.23895
+priorizado,razon-mortalidad-materna,BRB,Barbados,2007,41.89977
+priorizado,razon-mortalidad-materna,BLZ,Belice,2007,51.57972
+priorizado,razon-mortalidad-materna,BRA,Brasil,2007,72.50563
+priorizado,razon-mortalidad-materna,CAN,Canadá,2007,11.39832
+priorizado,razon-mortalidad-materna,CHL,Chile,2007,25.68844
+priorizado,razon-mortalidad-materna,COL,Colombia,2007,79.83739
+priorizado,razon-mortalidad-materna,CRI,Costa Rica,2007,30.31843
+priorizado,razon-mortalidad-materna,CUB,Cuba,2007,41.88979
+priorizado,razon-mortalidad-materna,DMA,Dominica,2007,53.1065
+priorizado,razon-mortalidad-materna,ECU,Ecuador,2007,85.85287
+priorizado,razon-mortalidad-materna,SLV,El Salvador,2007,33.18813
+priorizado,razon-mortalidad-materna,GRD,Granada,2007,39.84307
+priorizado,razon-mortalidad-materna,GTM,Guatemala,2007,135.01586
+priorizado,razon-mortalidad-materna,GUY,Guyana,2007,157.5225
+priorizado,razon-mortalidad-materna,HTI,Haití,2007,382.59661
+priorizado,razon-mortalidad-materna,HND,Honduras,2007,72.10544
+priorizado,razon-mortalidad-materna,JAM,Jamaica,2007,88.54986
+priorizado,razon-mortalidad-materna,MEX,México,2007,49.59504
+priorizado,razon-mortalidad-materna,NIC,Nicaragua,2007,106.08226
+priorizado,razon-mortalidad-materna,PAN,Panamá,2007,55.40564
+priorizado,razon-mortalidad-materna,PRY,Paraguay,2007,176.89627
+priorizado,razon-mortalidad-materna,PER,Perú,2007,94.22268
+priorizado,razon-mortalidad-materna,PRI,Puerto Rico,2007,18.45396
+priorizado,razon-mortalidad-materna,DOM,República Dominicana,2007,90.0094
+priorizado,razon-mortalidad-materna,SUR,Surinam,2007,173.26426
+priorizado,razon-mortalidad-materna,URY,Uruguay,2007,18.9414
+priorizado,razon-mortalidad-materna,ARG,Argentina,2008,59.32073
+priorizado,razon-mortalidad-materna,BHS,Bahamas,2008,80.44553
+priorizado,razon-mortalidad-materna,BRB,Barbados,2008,41.50407
+priorizado,razon-mortalidad-materna,BLZ,Belice,2008,47.7854
+priorizado,razon-mortalidad-materna,BRA,Brasil,2008,71.39691
+priorizado,razon-mortalidad-materna,CAN,Canadá,2008,11.89835
+priorizado,razon-mortalidad-materna,CHL,Chile,2008,24.40544
+priorizado,razon-mortalidad-materna,COL,Colombia,2008,78.15605
+priorizado,razon-mortalidad-materna,CRI,Costa Rica,2008,29.9525
+priorizado,razon-mortalidad-materna,CUB,Cuba,2008,43.6271
+priorizado,razon-mortalidad-materna,DMA,Dominica,2008,52.51947
+priorizado,razon-mortalidad-materna,ECU,Ecuador,2008,83.24401
+priorizado,razon-mortalidad-materna,SLV,El Salvador,2008,33.20441
+priorizado,razon-mortalidad-materna,GRD,Granada,2008,41.26666
+priorizado,razon-mortalidad-materna,GTM,Guatemala,2008,133.38754
+priorizado,razon-mortalidad-materna,GUY,Guyana,2008,152.93407
+priorizado,razon-mortalidad-materna,HTI,Haití,2008,394.08571
+priorizado,razon-mortalidad-materna,HND,Honduras,2008,71.75468
+priorizado,razon-mortalidad-materna,JAM,Jamaica,2008,90.95328
+priorizado,razon-mortalidad-materna,MEX,México,2008,50.63943
+priorizado,razon-mortalidad-materna,NIC,Nicaragua,2008,101.34116
+priorizado,razon-mortalidad-materna,PAN,Panamá,2008,55.12235
+priorizado,razon-mortalidad-materna,PRY,Paraguay,2008,165.82151
+priorizado,razon-mortalidad-materna,PER,Perú,2008,90.72159
+priorizado,razon-mortalidad-materna,PRI,Puerto Rico,2008,18.14167
+priorizado,razon-mortalidad-materna,DOM,República Dominicana,2008,93.62418
+priorizado,razon-mortalidad-materna,SUR,Surinam,2008,160.71527
+priorizado,razon-mortalidad-materna,URY,Uruguay,2008,18.61649
+priorizado,razon-mortalidad-materna,ARG,Argentina,2009,62.10812
+priorizado,razon-mortalidad-materna,BHS,Bahamas,2009,83.77106
+priorizado,razon-mortalidad-materna,BRB,Barbados,2009,41.77438
+priorizado,razon-mortalidad-materna,BLZ,Belice,2009,44.53123
+priorizado,razon-mortalidad-materna,BRA,Brasil,2009,69.12705
+priorizado,razon-mortalidad-materna,CAN,Canadá,2009,12.05524
+priorizado,razon-mortalidad-materna,CHL,Chile,2009,23.90557
+priorizado,razon-mortalidad-materna,COL,Colombia,2009,76.84698
+priorizado,razon-mortalidad-materna,CRI,Costa Rica,2009,28.97739
+priorizado,razon-mortalidad-materna,CUB,Cuba,2009,44.993
+priorizado,razon-mortalidad-materna,DMA,Dominica,2009,49.94222
+priorizado,razon-mortalidad-materna,ECU,Ecuador,2009,81.52688
+priorizado,razon-mortalidad-materna,SLV,El Salvador,2009,34.55275
+priorizado,razon-mortalidad-materna,GRD,Granada,2009,40.80389
+priorizado,razon-mortalidad-materna,GTM,Guatemala,2009,130.47305
+priorizado,razon-mortalidad-materna,GUY,Guyana,2009,146.31503
+priorizado,razon-mortalidad-materna,HTI,Haití,2009,396.68968
+priorizado,razon-mortalidad-materna,HND,Honduras,2009,70.89231
+priorizado,razon-mortalidad-materna,JAM,Jamaica,2009,92.72836
+priorizado,razon-mortalidad-materna,MEX,México,2009,50.60608
+priorizado,razon-mortalidad-materna,NIC,Nicaragua,2009,99.45709
+priorizado,razon-mortalidad-materna,PAN,Panamá,2009,55.30424
+priorizado,razon-mortalidad-materna,PRY,Paraguay,2009,152.07337
+priorizado,razon-mortalidad-materna,PER,Perú,2009,89.31913
+priorizado,razon-mortalidad-materna,PRI,Puerto Rico,2009,17.56576
+priorizado,razon-mortalidad-materna,DOM,República Dominicana,2009,95.73007
+priorizado,razon-mortalidad-materna,SUR,Surinam,2009,147.19772
+priorizado,razon-mortalidad-materna,URY,Uruguay,2009,17.63661
+priorizado,razon-mortalidad-materna,ARG,Argentina,2010,54.74272
+priorizado,razon-mortalidad-materna,BHS,Bahamas,2010,79.49573
+priorizado,razon-mortalidad-materna,BRB,Barbados,2010,41.70716
+priorizado,razon-mortalidad-materna,BLZ,Belice,2010,40.88922
+priorizado,razon-mortalidad-materna,BRA,Brasil,2010,65.95196
+priorizado,razon-mortalidad-materna,CAN,Canadá,2010,11.3825
+priorizado,razon-mortalidad-materna,CHL,Chile,2010,21.70381
+priorizado,razon-mortalidad-materna,COL,Colombia,2010,76.38049
+priorizado,razon-mortalidad-materna,CRI,Costa Rica,2010,28.84048
+priorizado,razon-mortalidad-materna,CUB,Cuba,2010,43.88002
+priorizado,razon-mortalidad-materna,DMA,Dominica,2010,49.90149
+priorizado,razon-mortalidad-materna,ECU,Ecuador,2010,79.70975
+priorizado,razon-mortalidad-materna,SLV,El Salvador,2010,34.32537
+priorizado,razon-mortalidad-materna,GRD,Granada,2010,43.01116
+priorizado,razon-mortalidad-materna,GTM,Guatemala,2010,126.99096
+priorizado,razon-mortalidad-materna,GUY,Guyana,2010,140.98245
+priorizado,razon-mortalidad-materna,HTI,Haití,2010,396.40232
+priorizado,razon-mortalidad-materna,HND,Honduras,2010,71.62103
+priorizado,razon-mortalidad-materna,JAM,Jamaica,2010,94.20798
+priorizado,razon-mortalidad-materna,MEX,México,2010,49.73802
+priorizado,razon-mortalidad-materna,NIC,Nicaragua,2010,96.46102
+priorizado,razon-mortalidad-materna,PAN,Panamá,2010,55.56431
+priorizado,razon-mortalidad-materna,PRY,Paraguay,2010,135.98734
+priorizado,razon-mortalidad-materna,PER,Perú,2010,85.92868
+priorizado,razon-mortalidad-materna,PRI,Puerto Rico,2010,17.52801
+priorizado,razon-mortalidad-materna,DOM,República Dominicana,2010,91.65964
+priorizado,razon-mortalidad-materna,SUR,Surinam,2010,134.39041
+priorizado,razon-mortalidad-materna,URY,Uruguay,2010,17.22467
+priorizado,razon-mortalidad-materna,ARG,Argentina,2011,48.47361
+priorizado,razon-mortalidad-materna,BHS,Bahamas,2011,74.34305
+priorizado,razon-mortalidad-materna,BRB,Barbados,2011,41.17528
+priorizado,razon-mortalidad-materna,BLZ,Belice,2011,39.26565
+priorizado,razon-mortalidad-materna,BRA,Brasil,2011,61.86484
+priorizado,razon-mortalidad-materna,CAN,Canadá,2011,11.33171
+priorizado,razon-mortalidad-materna,CHL,Chile,2011,19.96513
+priorizado,razon-mortalidad-materna,COL,Colombia,2011,75.07368
+priorizado,razon-mortalidad-materna,CRI,Costa Rica,2011,28.43681
+priorizado,razon-mortalidad-materna,CUB,Cuba,2011,43.58694
+priorizado,razon-mortalidad-materna,DMA,Dominica,2011,49.28972
+priorizado,razon-mortalidad-materna,ECU,Ecuador,2011,76.62996
+priorizado,razon-mortalidad-materna,SLV,El Salvador,2011,35.43197
+priorizado,razon-mortalidad-materna,GRD,Granada,2011,43.92505
+priorizado,razon-mortalidad-materna,GTM,Guatemala,2011,120.02704
+priorizado,razon-mortalidad-materna,GUY,Guyana,2011,135.16405
+priorizado,razon-mortalidad-materna,HTI,Haití,2011,409.27697
+priorizado,razon-mortalidad-materna,HND,Honduras,2011,67.53817
+priorizado,razon-mortalidad-materna,JAM,Jamaica,2011,89.41778
+priorizado,razon-mortalidad-materna,MEX,México,2011,47.28058
+priorizado,razon-mortalidad-materna,NIC,Nicaragua,2011,92.50731
+priorizado,razon-mortalidad-materna,PAN,Panamá,2011,54.77635
+priorizado,razon-mortalidad-materna,PRY,Paraguay,2011,120.28351
+priorizado,razon-mortalidad-materna,PER,Perú,2011,83.21231
+priorizado,razon-mortalidad-materna,PRI,Puerto Rico,2011,17.24569
+priorizado,razon-mortalidad-materna,DOM,República Dominicana,2011,90.67073
+priorizado,razon-mortalidad-materna,SUR,Surinam,2011,125.68671
+priorizado,razon-mortalidad-materna,URY,Uruguay,2011,16.6331
+priorizado,razon-mortalidad-materna,ARG,Argentina,2012,49.27162
+priorizado,razon-mortalidad-materna,BHS,Bahamas,2012,70.75463
+priorizado,razon-mortalidad-materna,BRB,Barbados,2012,39.53492
+priorizado,razon-mortalidad-materna,BLZ,Belice,2012,40.26288
+priorizado,razon-mortalidad-materna,BRA,Brasil,2012,59.73186
+priorizado,razon-mortalidad-materna,CAN,Canadá,2012,11.46628
+priorizado,razon-mortalidad-materna,CHL,Chile,2012,18.3832
+priorizado,razon-mortalidad-materna,COL,Colombia,2012,72.96662
+priorizado,razon-mortalidad-materna,CRI,Costa Rica,2012,27.46544
+priorizado,razon-mortalidad-materna,CUB,Cuba,2012,42.49497
+priorizado,razon-mortalidad-materna,DMA,Dominica,2012,51.43396
+priorizado,razon-mortalidad-materna,ECU,Ecuador,2012,72.43839
+priorizado,razon-mortalidad-materna,SLV,El Salvador,2012,36.24238
+priorizado,razon-mortalidad-materna,GRD,Granada,2012,43.652589999999996
+priorizado,razon-mortalidad-materna,GTM,Guatemala,2012,114.71297
+priorizado,razon-mortalidad-materna,GUY,Guyana,2012,132.98054
+priorizado,razon-mortalidad-materna,HTI,Haití,2012,385.296
+priorizado,razon-mortalidad-materna,HND,Honduras,2012,64.36368
+priorizado,razon-mortalidad-materna,JAM,Jamaica,2012,88.924
+priorizado,razon-mortalidad-materna,MEX,México,2012,45.78834
+priorizado,razon-mortalidad-materna,NIC,Nicaragua,2012,88.09861
+priorizado,razon-mortalidad-materna,PAN,Panamá,2012,53.48818
+priorizado,razon-mortalidad-materna,PRY,Paraguay,2012,99.71234
+priorizado,razon-mortalidad-materna,PER,Perú,2012,78.76699
+priorizado,razon-mortalidad-materna,PRI,Puerto Rico,2012,16.86694
+priorizado,razon-mortalidad-materna,DOM,República Dominicana,2012,88.5217
+priorizado,razon-mortalidad-materna,SUR,Surinam,2012,122.00952
+priorizado,razon-mortalidad-materna,URY,Uruguay,2012,16.48729
+priorizado,razon-mortalidad-materna,ARG,Argentina,2013,46.72781
+priorizado,razon-mortalidad-materna,BHS,Bahamas,2013,74.16211
+priorizado,razon-mortalidad-materna,BRB,Barbados,2013,39.66056
+priorizado,razon-mortalidad-materna,BLZ,Belice,2013,41.36256
+priorizado,razon-mortalidad-materna,BRA,Brasil,2013,61.03989
+priorizado,razon-mortalidad-materna,CAN,Canadá,2013,11.1419
+priorizado,razon-mortalidad-materna,CHL,Chile,2013,16.94691
+priorizado,razon-mortalidad-materna,COL,Colombia,2013,71.75142
+priorizado,razon-mortalidad-materna,CRI,Costa Rica,2013,26.58293
+priorizado,razon-mortalidad-materna,CUB,Cuba,2013,42.28007
+priorizado,razon-mortalidad-materna,DMA,Dominica,2013,49.8509
+priorizado,razon-mortalidad-materna,ECU,Ecuador,2013,68.12781
+priorizado,razon-mortalidad-materna,SLV,El Salvador,2013,38.73457
+priorizado,razon-mortalidad-materna,GRD,Granada,2013,44.34523
+priorizado,razon-mortalidad-materna,GTM,Guatemala,2013,111.22997
+priorizado,razon-mortalidad-materna,GUY,Guyana,2013,128.16594
+priorizado,razon-mortalidad-materna,HTI,Haití,2013,380.36092
+priorizado,razon-mortalidad-materna,HND,Honduras,2013,61.85652
+priorizado,razon-mortalidad-materna,JAM,Jamaica,2013,93.90488
+priorizado,razon-mortalidad-materna,MEX,México,2013,44.95863
+priorizado,razon-mortalidad-materna,NIC,Nicaragua,2013,85.76308
+priorizado,razon-mortalidad-materna,PAN,Panamá,2013,51.84922
+priorizado,razon-mortalidad-materna,PRY,Paraguay,2013,83.61236
+priorizado,razon-mortalidad-materna,PER,Perú,2013,75.02815
+priorizado,razon-mortalidad-materna,PRI,Puerto Rico,2013,15.83413
+priorizado,razon-mortalidad-materna,DOM,República Dominicana,2013,90.95711
+priorizado,razon-mortalidad-materna,SUR,Surinam,2013,121.20715
+priorizado,razon-mortalidad-materna,URY,Uruguay,2013,16.22154
+priorizado,razon-mortalidad-materna,ARG,Argentina,2014,43.4515
+priorizado,razon-mortalidad-materna,BHS,Bahamas,2014,77.69537
+priorizado,razon-mortalidad-materna,BRB,Barbados,2014,38.54943
+priorizado,razon-mortalidad-materna,BLZ,Belice,2014,43.66217
+priorizado,razon-mortalidad-materna,BRA,Brasil,2014,63.39032
+priorizado,razon-mortalidad-materna,CAN,Canadá,2014,11.51086
+priorizado,razon-mortalidad-materna,CHL,Chile,2014,15.7487
+priorizado,razon-mortalidad-materna,COL,Colombia,2014,70.72659
+priorizado,razon-mortalidad-materna,CRI,Costa Rica,2014,26.57139
+priorizado,razon-mortalidad-materna,CUB,Cuba,2014,42.14867
+priorizado,razon-mortalidad-materna,DMA,Dominica,2014,52.83572
+priorizado,razon-mortalidad-materna,ECU,Ecuador,2014,64.88269
+priorizado,razon-mortalidad-materna,SLV,El Salvador,2014,40.74637
+priorizado,razon-mortalidad-materna,GRD,Granada,2014,44.87656
+priorizado,razon-mortalidad-materna,GTM,Guatemala,2014,110.58089
+priorizado,razon-mortalidad-materna,GUY,Guyana,2014,120.58509
+priorizado,razon-mortalidad-materna,HTI,Haití,2014,372.7467
+priorizado,razon-mortalidad-materna,HND,Honduras,2014,59.71337
+priorizado,razon-mortalidad-materna,JAM,Jamaica,2014,99.81889
+priorizado,razon-mortalidad-materna,MEX,México,2014,43.70399
+priorizado,razon-mortalidad-materna,NIC,Nicaragua,2014,82.61405
+priorizado,razon-mortalidad-materna,PAN,Panamá,2014,49.01167
+priorizado,razon-mortalidad-materna,PRY,Paraguay,2014,70.40385
+priorizado,razon-mortalidad-materna,PER,Perú,2014,72.96355
+priorizado,razon-mortalidad-materna,PRI,Puerto Rico,2014,15.95047
+priorizado,razon-mortalidad-materna,DOM,República Dominicana,2014,95.29755
+priorizado,razon-mortalidad-materna,SUR,Surinam,2014,119.51009
+priorizado,razon-mortalidad-materna,URY,Uruguay,2014,16.32017
+priorizado,razon-mortalidad-materna,ARG,Argentina,2015,38.61611
+priorizado,razon-mortalidad-materna,BHS,Bahamas,2015,82.83132
+priorizado,razon-mortalidad-materna,BRB,Barbados,2015,37.02361
+priorizado,razon-mortalidad-materna,BLZ,Belice,2015,47.15458
+priorizado,razon-mortalidad-materna,BRA,Brasil,2015,62.95876
+priorizado,razon-mortalidad-materna,CAN,Canadá,2015,11.31237
+priorizado,razon-mortalidad-materna,CHL,Chile,2015,14.44723
+priorizado,razon-mortalidad-materna,COL,Colombia,2015,70.25705
+priorizado,razon-mortalidad-materna,CRI,Costa Rica,2015,25.54293
+priorizado,razon-mortalidad-materna,CUB,Cuba,2015,41.48397
+priorizado,razon-mortalidad-materna,DMA,Dominica,2015,62.77061
+priorizado,razon-mortalidad-materna,ECU,Ecuador,2015,64.22836
+priorizado,razon-mortalidad-materna,SLV,El Salvador,2015,42.94738
+priorizado,razon-mortalidad-materna,GRD,Granada,2015,46.20516
+priorizado,razon-mortalidad-materna,GTM,Guatemala,2015,111.9959
+priorizado,razon-mortalidad-materna,GUY,Guyana,2015,117.17014
+priorizado,razon-mortalidad-materna,HTI,Haití,2015,363.74783
+priorizado,razon-mortalidad-materna,HND,Honduras,2015,57.10412
+priorizado,razon-mortalidad-materna,JAM,Jamaica,2015,100.26626
+priorizado,razon-mortalidad-materna,MEX,México,2015,43.15536
+priorizado,razon-mortalidad-materna,NIC,Nicaragua,2015,80.67301
+priorizado,razon-mortalidad-materna,PAN,Panamá,2015,48.08212
+priorizado,razon-mortalidad-materna,PRY,Paraguay,2015,63.68524
+priorizado,razon-mortalidad-materna,PER,Perú,2015,71.46575
+priorizado,razon-mortalidad-materna,PRI,Puerto Rico,2015,15.15107
+priorizado,razon-mortalidad-materna,DOM,República Dominicana,2015,102.25961
+priorizado,razon-mortalidad-materna,SUR,Surinam,2015,115.13538
+priorizado,razon-mortalidad-materna,URY,Uruguay,2015,15.97752
+priorizado,razon-mortalidad-materna,ARG,Argentina,2016,39.5128
+priorizado,razon-mortalidad-materna,BHS,Bahamas,2016,77.20687
+priorizado,razon-mortalidad-materna,BRB,Barbados,2016,36.26096
+priorizado,razon-mortalidad-materna,BLZ,Belice,2016,51.40328
+priorizado,razon-mortalidad-materna,BRA,Brasil,2016,63.64146
+priorizado,razon-mortalidad-materna,CAN,Canadá,2016,12.0039
+priorizado,razon-mortalidad-materna,CHL,Chile,2016,13.16912
+priorizado,razon-mortalidad-materna,COL,Colombia,2016,68.82124
+priorizado,razon-mortalidad-materna,CRI,Costa Rica,2016,27.03126
+priorizado,razon-mortalidad-materna,CUB,Cuba,2016,40.45728
+priorizado,razon-mortalidad-materna,DMA,Dominica,2016,47.78684
+priorizado,razon-mortalidad-materna,ECU,Ecuador,2016,64.70521
+priorizado,razon-mortalidad-materna,SLV,El Salvador,2016,43.40186
+priorizado,razon-mortalidad-materna,GRD,Granada,2016,44.03691
+priorizado,razon-mortalidad-materna,GTM,Guatemala,2016,110.10903
+priorizado,razon-mortalidad-materna,GUY,Guyana,2016,114.12205
+priorizado,razon-mortalidad-materna,HTI,Haití,2016,356.13676
+priorizado,razon-mortalidad-materna,HND,Honduras,2016,54.65124
+priorizado,razon-mortalidad-materna,JAM,Jamaica,2016,102.13734
+priorizado,razon-mortalidad-materna,MEX,México,2016,43.15522
+priorizado,razon-mortalidad-materna,NIC,Nicaragua,2016,76.77425
+priorizado,razon-mortalidad-materna,PAN,Panamá,2016,46.56604
+priorizado,razon-mortalidad-materna,PRY,Paraguay,2016,59.62665
+priorizado,razon-mortalidad-materna,PER,Perú,2016,68.76235
+priorizado,razon-mortalidad-materna,PRI,Puerto Rico,2016,15.37008
+priorizado,razon-mortalidad-materna,DOM,República Dominicana,2016,105.72369
+priorizado,razon-mortalidad-materna,SUR,Surinam,2016,108.56336
+priorizado,razon-mortalidad-materna,URY,Uruguay,2016,16.14472
+priorizado,razon-mortalidad-materna,ARG,Argentina,2017,38.34257
+priorizado,razon-mortalidad-materna,BHS,Bahamas,2017,78.97838
+priorizado,razon-mortalidad-materna,BRB,Barbados,2017,36.58056
+priorizado,razon-mortalidad-materna,BLZ,Belice,2017,55.84857
+priorizado,razon-mortalidad-materna,BRA,Brasil,2017,61.02473
+priorizado,razon-mortalidad-materna,CAN,Canadá,2017,12.26458
+priorizado,razon-mortalidad-materna,CHL,Chile,2017,12.10446
+priorizado,razon-mortalidad-materna,COL,Colombia,2017,68.04436
+priorizado,razon-mortalidad-materna,CRI,Costa Rica,2017,26.99787
+priorizado,razon-mortalidad-materna,CUB,Cuba,2017,39.2643
+priorizado,razon-mortalidad-materna,DMA,Dominica,2017,43.59389
+priorizado,razon-mortalidad-materna,ECU,Ecuador,2017,61.50861
+priorizado,razon-mortalidad-materna,SLV,El Salvador,2017,43.87454
+priorizado,razon-mortalidad-materna,GRD,Granada,2017,44.92742
+priorizado,razon-mortalidad-materna,GTM,Guatemala,2017,106.93783
+priorizado,razon-mortalidad-materna,GUY,Guyana,2017,109.86793
+priorizado,razon-mortalidad-materna,HTI,Haití,2017,350.62073
+priorizado,razon-mortalidad-materna,HND,Honduras,2017,52.96214
+priorizado,razon-mortalidad-materna,JAM,Jamaica,2017,105.55131
+priorizado,razon-mortalidad-materna,MEX,México,2017,43.93981
+priorizado,razon-mortalidad-materna,NIC,Nicaragua,2017,72.42528
+priorizado,razon-mortalidad-materna,PAN,Panamá,2017,46.60967
+priorizado,razon-mortalidad-materna,PRY,Paraguay,2017,58.41089
+priorizado,razon-mortalidad-materna,PER,Perú,2017,66.663
+priorizado,razon-mortalidad-materna,PRI,Puerto Rico,2017,16.54053
+priorizado,razon-mortalidad-materna,DOM,República Dominicana,2017,103.77688
+priorizado,razon-mortalidad-materna,SUR,Surinam,2017,104.81762
+priorizado,razon-mortalidad-materna,URY,Uruguay,2017,16.40602
+priorizado,razon-mortalidad-materna,ARG,Argentina,2018,38.48333
+priorizado,razon-mortalidad-materna,BHS,Bahamas,2018,82.14974
+priorizado,razon-mortalidad-materna,BRB,Barbados,2018,36.70521
+priorizado,razon-mortalidad-materna,BLZ,Belice,2018,59.97342
+priorizado,razon-mortalidad-materna,BRA,Brasil,2018,62.3322
+priorizado,razon-mortalidad-materna,CAN,Canadá,2018,12.58052
+priorizado,razon-mortalidad-materna,CHL,Chile,2018,11.39816
+priorizado,razon-mortalidad-materna,COL,Colombia,2018,67.3379
+priorizado,razon-mortalidad-materna,CRI,Costa Rica,2018,28.37408
+priorizado,razon-mortalidad-materna,CUB,Cuba,2018,39.17947
+priorizado,razon-mortalidad-materna,DMA,Dominica,2018,42.62802
+priorizado,razon-mortalidad-materna,ECU,Ecuador,2018,60.93285
+priorizado,razon-mortalidad-materna,SLV,El Salvador,2018,42.82344
+priorizado,razon-mortalidad-materna,GRD,Granada,2018,46.42027
+priorizado,razon-mortalidad-materna,GTM,Guatemala,2018,107.1139
+priorizado,razon-mortalidad-materna,GUY,Guyana,2018,105.12369
+priorizado,razon-mortalidad-materna,HTI,Haití,2018,358.46475
+priorizado,razon-mortalidad-materna,HND,Honduras,2018,51.75144
+priorizado,razon-mortalidad-materna,JAM,Jamaica,2018,112.23032
+priorizado,razon-mortalidad-materna,MEX,México,2018,44.00298
+priorizado,razon-mortalidad-materna,NIC,Nicaragua,2018,66.82026
+priorizado,razon-mortalidad-materna,PAN,Panamá,2018,43.42175
+priorizado,razon-mortalidad-materna,PRY,Paraguay,2018,57.68947
+priorizado,razon-mortalidad-materna,PER,Perú,2018,66.17149
+priorizado,razon-mortalidad-materna,PRI,Puerto Rico,2018,14.01131
+priorizado,razon-mortalidad-materna,DOM,República Dominicana,2018,106.73394
+priorizado,razon-mortalidad-materna,SUR,Surinam,2018,101.16503
+priorizado,razon-mortalidad-materna,URY,Uruguay,2018,15.98041
+priorizado,razon-mortalidad-materna,ARG,Argentina,2019,36.41051
+priorizado,razon-mortalidad-materna,BHS,Bahamas,2019,82.14319
+priorizado,razon-mortalidad-materna,BRB,Barbados,2019,36.4975
+priorizado,razon-mortalidad-materna,BLZ,Belice,2019,61.29752
+priorizado,razon-mortalidad-materna,BRA,Brasil,2019,64.63298
+priorizado,razon-mortalidad-materna,CAN,Canadá,2019,12.26644
+priorizado,razon-mortalidad-materna,CHL,Chile,2019,11.09544
+priorizado,razon-mortalidad-materna,COL,Colombia,2019,66.19187
+priorizado,razon-mortalidad-materna,CRI,Costa Rica,2019,25.72865
+priorizado,razon-mortalidad-materna,CUB,Cuba,2019,39.72424
+priorizado,razon-mortalidad-materna,DMA,Dominica,2019,40.82373
+priorizado,razon-mortalidad-materna,ECU,Ecuador,2019,61.52598
+priorizado,razon-mortalidad-materna,SLV,El Salvador,2019,40.28957
+priorizado,razon-mortalidad-materna,GRD,Granada,2019,48.39963
+priorizado,razon-mortalidad-materna,GTM,Guatemala,2019,106.15478
+priorizado,razon-mortalidad-materna,GUY,Guyana,2019,106.94327
+priorizado,razon-mortalidad-materna,HTI,Haití,2019,350.62432
+priorizado,razon-mortalidad-materna,HND,Honduras,2019,51.12075
+priorizado,razon-mortalidad-materna,JAM,Jamaica,2019,120.11501
+priorizado,razon-mortalidad-materna,MEX,México,2019,43.33916
+priorizado,razon-mortalidad-materna,NIC,Nicaragua,2019,69.49821
+priorizado,razon-mortalidad-materna,PAN,Panamá,2019,40.72978
+priorizado,razon-mortalidad-materna,PRY,Paraguay,2019,57.57454
+priorizado,razon-mortalidad-materna,PER,Perú,2019,60.19835
+priorizado,razon-mortalidad-materna,PRI,Puerto Rico,2019,13.06405
+priorizado,razon-mortalidad-materna,DOM,República Dominicana,2019,118.09314
+priorizado,razon-mortalidad-materna,SUR,Surinam,2019,97.15345
+priorizado,razon-mortalidad-materna,URY,Uruguay,2019,15.93727
+priorizado,razon-mortalidad-materna,ARG,Argentina,2020,39.67996
+priorizado,razon-mortalidad-materna,BHS,Bahamas,2020,84.35691
+priorizado,razon-mortalidad-materna,BRB,Barbados,2020,38.65383
+priorizado,razon-mortalidad-materna,BLZ,Belice,2020,88.48717
+priorizado,razon-mortalidad-materna,BRA,Brasil,2020,84.88166
+priorizado,razon-mortalidad-materna,CAN,Canadá,2020,16.65174
+priorizado,razon-mortalidad-materna,CHL,Chile,2020,12.30187
+priorizado,razon-mortalidad-materna,COL,Colombia,2020,93.67608
+priorizado,razon-mortalidad-materna,CRI,Costa Rica,2020,34.08731
+priorizado,razon-mortalidad-materna,CUB,Cuba,2020,39.95422
+priorizado,razon-mortalidad-materna,DMA,Dominica,2020,46.64251
+priorizado,razon-mortalidad-materna,ECU,Ecuador,2020,91.49858
+priorizado,razon-mortalidad-materna,SLV,El Salvador,2020,48.01989
+priorizado,razon-mortalidad-materna,GRD,Granada,2020,50.55742
+priorizado,razon-mortalidad-materna,GTM,Guatemala,2020,102.4683
+priorizado,razon-mortalidad-materna,GUY,Guyana,2020,108.56039
+priorizado,razon-mortalidad-materna,HTI,Haití,2020,346.25727
+priorizado,razon-mortalidad-materna,HND,Honduras,2020,57.15552
+priorizado,razon-mortalidad-materna,JAM,Jamaica,2020,126.19424
+priorizado,razon-mortalidad-materna,MEX,México,2020,61.48252
+priorizado,razon-mortalidad-materna,NIC,Nicaragua,2020,86.79423
+priorizado,razon-mortalidad-materna,PAN,Panamá,2020,74.18438
+priorizado,razon-mortalidad-materna,PRY,Paraguay,2020,68.64985
+priorizado,razon-mortalidad-materna,PER,Perú,2020,75.04343
+priorizado,razon-mortalidad-materna,PRI,Puerto Rico,2020,10.50316
+priorizado,razon-mortalidad-materna,DOM,República Dominicana,2020,121.46605
+priorizado,razon-mortalidad-materna,SUR,Surinam,2020,94.49409
+priorizado,razon-mortalidad-materna,URY,Uruguay,2020,19.56055
+priorizado,razon-mortalidad-materna,ARG,Argentina,2021,76.48618
+priorizado,razon-mortalidad-materna,BHS,Bahamas,2021,174.29421
+priorizado,razon-mortalidad-materna,BRB,Barbados,2021,38.48689
+priorizado,razon-mortalidad-materna,BLZ,Belice,2021,156.63585
+priorizado,razon-mortalidad-materna,BRA,Brasil,2021,127.99026
+priorizado,razon-mortalidad-materna,CAN,Canadá,2021,13.58174
+priorizado,razon-mortalidad-materna,CHL,Chile,2021,14.38931
+priorizado,razon-mortalidad-materna,COL,Colombia,2021,146.65778
+priorizado,razon-mortalidad-materna,CRI,Costa Rica,2021,43.94856
+priorizado,razon-mortalidad-materna,CUB,Cuba,2021,171.67994
+priorizado,razon-mortalidad-materna,DMA,Dominica,2021,110.22343
+priorizado,razon-mortalidad-materna,ECU,Ecuador,2021,93.3707
+priorizado,razon-mortalidad-materna,SLV,El Salvador,2021,58.47763
+priorizado,razon-mortalidad-materna,GRD,Granada,2021,52.00749
+priorizado,razon-mortalidad-materna,GTM,Guatemala,2021,125.27008
+priorizado,razon-mortalidad-materna,GUY,Guyana,2021,188.99829
+priorizado,razon-mortalidad-materna,HTI,Haití,2021,384.6512
+priorizado,razon-mortalidad-materna,HND,Honduras,2021,88.2459
+priorizado,razon-mortalidad-materna,JAM,Jamaica,2021,186.25268
+priorizado,razon-mortalidad-materna,MEX,México,2021,103.87792
+priorizado,razon-mortalidad-materna,NIC,Nicaragua,2021,123.59525
+priorizado,razon-mortalidad-materna,PAN,Panamá,2021,59.22772
+priorizado,razon-mortalidad-materna,PRY,Paraguay,2021,139.9224
+priorizado,razon-mortalidad-materna,PER,Perú,2021,141.45583
+priorizado,razon-mortalidad-materna,PRI,Puerto Rico,2021,49.80809
+priorizado,razon-mortalidad-materna,DOM,República Dominicana,2021,152.54161
+priorizado,razon-mortalidad-materna,SUR,Surinam,2021,144.27119
+priorizado,razon-mortalidad-materna,URY,Uruguay,2021,49.46617
+priorizado,razon-mortalidad-materna,ARG,Argentina,2022,39.32267
+priorizado,razon-mortalidad-materna,BHS,Bahamas,2022,80.06993
+priorizado,razon-mortalidad-materna,BRB,Barbados,2022,37.93933
+priorizado,razon-mortalidad-materna,BLZ,Belice,2022,109.63405
+priorizado,razon-mortalidad-materna,BRA,Brasil,2022,103.96809
+priorizado,razon-mortalidad-materna,CAN,Canadá,2022,14.63701
+priorizado,razon-mortalidad-materna,CHL,Chile,2022,11.7096
+priorizado,razon-mortalidad-materna,COL,Colombia,2022,74.34447
+priorizado,razon-mortalidad-materna,CRI,Costa Rica,2022,27.41604
+priorizado,razon-mortalidad-materna,CUB,Cuba,2022,40.95331
+priorizado,razon-mortalidad-materna,DMA,Dominica,2022,43.89311
+priorizado,razon-mortalidad-materna,ECU,Ecuador,2022,68.72916
+priorizado,razon-mortalidad-materna,SLV,El Salvador,2022,38.76226
+priorizado,razon-mortalidad-materna,GRD,Granada,2022,49.9391
+priorizado,razon-mortalidad-materna,GTM,Guatemala,2022,96.5693
+priorizado,razon-mortalidad-materna,GUY,Guyana,2022,82.96077
+priorizado,razon-mortalidad-materna,HTI,Haití,2022,330.84864
+priorizado,razon-mortalidad-materna,HND,Honduras,2022,48.08667
+priorizado,razon-mortalidad-materna,JAM,Jamaica,2022,137.5833
+priorizado,razon-mortalidad-materna,MEX,México,2022,45.44723
+priorizado,razon-mortalidad-materna,NIC,Nicaragua,2022,61.13118
+priorizado,razon-mortalidad-materna,PAN,Panamá,2022,40.19728
+priorizado,razon-mortalidad-materna,PRY,Paraguay,2022,77.71228
+priorizado,razon-mortalidad-materna,PER,Perú,2022,80.57387
+priorizado,razon-mortalidad-materna,PRI,Puerto Rico,2022,55.33396
+priorizado,razon-mortalidad-materna,DOM,República Dominicana,2022,124.12434
+priorizado,razon-mortalidad-materna,SUR,Surinam,2022,87.71918
+priorizado,razon-mortalidad-materna,URY,Uruguay,2022,19.75276
+priorizado,razon-mortalidad-materna,ARG,Argentina,2023,33.22814
+priorizado,razon-mortalidad-materna,BHS,Bahamas,2023,75.95361
+priorizado,razon-mortalidad-materna,BRB,Barbados,2023,34.88119
+priorizado,razon-mortalidad-materna,BLZ,Belice,2023,66.80087
+priorizado,razon-mortalidad-materna,BRA,Brasil,2023,66.91036
+priorizado,razon-mortalidad-materna,CAN,Canadá,2023,11.78479
+priorizado,razon-mortalidad-materna,CHL,Chile,2023,9.88497
+priorizado,razon-mortalidad-materna,COL,Colombia,2023,59.38166
+priorizado,razon-mortalidad-materna,CRI,Costa Rica,2023,24.1198
+priorizado,razon-mortalidad-materna,CUB,Cuba,2023,34.79424
+priorizado,razon-mortalidad-materna,DMA,Dominica,2023,35.54812
+priorizado,razon-mortalidad-materna,ECU,Ecuador,2023,55.37107
+priorizado,razon-mortalidad-materna,SLV,El Salvador,2023,39.10834
+priorizado,razon-mortalidad-materna,GRD,Granada,2023,48.24919
+priorizado,razon-mortalidad-materna,GTM,Guatemala,2023,93.71639
+priorizado,razon-mortalidad-materna,GUY,Guyana,2023,74.73033
+priorizado,razon-mortalidad-materna,HTI,Haití,2023,327.56383
+priorizado,razon-mortalidad-materna,HND,Honduras,2023,46.74992
+priorizado,razon-mortalidad-materna,JAM,Jamaica,2023,130.14276
+priorizado,razon-mortalidad-materna,MEX,México,2023,42.10605
+priorizado,razon-mortalidad-materna,NIC,Nicaragua,2023,60.3484
+priorizado,razon-mortalidad-materna,PAN,Panamá,2023,37.00633
+priorizado,razon-mortalidad-materna,PRY,Paraguay,2023,58.27149
+priorizado,razon-mortalidad-materna,PER,Perú,2023,51.44545
+priorizado,razon-mortalidad-materna,PRI,Puerto Rico,2023,11.02504
+priorizado,razon-mortalidad-materna,DOM,República Dominicana,2023,124.47325
+priorizado,razon-mortalidad-materna,SUR,Surinam,2023,83.64146
+priorizado,razon-mortalidad-materna,URY,Uruguay,2023,15.30536
