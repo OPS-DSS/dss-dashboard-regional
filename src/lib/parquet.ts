@@ -128,27 +128,35 @@ export type StratifiedRow = {
 
 /** Wide-format rows keyed by indicator slug (analytics/scatter datasets). */
 export type AnalyticsRow = {
+  tipo: string
+  indicador: string
+  iso3: string
+  territorio: string
   anio: number
   valor: number
 } & DataRow
 
-/** Indicator slugs used as data-row keys across the analytics dashboard. */
 export type AnalyticsIndicatorKey = string
 
 export type ScatterRow = {
-  anio: number
+  priorizado: string
+  dss: string
+  iso3: string
   territorio: string
-  valor: number
-  nacimientos: number
+  anio: number
+  valor_salud: number
+  valor_dss: number
 } & DataRow
 
 export type ForestPlotDataRow = {
+  priorizado: string
   anio: number
   indicador: string
-  label: string
   correlacion: number
   ci_lower: number
   ci_upper: number
   p_value: number
   n: number
+  rank_abs: number
+  top10: string
 } & DataRow

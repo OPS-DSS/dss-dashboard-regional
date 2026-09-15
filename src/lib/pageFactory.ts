@@ -128,6 +128,9 @@ export function buildPages(datasets: PageDatasets): PageDefinition[] {
       date: '2026-01-01',
       navbar: true,
       allStratifiedData: datasets.stratifiedData,
+      forestPlotData: datasets.forestPlotData,
+      analyticsData: datasets.analyticsData,
+      scatterData: datasets.scatterData,
     },
   ]
 

@@ -1,21 +1,25 @@
 ---
 import { AnalyticsPageContent } from './AnalyticsPageContent'
-import type { StratifiedRow } from '@/lib/parquet'
+import type { ForestPlotDataRow, AnalyticsRow, ScatterRow } from '@/lib/parquet'
 
 interface Props {
   title: string
   text?: string
-  allStratifiedData?: Record<string, StratifiedRow[]>
+  forestPlotData?: ForestPlotDataRow[]
+  analyticsData?: AnalyticsRow[]
+  scatterData?: ScatterRow[]
 }
 
-const { title, allStratifiedData = {} } = Astro.props
+const { title, forestPlotData = [], analyticsData = [], scatterData = [] } = Astro.props
 ---
 
 <div class="mx-auto max-w-[120em] px-2 sm:px-6 lg:px-10 mb-16">
   <div class="flex flex-col gap-2">
     <h1 class="text-3xl font-bold my-6">{title}</h1>
     <AnalyticsPageContent
-      allStratifiedData={allStratifiedData}
+      forestPlotData={forestPlotData}
+      analyticsData={analyticsData}
+      scatterData={scatterData}
       client:only="react"
     />
   </div>
