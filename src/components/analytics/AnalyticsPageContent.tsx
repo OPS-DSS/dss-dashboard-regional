@@ -72,9 +72,9 @@ export const AnalyticsPageContent = ({ forestPlotData, analyticsData, scatterDat
   const [selectedDss, setSelectedDss] = useState('')
   const [mapMode, setMapMode] = useState<'bivariate' | 'priority'>('bivariate')
   const [secondaryDss, setSecondaryDss] = useState('')
-  const activeDssSlug = top10.some((r) => r.indicador === selectedDss)
+  const activeDssSlug = top10.some((r) => r.dss === selectedDss)
     ? selectedDss
-    : (top10[0]?.indicador ?? '')
+    : (top10[0]?.dss ?? '')
   const activeDss = indicators.find((i) => i.slug === activeDssSlug)
 
   const points = scatterData.filter((r) =>
