@@ -61,10 +61,22 @@ export async function loadAllDatasets(): Promise<PageDatasets> {
     )
   }
 
+  // Country context is not part of the DSS indicator catalogue.
+  // Load these four Parquet files directly with their common regional schema.
+  const contextScheme: DatasetScheme = [
+    { name: 'iso3', type: 'string', index: 0 },
+    { name: 'territorio', type: 'string', role: 'territory', index: 1 },
+    { name: 'cod_local', type: 'string', index: 2 },
+    { name: 'anio', type: 'number', role: 'year', index: 3 },
+    { name: 'valor', type: 'number', role: 'value', index: 4 },
+  ]
   const contextData: Record<string, StratifiedRow[]> = {}
   for (const slug of ['poblacion', 'pib-per-capita', 'esperanza-vida', 'mortalidad-bruta']) {
-    const indicator = indicators.find((ind) => ind.slug === slug)
-    if (indicator) contextData[slug] = stratifiedData[slug] ?? []
+    contextData[slug] = await tryLoad<StratifiedRow>(
+      'context:' + slug,
+      slug + '.parquet',
+      contextScheme,
+    )
   }
 
   const { analytics, scatter, forestPlot } = app.datasets ?? {}
