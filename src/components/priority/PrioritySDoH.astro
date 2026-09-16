@@ -80,6 +80,12 @@ const dssAreas = [
         </button>
       </div>
 
+    <section id="country-context" class="mt-5"><h2 class="text-lg font-semibold text-gray-900 mb-3">Contexto del país</h2><div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-3">
+<article class="rounded-xl border border-gray-200 bg-white p-4 shadow-sm"><p class="text-sm text-gray-600">Población total</p><p data-context-value="poblacion" class="mt-1 text-2xl font-semibold text-gray-900">—</p><p data-context-meta="poblacion" class="mt-1 text-xs text-gray-500"></p></article>
+<article class="rounded-xl border border-gray-200 bg-white p-4 shadow-sm"><p class="text-sm text-gray-600">PIB per cápita</p><p data-context-value="pib-per-capita" class="mt-1 text-2xl font-semibold text-gray-900">—</p><p data-context-meta="pib-per-capita" class="mt-1 text-xs text-gray-500"></p></article>
+<article class="rounded-xl border border-gray-200 bg-white p-4 shadow-sm"><p class="text-sm text-gray-600">Esperanza de vida al nacer</p><p data-context-value="esperanza-vida" class="mt-1 text-2xl font-semibold text-gray-900">—</p><p data-context-meta="esperanza-vida" class="mt-1 text-xs text-gray-500"></p></article>
+<article class="rounded-xl border border-gray-200 bg-white p-4 shadow-sm"><p class="text-sm text-gray-600">Tasa de mortalidad bruta</p><p data-context-value="mortalidad-bruta" class="mt-1 text-2xl font-semibold text-gray-900">—</p><p data-context-meta="mortalidad-bruta" class="mt-1 text-xs text-gray-500"></p></article>
+</div></section>
     <div class="flex flex-col gap-3 mt-4">
       <div class="flex gap-3 items-center">
         <div
@@ -167,6 +173,49 @@ const dssAreas = [
   let selectedCountry = params.get('country') ?? ''
   let selectedDimension = getInitialDimension()
   let selectedSubdimensions = new Set<string>()
+  const contextIndicators = {
+    poblacion: { prefix: '', suffix: '', decimals: 0 },
+    'pib-per-capita': { prefix: 'US$ ', suffix: '', decimals: 0 },
+    'esperanza-vida': { prefix: '', suffix: ' años', decimals: 1 },
+    'mortalidad-bruta': { prefix: '', suffix: ' por 1.000', decimals: 1 },
+  }
+  const contextCache = new Map()
+
+  function parseContextCsv(text) {
+    const lines = text.trim().split(/\\r?\\n/)
+    const headers = (lines.shift() || '').split(',')
+    const ti = headers.indexOf('territorio'), yi = headers.indexOf('anio'), vi = headers.indexOf('valor')
+    return lines.map((line) => {
+      const cols = line.split(',')
+      return { territorio: cols[ti] || '', anio: Number(cols[yi]), valor: Number(cols[vi]) }
+    }).filter((row) => row.territorio && Number.isFinite(row.anio) && Number.isFinite(row.valor))
+  }
+
+  async function loadContextIndicator(slug) {
+    if (contextCache.has(slug)) return contextCache.get(slug)
+    const response = await fetch(import.meta.env.BASE_URL + 'data/csv/' + slug + '.csv')
+    if (!response.ok) throw new Error('No se pudo cargar ' + slug)
+    const rows = parseContextCsv(await response.text())
+    contextCache.set(slug, rows)
+    return rows
+  }
+
+  async function updateCountryContext() {
+    if (!selectedCountry) return
+    await Promise.all(Object.entries(contextIndicators).map(async ([slug, format]) => {
+      const valueEl = document.querySelector('[data-context-value="' + slug + '"]')
+      const metaEl = document.querySelector('[data-context-meta="' + slug + '"]')
+      if (valueEl) valueEl.textContent = '…'
+      if (metaEl) metaEl.textContent = ''
+      try {
+        const latest = (await loadContextIndicator(slug)).filter((row) => row.territorio === selectedCountry).sort((a,b) => b.anio-a.anio)[0]
+        if (!latest) { if (valueEl) valueEl.textContent = 'Sin datos'; return }
+        const number = new Intl.NumberFormat('es-CL', { minimumFractionDigits: format.decimals, maximumFractionDigits: format.decimals }).format(latest.valor)
+        if (valueEl) valueEl.textContent = format.prefix + number + format.suffix
+        if (metaEl) metaEl.textContent = latest.anio + ' · Banco Mundial'
+      } catch { if (valueEl) valueEl.textContent = 'Sin datos' }
+    }))
+  }
 
   function getSubdimsForDimension(_dim: string): string[] {
     return Array.from(
@@ -260,7 +309,7 @@ const dssAreas = [
     if (selectedCountry) {
       selector?.classList.add('hidden')
       content?.classList.remove('hidden')
-      if (label) label.textContent = selectedCountry
+      if (label) label.textContent = selectedCountry\n      void updateCountryContext()
     } else {
       selector?.classList.remove('hidden')
       content?.classList.add('hidden')
