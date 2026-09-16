@@ -179,9 +179,10 @@ const dssAreas = [
     'esperanza-vida': { prefix: '', suffix: ' años', decimals: 1 },
     'mortalidad-bruta': { prefix: '', suffix: ' por 1.000', decimals: 1 },
   }
-  const contextCache = new Map()
+  type ContextRow = { territorio: string; anio: number; valor: number }
+  const contextCache = new Map<string, ContextRow[]>()
 
-  function parseContextCsv(text) {
+  function parseContextCsv(text: string): ContextRow[] {
     const lines = text.trim().split(/\r?\n/)
     const headers = (lines.shift() || '').split(',')
     const ti = headers.indexOf('territorio'), yi = headers.indexOf('anio'), vi = headers.indexOf('valor')
@@ -191,7 +192,7 @@ const dssAreas = [
     }).filter((row) => row.territorio && Number.isFinite(row.anio) && Number.isFinite(row.valor))
   }
 
-  async function loadContextIndicator(slug) {
+  async function loadContextIndicator(slug: string): Promise<ContextRow[]> {
     if (contextCache.has(slug)) return contextCache.get(slug)
     const response = await fetch(import.meta.env.BASE_URL + 'data/csv/' + slug + '.csv')
     if (!response.ok) throw new Error('No se pudo cargar ' + slug)
@@ -208,7 +209,7 @@ const dssAreas = [
       if (valueEl) valueEl.textContent = '…'
       if (metaEl) metaEl.textContent = ''
       try {
-        const latest = (await loadContextIndicator(slug)).filter((row) => row.territorio === selectedCountry).sort((a,b) => b.anio-a.anio)[0]
+        const latest = (await loadContextIndicator(slug)).filter((row: ContextRow) => row.territorio === selectedCountry).sort((a: ContextRow, b: ContextRow) => b.anio-a.anio)[0]
         if (!latest) { if (valueEl) valueEl.textContent = 'Sin datos'; return }
         const number = new Intl.NumberFormat('es-CL', { minimumFractionDigits: format.decimals, maximumFractionDigits: format.decimals }).format(latest.valor)
         if (valueEl) valueEl.textContent = format.prefix + number + format.suffix
