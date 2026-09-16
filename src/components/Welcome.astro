@@ -1,52 +1,42 @@
 ---
 import { app } from '@/config/general'
+
+const areas = [
+  { title: 'Trabajo, ingresos, seguridad económica y desigualdad', color: '#a35331', icon: '⚖', description: 'Esta área aborda las condiciones económicas que influyen directamente en la salud de las personas, como el empleo digno, los ingresos adecuados, la protección frente a la pobreza y la inseguridad alimentaria. Incluye políticas relacionadas con el trabajo, la protección social y la redistribución del ingreso. Su monitoreo permite identificar desigualdades económicas que afectan el acceso a recursos esenciales para una vida saludable.' },
+  { title: 'Educación', color: '#c87542', icon: '▣', description: 'Considera tanto el acceso como la calidad y los resultados del sistema educativo, desde la educación inicial hasta la terciaria. El nivel educativo está estrechamente vinculado a la salud y a la capacidad de las personas para acceder a información, oportunidades laborales y servicios. Monitorear esta área permite evaluar brechas educativas y el impacto de políticas orientadas a garantizar una educación inclusiva y equitativa.' },
+  { title: 'Ambiente físico', color: '#7eb36a', icon: '⌂', description: 'Se refiere a las condiciones del entorno donde las personas viven y trabajan: vivienda adecuada, acceso a agua segura y saneamiento, calidad del aire, exposición a riesgos climáticos y acceso a energía limpia y transporte. También incluye aspectos como la seguridad vial y la planificación urbana. Esta área refleja cómo el ambiente físico puede potenciar o limitar la salud y el bienestar.' },
+  { title: 'Contexto social y comunitario', color: '#4b62a0', icon: '♙', description: 'Explora las relaciones sociales, la cohesión comunitaria, la participación ciudadana, así como situaciones de violencia, discriminación, migración forzada y privación de libertad. También incluye indicadores de empoderamiento de género y envejecimiento saludable. Esta dimensión es clave para comprender cómo las redes sociales y el entorno social afectan el bienestar emocional y físico de las personas.' },
+  { title: 'Conductas relacionadas con la salud', color: '#86afc4', icon: '♡', description: 'Incluye factores como el consumo de alcohol y tabaco, la actividad física, la nutrición y los patrones alimentarios. Estos comportamientos están fuertemente influenciados por el entorno social y económico, y no solo por decisiones individuales. El monitoreo permite evaluar cómo las políticas de promoción de la salud y prevención de enfermedades impactan en estos hábitos.' },
+  { title: 'Sistema de atención de salud', color: '#7626c8', icon: '✚', description: 'Evalúa el acceso, la disponibilidad, la asequibilidad y la calidad de los servicios de salud, incluyendo cobertura de medicamentos, personal de salud, infraestructura y gasto de bolsillo. Esta área es fundamental para analizar si el sistema de salud responde de manera equitativa a las necesidades de la población y si las políticas de cobertura universal son efectivas.' },
+]
 ---
 
 <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-10">
   <div class="flex flex-col p-6">
-    <h1 class="text-4xl py-8">
-      Observatorio de Determinantes Sociales de la Salud de {app.local}
-    </h1>
-    <div class="flex gap-20">
-      <div class="flex flex-col gap-4 text-justify">
-        <p class="text-slate-600">
-          Bienvenido/a al Tablero de Monitoreo de Determinantes Sociales de la
-          Salud.
-        </p>
-        <p class="text-slate-600">
-          Este tablero forma parte de un sistema de monitoreo que permite
-          observar de manera continua las condiciones sociales que influyen en
-          la salud de la población, identificar desigualdades y orientar la toma
-          de decisiones para mejorar el bienestar y la equidad en el territorio.
-        </p>
-        <p class="text-slate-600">
-          A través del menú superior, usted podrá navegar por las distintas
-          secciones del sistema:
-        </p>
-        <ul class="list-disc text-slate-600 flex flex-col gap-2 pl-4">
-          <li>Inicio, con una visión general del propósito del tablero.</li>
-          <li>
-            Inequidades en salud, donde se presentan los principales datos sobre
-            las inequidades en salud priorizadas por el territorio
-          </li>
-          <li>
-            Determinantes sociales de la salud, orientada a dar seguimiento a
-            las condiciones sociales subyacentes que están relacionadas con la
-            producción de las inequidades priorizadas, además de las políticas
-            implementadas para su abordaje.
-          </li>
-        </ul>
-        <p class="text-slate-600">
-          Este dashboard utiliza visualizaciones interactivas que facilitan el
-          análisis, la comparación y el seguimiento de la situación local,
-          apoyando la planificación y evaluación de políticas públicas.
-        </p>
-        <p class="text-slate-600">
-          Le invitamos a recorrer sus secciones y utilizar esta herramienta para
-          comprender mejor la realidad del municipio y fortalecer las acciones
-          en favor de la salud y la equidad en el territorio.
-        </p>
+    <h1 class="text-4xl py-8">Observatorio de Determinantes Sociales de la Salud de {app.local}</h1>
+    <div class="home-grid">
+      <div class="intro text-justify">
+        <p>La Iniciativa Especial sobre Determinantes Sociales de la Salud es una estrategia global liderada por la OMS y coordinada por la OPS en la región de las Américas, con apoyo de la Cooperación Suiza. Su propósito es asegurar que la equidad en salud sea incorporada en el desarrollo de políticas sociales y económicas, especialmente aquellas que afectan a poblaciones en situación de vulnerabilidad. A través de acciones intersectoriales, participación comunitaria y fortalecimiento de capacidades, la Iniciativa busca transformar las condiciones estructurales que generan inequidades en salud.</p>
+        <p>Una de sus líneas de acción es el desarrollo de sistemas de monitoreo de determinantes sociales que sirva a los países y territorios a medir los determinantes sociales de las inequidades en salud y las acciones implementadas para su abordaje. Este tablero es un resumen de la información general disponible para los países de la Iniciativa Especial.</p>
+        <p>La información presentada para cada uno de los países está organizada en seis diferentes áreas para facilitar su consulta, en concordancia con el Marco Operacional para el Monitoreo de los Determinantes Sociales de la Salud de OMS:</p>
+        <ol>{areas.map((area) => <li>{area.title}</li>)}</ol>
+      </div>
+      <div class="areas">
+        {areas.map((area) => (
+          <details class="area-card" style={`--area-color: ${area.color}`}>
+            <summary><span>{area.title}</span><span class="area-icon" aria-hidden="true">{area.icon}</span><span class="chevron" aria-hidden="true">⌄</span></summary>
+            <p>{area.description}</p>
+          </details>
+        ))}
       </div>
     </div>
   </div>
 </div>
+
+<style>
+.home-grid{display:grid;grid-template-columns:minmax(0,2fr) minmax(330px,1fr);gap:3rem;align-items:start}.intro{font-size:1.05rem;line-height:1.55;color:#111827}.intro p{margin:0 0 1.25rem}.intro ol{list-style:decimal;padding-left:2rem}.intro li{margin:.2rem 0}.areas{display:flex;flex-direction:column;gap:.7rem}.area-card{background:var(--area-color);color:#fff;border-radius:1rem;overflow:hidden;border:1px solid #d1d5db}.area-card summary{cursor:pointer;list-style:none;display:grid;grid-template-columns:1fr auto auto;gap:1rem;align-items:center;padding:1.15rem 1.25rem;font-size:1.05rem;font-weight:700}.area-card summary::-webkit-details-marker{display:none}.area-card p{margin:0;padding:0 1.25rem 1.25rem;line-height:1.45;text-align:justify}.area-icon{font-size:1.55rem;line-height:1}.chevron{font-size:1.35rem;transition:transform .15s ease}.area-card[open] .chevron{transform:rotate(180deg)}@media(max-width:900px){.home-grid{grid-template-columns:1fr;gap:2rem}}
+</style>
+
+<script>
+document.querySelectorAll<HTMLDetailsElement>('.area-card').forEach((detail)=>{detail.addEventListener('toggle',()=>{if(!detail.open)return;document.querySelectorAll<HTMLDetailsElement>('.area-card').forEach((other)=>{if(other!==detail)other.open=false})})})
+</script>
