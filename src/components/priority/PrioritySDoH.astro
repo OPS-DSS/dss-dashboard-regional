@@ -182,7 +182,7 @@ const dssAreas = [
   const contextCache = new Map()
 
   function parseContextCsv(text) {
-    const lines = text.trim().split(/\\r?\\n/)
+    const lines = text.trim().split(/\r?\n/)
     const headers = (lines.shift() || '').split(',')
     const ti = headers.indexOf('territorio'), yi = headers.indexOf('anio'), vi = headers.indexOf('valor')
     return lines.map((line) => {
