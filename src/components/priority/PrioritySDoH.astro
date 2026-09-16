@@ -23,20 +23,15 @@ const base = import.meta.env.BASE_URL.endsWith('/')
   ? import.meta.env.BASE_URL
   : import.meta.env.BASE_URL + '/'
 
-const dimensionLabels: Record<string, string> = {
-  dss: 'Determinantes Sociales de la Salud',
-  policy: 'Política',
-}
-
-const subdimensionsByDim: Record<string, string[]> = {}
-for (const ind of indicators) {
-  subdimensionsByDim[ind.dimension] ??= []
-  for (const sub of ind.subdimensions) {
-    if (!subdimensionsByDim[ind.dimension].includes(sub)) {
-      subdimensionsByDim[ind.dimension].push(sub)
-    }
-  }
-}
+const areas = [
+  { slug: 'economia', title: 'Trabajo, ingresos, seguridad económica y desigualdad', color: '#a53331', icon: 'flowbite:scale-balanced-solid' },
+  { slug: 'educacion', title: 'Educación', color: '#c7743e', icon: 'flowbite:book-open-outline' },
+  { slug: 'ambiente', title: 'Ambiente físico', color: '#7eb267', icon: 'flowbite:home-outline' },
+  { slug: 'comunidad', title: 'Contexto social y comunitario', color: '#385495', icon: 'flowbite:users-group-outline' },
+  { slug: 'salud', title: 'Conductas relacionadas con la salud', color: '#6fabc2', icon: 'flowbite:heart-outline' },
+  { slug: 'sistema', title: 'Sistema de atención de salud', color: '#7a00c2', icon: 'icons8:doctor' },
+]
+const selectableIndicators = indicators.filter((ind) => !ind.priority)
 ---
 
 <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-10">
@@ -45,305 +40,149 @@ for (const ind of indicators) {
     <p class="text-gray-700">{text}</p>
 
     <div id="country-selector" class="mt-4 rounded-lg border border-gray-200 p-5">
-      <label for="country-select" class="block text-sm font-medium text-gray-700 mb-2">
-        Seleccione un país de la Región de las Américas
-      </label>
+      <label for="country-select" class="block text-sm font-medium text-gray-700 mb-2">Seleccione un país de la Región de las Américas</label>
       <div class="flex flex-col sm:flex-row gap-3 sm:items-center">
-        <select
-          id="country-select"
-          class="min-w-72 rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-800"
-        >
+        <select id="country-select" class="min-w-72 rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-800">
           <option value="">Seleccione un país</option>
           {countries.map((country) => <option value={country}>{country}</option>)}
         </select>
-        <button
-          id="country-enter-btn"
-          type="button"
-          class="rounded-lg bg-gray-800 px-4 py-2 text-sm font-medium text-white disabled:opacity-40"
-          disabled
-        >
-          Ver indicadores
-        </button>
+        <button id="country-enter-btn" type="button" class="rounded-lg bg-gray-800 px-4 py-2 text-sm font-medium text-white disabled:opacity-40" disabled>Continuar</button>
       </div>
     </div>
 
     <div id="country-content" class="hidden">
       <div class="mt-4 flex items-center justify-between gap-3 flex-wrap">
-        <p class="text-sm text-gray-600">
-          País seleccionado: <strong id="selected-country-label"></strong>
-        </p>
-        <button
-          id="change-country-btn"
-          type="button"
-          class="text-sm font-medium text-blue-700 hover:underline"
-        >
-          Cambiar país
-        </button>
+        <p class="text-sm text-gray-600">País seleccionado: <strong id="selected-country-label"></strong></p>
+        <button id="change-country-btn" type="button" class="text-sm font-medium text-blue-700 hover:underline">Cambiar país</button>
       </div>
 
-    <div class="flex flex-col gap-3 mt-4">
-      <div class="flex gap-3 items-center">
-        <div
-          class="flex rounded-lg border border-gray-300 overflow-hidden text-sm"
-        >
-          {
-            Object.entries(dimensionLabels).map(([dim, label], i) => (
-              <button
-                data-dim-btn={dim}
-                type="button"
-                aria-pressed={i === 0 ? 'true' : 'false'}
-                class={
-                  i === 0
-                    ? 'px-4 py-2 font-medium bg-gray-800 text-white transition-colors'
-                    : 'px-4 py-2 font-medium bg-white text-gray-700 hover:bg-gray-50 transition-colors'
-                }
-              >
-                {label}
-              </button>
-            ))
-          }
+      <section id="area-selector" class="mt-5">
+        <h2 class="text-xl font-semibold mb-4">Seleccione una dimensión</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {areas.map((area) => (
+            <button data-area-btn={area.slug} type="button" style={`background-color: ${area.color}`} class="w-full rounded-2xl border border-gray-300 px-6 py-5 text-left text-white shadow-sm transition hover:opacity-90 flex items-center justify-between gap-4">
+              <span class="text-xl font-semibold">{area.title}</span>
+              <span class="text-2xl" aria-hidden="true">›</span>
+            </button>
+          ))}
         </div>
-      </div>
+      </section>
 
-      <div class="flex gap-3 items-start min-h-8">
-        <div class="flex gap-2 flex-wrap">
-          {
-            Object.entries(subdimensionsByDim).map(([dim, subs]) => (
-              <div data-subdim-group={dim} class="contents">
-                {subs.map((sub) => (
-                  <button
-                    data-subdim-tag={sub}
-                    data-subdim-dim={dim}
-                    type="button"
-                    aria-pressed="true"
-                    class="px-3 py-1 rounded-full text-xs font-medium border transition-colors bg-blue-700 text-white border-blue-700 capitalize hidden"
-                  >
-                    {sub}
-                  </button>
-                ))}
-              </div>
-            ))
-          }
+      <section id="indicator-selector" class="hidden mt-5">
+        <button id="back-to-areas-btn" type="button" class="mb-4 text-sm font-medium text-blue-700 hover:underline">← Volver a dimensiones</button>
+        <h2 id="selected-area-label" class="text-xl font-semibold mb-4"></h2>
+        <div class="flex rounded-lg border border-gray-300 overflow-hidden text-sm w-fit mb-4">
+          <button data-type-btn="dss" type="button" class="px-4 py-2 font-medium bg-gray-800 text-white">Indicadores</button>
+          <button data-type-btn="policy" type="button" class="px-4 py-2 font-medium bg-white text-gray-700">Políticas</button>
         </div>
-      </div>
-    </div>
-
-    <ul id="indicators-list" class="mt-4 flex flex-col gap-4">
-      {
-        indicators.map((ind) => (
-          <li
-            data-dimension={ind.dimension}
-            data-subdimensions={ind.subdimensions.join(',')}
-          >
-            <a
-              href={`${base}${ind.slug}`}
-              data-indicator-href={`${base}${ind.slug}`}
-              class="block rounded-lg border border-gray-200 p-4 hover:border-blue-400 hover:shadow-sm transition-all"
-            >
-              <h3 class="text-lg font-semibold text-gray-900">{ind.title}</h3>
-              <p class="mt-1 text-sm text-gray-600">{ind.description}</p>
-              <div class="mt-3 flex flex-wrap gap-2">
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-700 border border-gray-200">
-                  {dimensionLabels[ind.dimension] ?? ind.dimension}
-                </span>
-                {ind.subdimensions.map((sub) => (
-                  <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200 capitalize">
-                    {sub}
-                  </span>
-                ))}
-              </div>
-            </a>
-          </li>
-        ))
-      }
-    </ul>
-
-    <p id="empty-message" class="text-gray-500 italic mt-4 hidden">
-      No hay indicadores disponibles para los filtros seleccionados.
-    </p>
+        <ul id="indicators-list" class="flex flex-col gap-4">
+          {selectableIndicators.map((ind) => (
+            <li data-type={ind.dimension} data-area={(ind as any).area ?? ''}>
+              <a href={`${base}${ind.slug}`} data-indicator-href={`${base}${ind.slug}`} class="block rounded-lg border border-gray-200 p-4 hover:border-blue-400 hover:shadow-sm transition-all">
+                <h3 class="text-lg font-semibold text-gray-900">{ind.title}</h3>
+                <p class="mt-1 text-sm text-gray-600">{ind.description}</p>
+              </a>
+            </li>
+          ))}
+        </ul>
+        <p id="empty-message" class="text-gray-500 italic mt-4 hidden">No hay indicadores disponibles para esta dimensión y tipo.</p>
+      </section>
     </div>
   </div>
 </div>
 <script>
   const params = new URLSearchParams(window.location.search)
-
-  function getInitialDimension(): string {
-    const d = params.get('dimension')
-    return d === 'dss' || d === 'policy' ? d : 'dss'
-  }
-
   let selectedCountry = params.get('country') ?? ''
-  let selectedDimension = getInitialDimension()
-  let selectedSubdimensions = new Set<string>()
+  let selectedArea = params.get('area') ?? ''
+  let selectedType = params.get('dimension') === 'policy' ? 'policy' : 'dss'
 
-  function getSubdimsForDimension(dim: string): string[] {
-    return Array.from(
-      document.querySelectorAll<HTMLButtonElement>(
-        `[data-subdim-tag][data-subdim-dim="${dim}"]`,
-      ),
-    ).map((btn) => btn.getAttribute('data-subdim-tag')!)
+  const areaTitles: Record<string,string> = {
+    economia: 'Trabajo, ingresos, seguridad económica y desigualdad',
+    educacion: 'Educación',
+    ambiente: 'Ambiente físico',
+    comunidad: 'Contexto social y comunitario',
+    salud: 'Conductas relacionadas con la salud',
+    sistema: 'Sistema de atención de salud',
   }
 
-  function selectAllSubdims() {
-    selectedSubdimensions = new Set(getSubdimsForDimension(selectedDimension))
+  function syncUrl() {
+    const q = new URLSearchParams()
+    if (selectedCountry) q.set('country', selectedCountry)
+    if (selectedArea) q.set('area', selectedArea)
+    q.set('dimension', selectedType)
+    history.replaceState(null, '', `?${q.toString()}`)
+  }
+
+  function updateLinks() {
+    document.querySelectorAll<HTMLAnchorElement>('[data-indicator-href]').forEach((link) => {
+      const href = link.getAttribute('data-indicator-href')!
+      const q = new URLSearchParams({ country: selectedCountry, area: selectedArea, dimension: selectedType })
+      link.href = `${href}?${q.toString()}`
+    })
   }
 
   function filterIndicators() {
-    const items = document.querySelectorAll<HTMLLIElement>(
-      '#indicators-list [data-dimension]',
-    )
     let visible = 0
-
-    items.forEach((item) => {
-      const dim = item.getAttribute('data-dimension') ?? ''
-      const subs = (item.getAttribute('data-subdimensions') ?? '')
-        .split(',')
-        .filter(Boolean)
-      const dimMatch = dim === selectedDimension
-      const subMatch = subs.some((s) => selectedSubdimensions.has(s))
-      if (dimMatch && subMatch) {
-        item.style.display = ''
-        visible++
-      } else {
-        item.style.display = 'none'
-      }
+    document.querySelectorAll<HTMLLIElement>('#indicators-list [data-area]').forEach((item) => {
+      const show = item.dataset.area === selectedArea && item.dataset.type === selectedType
+      item.style.display = show ? '' : 'none'
+      if (show) visible++
     })
-
-    document
-      .getElementById('empty-message')
-      ?.classList.toggle('hidden', visible > 0)
+    document.getElementById('empty-message')?.classList.toggle('hidden', visible > 0)
   }
 
-  function updateDimensionButtons() {
-    document
-      .querySelectorAll<HTMLButtonElement>('[data-dim-btn]')
-      .forEach((btn) => {
-        const dim = btn.getAttribute('data-dim-btn') ?? ''
-        const active = dim === selectedDimension
-        btn.setAttribute('aria-pressed', String(active))
-        if (active) {
-          btn.classList.add('bg-gray-800', 'text-white')
-          btn.classList.remove('bg-white', 'text-gray-700', 'hover:bg-gray-50')
-        } else {
-          btn.classList.remove('bg-gray-800', 'text-white')
-          btn.classList.add('bg-white', 'text-gray-700', 'hover:bg-gray-50')
-        }
-      })
+  function updateTypeButtons() {
+    document.querySelectorAll<HTMLButtonElement>('[data-type-btn]').forEach((btn) => {
+      const active = btn.dataset.typeBtn === selectedType
+      btn.classList.toggle('bg-gray-800', active)
+      btn.classList.toggle('text-white', active)
+      btn.classList.toggle('bg-white', !active)
+      btn.classList.toggle('text-gray-700', !active)
+    })
   }
 
-  function updateSubdimTags() {
-    document
-      .querySelectorAll<HTMLButtonElement>('[data-subdim-tag]')
-      .forEach((btn) => {
-        const dim = btn.getAttribute('data-subdim-dim') ?? ''
-        const sub = btn.getAttribute('data-subdim-tag') ?? ''
-
-        if (dim !== selectedDimension) {
-          btn.classList.add('hidden')
-          return
-        }
-
-        btn.classList.remove('hidden')
-        const active = selectedSubdimensions.has(sub)
-        btn.setAttribute('aria-pressed', String(active))
-        if (active) {
-          btn.classList.add('bg-blue-700', 'text-white', 'border-blue-700')
-          btn.classList.remove('bg-white', 'text-blue-700', 'border-blue-200')
-        } else {
-          btn.classList.remove('bg-blue-700', 'text-white', 'border-blue-700')
-          btn.classList.add('bg-white', 'text-blue-700', 'border-blue-200')
-        }
-      })
-  }
-
-  function updateCountryView() {
+  function updateView() {
     const selector = document.getElementById('country-selector')
     const content = document.getElementById('country-content')
+    const areas = document.getElementById('area-selector')
+    const indicatorsPanel = document.getElementById('indicator-selector')
     const label = document.getElementById('selected-country-label')
+    const areaLabel = document.getElementById('selected-area-label')
     const select = document.getElementById('country-select') as HTMLSelectElement | null
-    const enterBtn = document.getElementById('country-enter-btn') as HTMLButtonElement | null
-
+    const enter = document.getElementById('country-enter-btn') as HTMLButtonElement | null
     if (select) select.value = selectedCountry
-    if (enterBtn) enterBtn.disabled = !(select?.value)
-
-    if (selectedCountry) {
-      selector?.classList.add('hidden')
-      content?.classList.remove('hidden')
-      if (label) label.textContent = selectedCountry
-    } else {
-      selector?.classList.remove('hidden')
-      content?.classList.add('hidden')
-    }
-
-    document.querySelectorAll<HTMLAnchorElement>('[data-indicator-href]').forEach((link) => {
-      const baseHref = link.getAttribute('data-indicator-href') ?? link.href
-      const query = new URLSearchParams({
-        country: selectedCountry,
-        dimension: selectedDimension,
-      })
-      link.href = `${baseHref}?${query.toString()}`
-    })
-  }
-
-  function setDimension(dim: string) {
-    selectedDimension = dim
-    selectAllSubdims()
-    updateDimensionButtons()
-    updateSubdimTags()
+    if (enter) enter.disabled = !select?.value
+    selector?.classList.toggle('hidden', Boolean(selectedCountry))
+    content?.classList.toggle('hidden', !selectedCountry)
+    if (label) label.textContent = selectedCountry
+    areas?.classList.toggle('hidden', Boolean(selectedArea))
+    indicatorsPanel?.classList.toggle('hidden', !selectedArea)
+    if (areaLabel) areaLabel.textContent = areaTitles[selectedArea] ?? ''
+    updateTypeButtons()
     filterIndicators()
-    const query = new URLSearchParams({ country: selectedCountry, dimension: dim })
-    history.replaceState(null, '', `?${query.toString()}`)
-    updateCountryView()
+    updateLinks()
   }
 
   const countrySelect = document.getElementById('country-select') as HTMLSelectElement | null
-  const countryEnterBtn = document.getElementById('country-enter-btn') as HTMLButtonElement | null
-
-  countrySelect?.addEventListener('change', () => {
-    if (countryEnterBtn) countryEnterBtn.disabled = !countrySelect.value
-  })
-
-  countryEnterBtn?.addEventListener('click', () => {
+  const enter = document.getElementById('country-enter-btn') as HTMLButtonElement | null
+  countrySelect?.addEventListener('change', () => { if (enter) enter.disabled = !countrySelect.value })
+  enter?.addEventListener('click', () => {
     selectedCountry = countrySelect?.value ?? ''
-    if (!selectedCountry) return
-    const query = new URLSearchParams({ country: selectedCountry, dimension: selectedDimension })
-    history.replaceState(null, '', `?${query.toString()}`)
-    updateCountryView()
+    selectedArea = ''
+    syncUrl(); updateView()
   })
-
   document.getElementById('change-country-btn')?.addEventListener('click', () => {
-    selectedCountry = ''
-    history.replaceState(null, '', window.location.pathname)
-    updateCountryView()
+    selectedCountry = ''; selectedArea = ''; history.replaceState(null, '', window.location.pathname); updateView()
   })
-
-  document
-    .querySelectorAll<HTMLButtonElement>('[data-dim-btn]')
-    .forEach((btn) => {
-      btn.addEventListener('click', () => {
-        const dim = btn.getAttribute('data-dim-btn')
-        if (dim && dim in { dss: 1, policy: 1 }) setDimension(dim)
-      })
-    })
-
-  document
-    .querySelectorAll<HTMLButtonElement>('[data-subdim-tag]')
-    .forEach((btn) => {
-      btn.addEventListener('click', () => {
-        const sub = btn.getAttribute('data-subdim-tag') ?? ''
-        if (selectedSubdimensions.has(sub)) {
-          selectedSubdimensions.delete(sub)
-        } else {
-          selectedSubdimensions.add(sub)
-        }
-        updateSubdimTags()
-        filterIndicators()
-      })
-    })
-
-  selectAllSubdims()
-  updateDimensionButtons()
-  updateSubdimTags()
-  filterIndicators()
-  updateCountryView()
+  document.querySelectorAll<HTMLButtonElement>('[data-area-btn]').forEach((btn) => btn.addEventListener('click', () => {
+    selectedArea = btn.dataset.areaBtn ?? ''; selectedType = 'dss'; syncUrl(); updateView()
+  }))
+  document.getElementById('back-to-areas-btn')?.addEventListener('click', () => {
+    selectedArea = ''; syncUrl(); updateView()
+  })
+  document.querySelectorAll<HTMLButtonElement>('[data-type-btn]').forEach((btn) => btn.addEventListener('click', () => {
+    selectedType = btn.dataset.typeBtn === 'policy' ? 'policy' : 'dss'; syncUrl(); updateView()
+  }))
+  updateView()
 </script>
+
