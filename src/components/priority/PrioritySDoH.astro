@@ -124,7 +124,8 @@ const dssAreas = [
         indicators.map((ind) => (
           <li
             data-dimension={ind.dimension}
-            data-subdimensions={(ind as any).area ?? ''}
+            data-subdimensions={ind.area ?? ind.subdimensions.join(',')}
+            data-indicator-slug={ind.slug}
           >
             <a
               href={`${base}${ind.slug}`}
@@ -189,7 +190,12 @@ const dssAreas = [
         .split(',')
         .filter(Boolean)
       const dimMatch = dim === selectedDimension
-      const subMatch = subs.some((s) => selectedSubdimensions.has(s))
+      // Selected DSS areas are alternatives (OR), not cumulative requirements.
+      // Fall back to legacy subdimensions so indicators without `area` are not
+      // silently hidden while the catalogue is being migrated.
+      const subMatch =
+        selectedSubdimensions.size === 0 ||
+        subs.some((s) => selectedSubdimensions.has(s))
       if (dimMatch && subMatch) {
         item.style.display = ''
         visible++
