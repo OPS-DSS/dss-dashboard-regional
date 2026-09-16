@@ -50,7 +50,8 @@
           "role": "value",
           "index": 4
         }
-      ]
+      ],
+      "area": null
     },
     {
       "slug": "gasto-educ-pib",
@@ -98,7 +99,8 @@
           "role": "value",
           "index": 4
         }
-      ]
+      ],
+      "area": "educacion"
     },
     {
       "slug": "uso-internet",
@@ -161,7 +163,8 @@
           "aggregate": "Total",
           "index": 5
         }
-      ]
+      ],
+      "area": "ambiente"
     },
     {
       "slug": "gini",
@@ -209,7 +212,8 @@
           "role": "value",
           "index": 4
         }
-      ]
+      ],
+      "area": "economia"
     },
     {
       "slug": "tuberculosis",
@@ -258,7 +262,8 @@
           "role": "value",
           "index": 4
         }
-      ]
+      ],
+      "area": null
     }
   ],
   "features": {
