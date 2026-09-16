@@ -26,6 +26,7 @@ export interface PageDatasets {
   priorityData: Record<string, PriorityRow[]>
   /** Stratified indicator data, keyed by indicator slug. */
   stratifiedData: Record<string, StratifiedRow[]>
+  contextData: Record<string, StratifiedRow[]>
 }
 
 async function tryLoad<T extends DataRow>(
@@ -60,6 +61,12 @@ export async function loadAllDatasets(): Promise<PageDatasets> {
     )
   }
 
+  const contextData: Record<string, StratifiedRow[]> = {}
+  for (const slug of ['poblacion', 'pib-per-capita', 'esperanza-vida', 'mortalidad-bruta']) {
+    const indicator = indicators.find((ind) => ind.slug === slug)
+    if (indicator) contextData[slug] = stratifiedData[slug] ?? []
+  }
+
   const { analytics, scatter, forestPlot } = app.datasets ?? {}
   return {
     forestPlotData: await tryLoad<ForestPlotDataRow>(
@@ -77,6 +84,7 @@ export async function loadAllDatasets(): Promise<PageDatasets> {
       : [],
     priorityData,
     stratifiedData,
+    contextData,
   }
 }
 
@@ -95,6 +103,7 @@ export interface PageDefinition {
   scatterData?: ScatterRow[]
   stratifiedData?: StratifiedRow[]
   allStratifiedData?: Record<string, StratifiedRow[]>
+  contextData?: Record<string, StratifiedRow[]>
   dimension?: string
   subdimensions?: string[]
   description?: string
@@ -120,6 +129,7 @@ export function buildPages(datasets: PageDatasets): PageDefinition[] {
       date: '2026-01-01',
       navbar: true,
       allStratifiedData: datasets.stratifiedData,
+      contextData: datasets.contextData,
     },
     {
       slug: 'analisis',
