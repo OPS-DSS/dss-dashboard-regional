@@ -83,10 +83,12 @@ const {
   const params = new URLSearchParams(window.location.search)
   const country = params.get('country')
   const dimension = params.get('dimension') ?? 'dss'
+  const area = params.get('area')
   if (backLink && country) {
     const url = new URL(backLink.href)
     url.searchParams.set('country', country)
     url.searchParams.set('dimension', dimension)
+    if (area) url.searchParams.set('area', area)
     backLink.href = url.toString()
   }
 </script>
