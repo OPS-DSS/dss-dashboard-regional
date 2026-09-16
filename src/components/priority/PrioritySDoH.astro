@@ -6,9 +6,10 @@ interface Props {
   title: string
   text: string
   allStratifiedData?: Record<string, StratifiedRow[]>
+  contextData?: Record<string, StratifiedRow[]>
 }
 
-const { title, text, allStratifiedData = {} } = Astro.props
+const { title, text, allStratifiedData = {}, contextData = {} } = Astro.props
 
 const countries = [
   ...new Set(
@@ -162,6 +163,7 @@ const dssAreas = [
     </div>
   </div>
 </div>
+<script id="country-context-data" type="application/json" set:html={JSON.stringify(contextData)}></script>
 <script>
   const params = new URLSearchParams(window.location.search)
 
@@ -179,45 +181,34 @@ const dssAreas = [
     'esperanza-vida': { prefix: '', suffix: ' años', decimals: 1 },
     'mortalidad-bruta': { prefix: '', suffix: ' por 1.000', decimals: 1 },
   }
-  type ContextRow = { territorio: string; anio: number; valor: number }
-  const contextCache = new Map<string, ContextRow[]>()
+  const contextData = {}
+  const embeddedContext = document.getElementById('country-context-data')
+  const buildContextData = embeddedContext?.textContent
+    ? JSON.parse(embeddedContext.textContent)
+    : contextData
 
-  function parseContextCsv(text: string): ContextRow[] {
-    const lines = text.trim().split(/\r?\n/)
-    const headers = (lines.shift() || '').split(',')
-    const ti = headers.indexOf('territorio'), yi = headers.indexOf('anio'), vi = headers.indexOf('valor')
-    return lines.map((line) => {
-      const cols = line.split(',')
-      return { territorio: cols[ti] || '', anio: Number(cols[yi]), valor: Number(cols[vi]) }
-    }).filter((row) => row.territorio && Number.isFinite(row.anio) && Number.isFinite(row.valor))
-  }
-
-  async function loadContextIndicator(slug: string): Promise<ContextRow[]> {
-    if (contextCache.has(slug)) return contextCache.get(slug)
-    const response = await fetch(import.meta.env.BASE_URL + 'data/csv/' + slug + '.csv')
-    if (!response.ok) throw new Error('No se pudo cargar ' + slug)
-    const rows = parseContextCsv(await response.text())
-    contextCache.set(slug, rows)
-    return rows
-  }
-
-  async function updateCountryContext() {
+  function updateCountryContext() {
     if (!selectedCountry) return
-    await Promise.all(Object.entries(contextIndicators).map(async ([slug, format]) => {
+    Object.entries(contextIndicators).forEach(([slug, format]) => {
       const valueEl = document.querySelector('[data-context-value="' + slug + '"]')
       const metaEl = document.querySelector('[data-context-meta="' + slug + '"]')
-      if (valueEl) valueEl.textContent = '…'
-      if (metaEl) metaEl.textContent = ''
-      try {
-        const latest = (await loadContextIndicator(slug)).filter((row: ContextRow) => row.territorio === selectedCountry).sort((a: ContextRow, b: ContextRow) => b.anio-a.anio)[0]
-        if (!latest) { if (valueEl) valueEl.textContent = 'Sin datos'; return }
-        const number = new Intl.NumberFormat('es-CL', { minimumFractionDigits: format.decimals, maximumFractionDigits: format.decimals }).format(latest.valor)
-        if (valueEl) valueEl.textContent = format.prefix + number + format.suffix
-        if (metaEl) metaEl.textContent = latest.anio + ' · Banco Mundial'
-      } catch { if (valueEl) valueEl.textContent = 'Sin datos' }
-    }))
+      const rows = Array.isArray(buildContextData[slug]) ? buildContextData[slug] : []
+      const latest = rows
+        .filter((row) => String(row.territorio ?? '').trim() === selectedCountry)
+        .sort((a, b) => Number(b.anio) - Number(a.anio))[0]
+      if (!latest) {
+        if (valueEl) valueEl.textContent = 'Sin datos'
+        if (metaEl) metaEl.textContent = ''
+        return
+      }
+      const number = new Intl.NumberFormat('es-CL', {
+        minimumFractionDigits: format.decimals,
+        maximumFractionDigits: format.decimals,
+      }).format(Number(latest.valor))
+      if (valueEl) valueEl.textContent = format.prefix + number + format.suffix
+      if (metaEl) metaEl.textContent = latest.anio + ' · Banco Mundial'
+    })
   }
-
   function getSubdimsForDimension(_dim: string): string[] {
     return Array.from(
       document.querySelectorAll<HTMLButtonElement>('[data-subdim-tag]'),
