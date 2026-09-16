@@ -24,19 +24,18 @@ const base = import.meta.env.BASE_URL.endsWith('/')
   : import.meta.env.BASE_URL + '/'
 
 const dimensionLabels: Record<string, string> = {
-  dss: 'Determinantes Sociales de la Salud',
-  policy: 'Política',
+  dss: 'Indicadores',
+  policy: 'Políticas',
 }
 
-const subdimensionsByDim: Record<string, string[]> = {}
-for (const ind of indicators) {
-  subdimensionsByDim[ind.dimension] ??= []
-  for (const sub of ind.subdimensions) {
-    if (!subdimensionsByDim[ind.dimension].includes(sub)) {
-      subdimensionsByDim[ind.dimension].push(sub)
-    }
-  }
-}
+const dssAreas = [
+  { slug: 'economia', label: 'Trabajo, ingresos, seguridad económica y desigualdad' },
+  { slug: 'educacion', label: 'Educación' },
+  { slug: 'ambiente', label: 'Ambiente físico' },
+  { slug: 'comunidad', label: 'Contexto social y comunitario' },
+  { slug: 'salud', label: 'Conductas relacionadas con la salud' },
+  { slug: 'sistema', label: 'Sistema de atención de salud' },
+]
 ---
 
 <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-10">
@@ -105,27 +104,20 @@ for (const ind of indicators) {
         </div>
       </div>
 
-      <div class="flex gap-3 items-start min-h-8">
-        <div class="flex gap-2 flex-wrap">
-          {
-            Object.entries(subdimensionsByDim).map(([dim, subs]) => (
-              <div data-subdim-group={dim} class="contents">
-                {subs.map((sub) => (
-                  <button
-                    data-subdim-tag={sub}
-                    data-subdim-dim={dim}
-                    type="button"
-                    aria-pressed="true"
-                    class="px-3 py-1 rounded-full text-xs font-medium border transition-colors bg-blue-700 text-white border-blue-700 capitalize hidden"
-                  >
-                    {sub}
-                  </button>
-                ))}
-              </div>
-            ))
-          }
-        </div>
+      <div class="flex gap-2 flex-wrap">
+        {dssAreas.map((area) => (
+          <button
+            data-subdim-tag={area.slug}
+            data-subdim-dim="dss"
+            type="button"
+            aria-pressed="true"
+            class="px-3 py-1 rounded-full text-xs font-medium border transition-colors bg-blue-700 text-white border-blue-700"
+          >
+            {area.label}
+          </button>
+        ))}
       </div>
+    </div>
     </div>
 
     <ul id="indicators-list" class="mt-4 flex flex-col gap-4">
@@ -133,7 +125,7 @@ for (const ind of indicators) {
         indicators.map((ind) => (
           <li
             data-dimension={ind.dimension}
-            data-subdimensions={ind.subdimensions.join(',')}
+            data-subdimensions={(ind as any).area ?? ''}
           >
             <a
               href={`${base}${ind.slug}`}
