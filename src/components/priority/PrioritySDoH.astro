@@ -108,7 +108,7 @@ const dssAreas = [
         {dssAreas.map((area) => (
           <button
             data-subdim-tag={area.slug}
-            data-subdim-dim="dss"
+            data-subdim-dim="all"
             type="button"
             aria-pressed="true"
             class="px-3 py-1 rounded-full text-xs font-medium border transition-colors bg-blue-700 text-white border-blue-700"
@@ -167,11 +167,9 @@ const dssAreas = [
   let selectedDimension = getInitialDimension()
   let selectedSubdimensions = new Set<string>()
 
-  function getSubdimsForDimension(dim: string): string[] {
+  function getSubdimsForDimension(_dim: string): string[] {
     return Array.from(
-      document.querySelectorAll<HTMLButtonElement>(
-        `[data-subdim-tag][data-subdim-dim="${dim}"]`,
-      ),
+      document.querySelectorAll<HTMLButtonElement>('[data-subdim-tag]'),
     ).map((btn) => btn.getAttribute('data-subdim-tag')!)
   }
 
@@ -229,11 +227,7 @@ const dssAreas = [
         const dim = btn.getAttribute('data-subdim-dim') ?? ''
         const sub = btn.getAttribute('data-subdim-tag') ?? ''
 
-        if (dim !== selectedDimension) {
-          btn.classList.add('hidden')
-          return
-        }
-
+        // The six DSS areas apply to both Indicators and Policies.
         btn.classList.remove('hidden')
         const active = selectedSubdimensions.has(sub)
         btn.setAttribute('aria-pressed', String(active))
