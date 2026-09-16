@@ -62,6 +62,8 @@ const Indicator = z.object({
   category: z.string().optional(),
   related_priorities: z.array(z.string()).optional(),
   dimension: z.enum(['dss', 'policy']),
+  // One of the six DSS areas used to filter indicators/policies on the country page.
+  area: z.enum(['economia', 'educacion', 'ambiente', 'comunidad', 'salud', 'sistema']).nullable().optional(),
   subdimensions: z.array(z.string()),
   stratifiers: z.array(z.string()).optional(),
   label: z.string(),
