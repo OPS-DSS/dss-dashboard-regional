@@ -301,7 +301,8 @@ const dssAreas = [
     if (selectedCountry) {
       selector?.classList.add('hidden')
       content?.classList.remove('hidden')
-      if (label) label.textContent = selectedCountry\n      void updateCountryContext()
+      if (label) label.textContent = selectedCountry
+      updateCountryContext()
     } else {
       selector?.classList.remove('hidden')
       content?.classList.add('hidden')
